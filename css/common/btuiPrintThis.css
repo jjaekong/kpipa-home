@@ -1,0 +1,23 @@
+/*
+ * [START] 매인화면 온/오프라인 판매 통계 차트
+ *
+ */
+
+/* 배경 하얀색으로 */
+body {
+    background-color :#FFFFFF;
+}
+
+/* 더보기 버튼 숨김 */
+a.more {
+	display: none;
+}
+
+/* 다운로드 버튼 숨김 */
+div.col.text-center {
+	display: none;
+}
+
+/*
+ * [END] 매인화면 온/오프라인 판매 통계 차트
+ */

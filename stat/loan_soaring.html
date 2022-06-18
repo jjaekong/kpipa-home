@@ -1,0 +1,286 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="/css/style.css" rel="stylesheet">
+    <link href="/css/swiper-bundle.min.css" rel="stylesheet">
+
+    <title>출판유통통합전산망</title>
+</head>
+
+<body>
+
+    <!-- 컨텐츠 -->
+    <!--
+        페이지별 구분자(클래스) 필요.
+        대메뉴별 구분자.
+        - 통계서비스: stat
+        - 대출급상승 도서: loan-soaring
+    -->
+    <main id="main" class="stat loan-soaring bg-white">
+
+        <div class="menu-title-box py-4 py-xl-5">
+            <div class="container">
+                <h1 class="menu-title mb-0 text-center py-2">
+                    <a href="#">대출통계</a>
+                </h1>
+            </div>
+        </div>
+
+        <div class="tabs-wrapper px-3 px-xl-0 mb-4 mb-xl-5">
+            <div class="container">
+                <ul class="tabs d-flex mb-0 list-unstyled flex-wrap">
+                    <li><a class="px-2 d-flex align-items-center justify-content-center text-center text-decoration-none" href="./loan_popular.html">인기대출 도서</a></li>
+                    <li><a class="active px-2 d-flex align-items-center justify-content-center text-center text-decoration-none" href="./loan_soaring.html">대출급상승 도서</a></li>
+                </ul>    
+            </div>
+        </div>
+
+        <div class="search-form-wrapper px-3 px-xl-0">
+            <div class="container">
+                <div class="search-form mb-5">
+                    <div class="search-form-body">
+                        <div class="row justify-content-center align-items-center">
+                            <div class="col-12 col-sm-auto">
+                                <label for="stand-date" class="search-title">기준일</label>
+                            </div>
+                            <div class="col-12 col-sm-auto">
+                                <input class="form-control shadow-none" type="date" id="stand-date" name="" value="">
+                            </div>
+                            <div class="col-12 col-sm-auto">
+                                <button type="button" class="btn btn-search shadow-none">검색</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="px-3 px-xl-0">
+            <div class="container">
+                <section class="daily-ranking mb-5">
+                    <h4 class="mb-3">2021년 11월 15일 기준</h4>
+                    <div class="table-responsive table-board-list">
+                        <table class="table table-bordered table-hover">
+                            <tbody>
+                                <tr>
+                                    <th>도서표지</th>
+                                    <td>
+                                        <div class="book-cover ratio ratio-3x4">
+                                            <img class="w-100" src="https://picsum.photos/154/227" alt="">
+                                            <div class="rank">200</div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="book-cover ratio ratio-3x4">
+                                            <img class="w-100" src="https://picsum.photos/154/227" alt="">
+                                            <div class="rank">200</div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="book-cover ratio ratio-3x4">
+                                            <img class="w-100" src="https://picsum.photos/154/227" alt="">
+                                            <div class="rank">200</div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="book-cover ratio ratio-3x4">
+                                            <img class="w-100" src="https://picsum.photos/154/227" alt="">
+                                            <div class="rank">200</div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="book-cover ratio ratio-3x4">
+                                            <img class="w-100" src="https://picsum.photos/154/227" alt="">
+                                            <div class="rank">200</div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>상승폭</th>
+                                    <td><span class="rate up">▲ 136</span></td>
+                                    <td><span class="rate up">▲ 144</span></td>
+                                    <td><span class="rate down">▼ 1665</span></td>
+                                    <td><span class="rate down">▼ 62</span></td>
+                                    <td><span class="rate down">▼ 59</span></td>
+                                </tr>
+                                <tr>
+                                    <th>기준일 순위 / 전주 순위</th>
+                                    <td>92 / 236</td>
+                                    <td>92 / 236</td>
+                                    <td>92 / 236</td>
+                                    <td>92 / 236</td>
+                                    <td>92 / 236</td>
+                                </tr>
+                                <tr>
+                                    <th>도서명</th>
+                                    <td>크리스마스 피그</td>
+                                    <td>크리스마스 피그</td>
+                                    <td>크리스마스 피그</td>
+                                    <td>크리스마스 피그</td>
+                                    <td>크리스마스 피그</td>
+                                </tr>
+                                <tr>
+                                    <th>ISBN</th>
+                                    <td>978-89-839288-2-5</td>
+                                    <td>978-89-839288-2-5</td>
+                                    <td>978-89-839288-2-5</td>
+                                    <td>978-89-839288-2-5</td>
+                                    <td>978-89-839288-2-5</td>
+                                </tr>
+                                <tr>
+                                    <th>저자</th>
+                                    <td>J.K. 롤링 (지은이), 짐 필드 (그림), 공보경 (옮긴이)</td>
+                                    <td>글·그림: 신태훈,나승훈</td>
+                                    <td>글·그림: 신태훈,나승훈</td>
+                                    <td>글·그림: 신태훈,나승훈</td>
+                                    <td>글·그림: 신태훈,나승훈</td>
+                                </tr>
+                                <tr>
+                                    <th>출판사</th>
+                                    <td>문학수첩</td>
+                                    <td>위즈덤하우스 미디어그룹</td>
+                                    <td>위즈덤하우스 미디어그룹</td>
+                                    <td>위즈덤하우스 미디어그룹</td>
+                                    <td>위즈덤하우스 미디어그룹</td>
+                                </tr>
+                                <tr>
+                                    <th>출판년도</th>
+                                    <td>2021</td>
+                                    <td>2021</td>
+                                    <td>2021</td>
+                                    <td>2021</td>
+                                    <td>2021</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+                <section class="daily-ranking mb-5">
+                    <h4 class="mb-3">2021년 11월 15일 기준</h4>
+                    <div class="table-responsive table-board-list">
+                        <table class="table table-bordered table-hover">
+                            <tbody>
+                                <tr>
+                                    <th>도서표지</th>
+                                    <td>
+                                        <div class="book-cover ratio ratio-3x4">
+                                            <img class="w-100" src="https://picsum.photos/154/227" alt="">
+                                            <div class="rank">200</div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="book-cover ratio ratio-3x4">
+                                            <img class="w-100" src="https://picsum.photos/154/227" alt="">
+                                            <div class="rank">200</div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="book-cover ratio ratio-3x4">
+                                            <img class="w-100" src="https://picsum.photos/154/227" alt="">
+                                            <div class="rank">200</div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="book-cover ratio ratio-3x4">
+                                            <img class="w-100" src="https://picsum.photos/154/227" alt="">
+                                            <div class="rank">200</div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="book-cover ratio ratio-3x4">
+                                            <img class="w-100" src="https://picsum.photos/154/227" alt="">
+                                            <div class="rank">200</div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>상승폭</th>
+                                    <td><span class="rate up">▲ 136</span></td>
+                                    <td><span class="rate up">▲ 144</span></td>
+                                    <td><span class="rate down">▼ 1665</span></td>
+                                    <td><span class="rate down">▼ 62</span></td>
+                                    <td><span class="rate down">▼ 59</span></td>
+                                </tr>
+                                <tr>
+                                    <th>기준일 순위 / 전주 순위</th>
+                                    <td>92 / 236</td>
+                                    <td>92 / 236</td>
+                                    <td>92 / 236</td>
+                                    <td>92 / 236</td>
+                                    <td>92 / 236</td>
+                                </tr>
+                                <tr>
+                                    <th>도서명</th>
+                                    <td>크리스마스 피그</td>
+                                    <td>크리스마스 피그</td>
+                                    <td>크리스마스 피그</td>
+                                    <td>크리스마스 피그</td>
+                                    <td>크리스마스 피그</td>
+                                </tr>
+                                <tr>
+                                    <th>ISBN</th>
+                                    <td>978-89-839288-2-5</td>
+                                    <td>978-89-839288-2-5</td>
+                                    <td>978-89-839288-2-5</td>
+                                    <td>978-89-839288-2-5</td>
+                                    <td>978-89-839288-2-5</td>
+                                </tr>
+                                <tr>
+                                    <th>저자</th>
+                                    <td>J.K. 롤링 (지은이), 짐 필드 (그림), 공보경 (옮긴이)</td>
+                                    <td>글·그림: 신태훈,나승훈</td>
+                                    <td>글·그림: 신태훈,나승훈</td>
+                                    <td>글·그림: 신태훈,나승훈</td>
+                                    <td>글·그림: 신태훈,나승훈</td>
+                                </tr>
+                                <tr>
+                                    <th>출판사</th>
+                                    <td>문학수첩</td>
+                                    <td>위즈덤하우스 미디어그룹</td>
+                                    <td>위즈덤하우스 미디어그룹</td>
+                                    <td>위즈덤하우스 미디어그룹</td>
+                                    <td>위즈덤하우스 미디어그룹</td>
+                                </tr>
+                                <tr>
+                                    <th>출판년도</th>
+                                    <td>2021</td>
+                                    <td>2021</td>
+                                    <td>2021</td>
+                                    <td>2021</td>
+                                    <td>2021</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+        <div class="standard-data-wrapper px-3 px-xl-0">
+            <div class="container">
+                <section class="standard-data">
+                    <h4>데이터 기준</h4>
+                    <ul class="time list-unstyled">
+                        <li>당일 오전 9시 이후 확인 시 1일 전 대출 데이터까지 확인 가능</li>
+                    </ul>
+                    <ul class="note list-unstyled">
+                        <li>대출통계는 국립중앙도서관의 <a href="https://www.data4library.kr/" target="_blank" title="새창 열림">도서관 정보나루</a> 공개 API를 통해 제공됩니다.</li>
+                        <li>대출통계는 한국십진분류법(KDC: Korean Decimal Classification)으로 도서 주제를 분류합니다.</li>
+                    </ul>
+                </section>
+            </div>
+        </div>
+        
+    </main>
+
+    <!-- 퍼블리싱용 JS -->
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="/js/template.sub.js"></script>
+
+</body>
+
+</html>

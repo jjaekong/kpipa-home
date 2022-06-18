@@ -1,0 +1,352 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="/css/style.css" rel="stylesheet">
+    <link href="/css/swiper-bundle.min.css" rel="stylesheet">
+    <link href="/css/common/jquery-ui.min.css" rel="stylesheet">
+
+    <title>출판유통통합전산망</title>
+</head>
+
+<body>
+
+    <!-- 컨텐츠 -->
+    <!--
+        페이지별 구분자(클래스) 필요.
+        대메뉴별 구분자.
+        - 통계서비스: stat
+        - 판매보고서: sales-report
+    -->
+    <main id="main" class="stat sales-report bg-white">
+
+        <div class="menu-title-box py-4 py-xl-5">
+            <div class="container">
+                <h1 class="menu-title mb-0 text-center py-2">
+                    <a href="#">판매통계</a>
+                </h1>
+            </div>
+        </div>
+
+        <div class="tabs-wrapper px-3 px-xl-0 mb-4 mb-xl-5">
+            <div class="container">
+                <ul class="tabs d-flex mb-0 list-unstyled flex-wrap">
+                    <li><a class="active px-2 d-flex align-items-center justify-content-center text-center text-decoration-none" href="./sales_report.html">판매보고서</a></li>
+                    <li><a class="px-2 d-flex align-items-center justify-content-center text-center text-decoration-none" href="./sales_amount.html">주제분류별 <br class="d-inline d-sm-none">판매량 통계</a></li>
+                    <li><a class="px-2 d-flex align-items-center justify-content-center text-center text-decoration-none" href="./sales_ranking.html">주제분류별 <br class="d-inline d-sm-none">판매량 순위</a></li>
+                </ul>    
+            </div>
+        </div>
+
+        <div class="search-wrapper px-3 px-xl-0 mb-4 mb-xl-5">
+            <div class="container">
+                <form action="#" class="search-form">
+                    <div class="fieldset search-type">
+                        <legend class="search-title">구분</legend>
+                        <div class="fieldset-body">
+                            <div class="radio-group">
+                                <label class="radio">
+                                    <input class="visually-hidden" type="radio" name="search-type" value="book" checked="checked"><i></i><span>도서유형별</span>
+                                </label>
+                                <label class="radio">
+                                    <input class="visually-hidden" type="radio" name="search-type" value="onoff"><i></i><span>온/오프라인</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="fieldset search-period">
+                        <legend class="search-title">조회기간</legend>
+                        <div class="fieldset-body">
+                            <div class="radio-group">
+                                <label class="radio">
+                                    <input class="visually-hidden" type="radio" name="date-type" value="monthly" checked="checked"><i></i><span>월별</span>
+                                </label>
+                                <label class="radio">
+                                    <input class="visually-hidden" type="radio" name="date-type" value="daily"><i></i><span>일별</span>
+                                </label>
+                                <label class="radio">
+                                    <input class="visually-hidden" type="radio" name="date-type" value="byday"><i></i><span>요일별</span>
+                                </label>
+                            </div>
+                            <div class="period-group">
+                                <input class="form-control shadow-none period-from" type="month" name="monthly-from" value="" pattern="[0-9]{4}-[0-9]{2}">
+                                <span class="bar">-</span>
+                                <input class="form-control shadow-none period-to" type="month" name="monthly-to" value="" pattern="[0-9]{4}-[0-9]{2}">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-btn-group">
+                        <button type="submit" class="btn btn-search shadow-none">검색</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="chart-wrapper px-3 px-xl-0 mb-4 mb-xl-5">
+            <div class="container">
+                <div class="chart-content">
+                    <div class="no-data">
+                        <i class="bi bi-exclamation-circle"></i>
+                        <p>조회기간이 적절하지 않습니다.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="chart-wrapper px-3 px-xl-0 mb-4 mb-xl-5">
+            <div class="container">
+                <!-- 차트의 높이는 인라인 스타일로 임의 설정하였으니 개발 시 style을 삭제(높이 삭제)하거나, 수치를 변경하시면 됩니다. -->
+                <div class="chart-content" style="min-height: 300px">
+                    차트 영역
+                </div>
+                <div class="chart-download">
+                    <div class="btn-group dropup">
+                        <button type="button" class="btn btn-sm btn-secondary dropdown-toggle shadow-none rounded-pill" data-bs-toggle="dropdown" aria-expanded="false">
+                            다운로드
+                            <i class="bi bi-download"></i>
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-end shadow">
+                            <li><a class="dropdown-item" href="#">차트 프린트</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">PNG 다운로드</a></li>
+                            <li><a class="dropdown-item" href="#">JPEG 다운로드</a></li>
+                            <li><a class="dropdown-item" href="#">PDF 다운로드</a></li>
+                            <li><a class="dropdown-item" href="#">SVG vector 다운로드</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="data-table-wrapper px-3 px-xl-0 mb-4 mb-xl-5">
+            <div class="container">
+                <div class="table-responsive">
+                    <table class="table table-bordered table-hover data-table" style="min-width: 400px;">
+                        <thead>
+                            <tr>
+                                <th rowspan="2">조회기간</th>
+                                <th colspan="2">종이책</th>
+                            </tr>
+                            <tr>
+                                <th>부수</th>
+                                <th>금액(원)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th>21년 5월</th>
+                                <td>4,000,812</td>
+                                <td>60,384,000,812</td>
+                            </tr>
+                            <tr>
+                                <th>21년 6월</th>
+                                <td>4,000,812</td>
+                                <td>60,384,000,812</td>
+                            </tr>
+                            <tr>
+                                <th>21년 5월</th>
+                                <td>4,000,812</td>
+                                <td>60,384,000,812</td>
+                            </tr>
+                            <tr>
+                                <th>21년 6월</th>
+                                <td>4,000,812</td>
+                                <td>60,384,000,812</td>
+                            </tr>
+                            <tr>
+                                <th>21년 5월</th>
+                                <td>4,000,812</td>
+                                <td>60,384,000,812</td>
+                            </tr>
+                            <tr>
+                                <th>21년 6월</th>
+                                <td>4,000,812</td>
+                                <td>60,384,000,812</td>
+                            </tr>
+                            <tr>
+                                <th>21년 5월</th>
+                                <td>4,000,812</td>
+                                <td>60,384,000,812</td>
+                            </tr>
+                            <tr>
+                                <th>21년 6월</th>
+                                <td>4,000,812</td>
+                                <td>60,384,000,812</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <div class="data-table-wrapper px-3 px-xl-0 mb-4 mb-xl-5">
+            <div class="container">
+                <div class="text-end"><small>(단위: 원)</small></div>
+                <div class="table-responsive">
+                    <table class="table table-bordered table-hover data-table">
+                        <thead>
+                            <tr>
+                                <th rowspan="2">조회기간</th>
+                                <th colspan="2">오프라인(매장)</th>
+                                <th colspan="2">온라인</th>
+                                <th colspan="2">지역서점</th>
+                                <th rowspan="2">총합</th>
+                            </tr>
+                            <tr>
+                                <th>총합</th>
+                                <th>비율(%)</th>
+                                <th>총합</th>
+                                <th>비율(%)</th>
+                                <th>총합</th>
+                                <th>비율(%)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th>21년 5월</th>
+                                <td>4,000,812</td>
+                                <td>61.74%</td>
+                                <td>4,000,812</td>
+                                <td>61.74%</td>
+                                <td>4,000,812</td>
+                                <td>61.74%</td>
+                                <td>4,000,812</td>
+                            </tr>
+                            <tr>
+                                <th>21년 5월</th>
+                                <td>4,000,812</td>
+                                <td>61.74%</td>
+                                <td>4,000,812</td>
+                                <td>61.74%</td>
+                                <td>4,000,812</td>
+                                <td>61.74%</td>
+                                <td>4,000,812</td>
+                            </tr>
+                            <tr>
+                                <th>21년 5월</th>
+                                <td>4,000,812</td>
+                                <td>61.74%</td>
+                                <td>4,000,812</td>
+                                <td>61.74%</td>
+                                <td>4,000,812</td>
+                                <td>61.74%</td>
+                                <td>4,000,812</td>
+                            </tr>
+                            <tr>
+                                <th>21년 5월</th>
+                                <td>4,000,812</td>
+                                <td>61.74%</td>
+                                <td>4,000,812</td>
+                                <td>61.74%</td>
+                                <td>4,000,812</td>
+                                <td>61.74%</td>
+                                <td>4,000,812</td>
+                            </tr>
+                            <tr>
+                                <th>21년 5월</th>
+                                <td>4,000,812</td>
+                                <td>61.74%</td>
+                                <td>4,000,812</td>
+                                <td>61.74%</td>
+                                <td>4,000,812</td>
+                                <td>61.74%</td>
+                                <td>4,000,812</td>
+                            </tr>
+                            <tr>
+                                <th>21년 5월</th>
+                                <td>4,000,812</td>
+                                <td>61.74%</td>
+                                <td>4,000,812</td>
+                                <td>61.74%</td>
+                                <td>4,000,812</td>
+                                <td>61.74%</td>
+                                <td>4,000,812</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <div class="standard-data-wrapper px-3 px-xl-0">
+            <div class="container">
+                <section class="standard-data">
+                    <h4>데이터 기준</h4>
+                    <ul class="time list-unstyled">
+                        <li>당일 오전 10시 이전 확인 시 2일 전 판매 데이터까지 확인 가능</li>
+                        <li>당일 오전 10시 이후 확인 시 1일 전 판매 데이터까지 확인 가능</li>
+                    </ul>
+                    <ul class="note list-unstyled">
+                        <li>해당 데이터는 교보문고, 알라딘, 영풍문고, 예스이십사, 지역서점과 연계되어 있습니다. (예스이십사, 알라딘의 경우: '21년 8월까지는 일부, '21년 9월부터는 전체 데이터 반영)</li>
+                        <li>현재는 종이책만 판매 통계를 확인할 수 있으며, 전자책 및 오디북은 추후 공개 예정입니다.</li>
+                    </ul>
+                </section>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- 퍼블리싱용 JS -->
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="/js/template.sub.js"></script>
+    
+    <!-- 공통 JS -->
+    <script src="https://bnk.kpipa.or.kr/home/v3/js/common/moment.min.js"></script>
+
+    <!-- 페이지 JS -->
+    <script>
+        window.addEventListener('DOMContentLoaded', function() {
+
+            var searchFormEl = document.querySelector('.search-form');
+            var searchFormData = new FormData(searchFormEl);
+
+            // 폼데이터에 기본값 저장
+            searchFormData.set('monthly-from', moment().add(-6, 'M').format('YYYY-MM'));
+            searchFormData.set('monthly-to', moment().format('YYYY-MM'));
+            searchFormData.set('daily-from', moment().add(-1, 'M').format('YYYY-MM-DD'));
+            searchFormData.set('daily-to', moment().format('YYYY-MM-DD'));
+            searchFormData.set('byday-from', moment().add(-1, 'M').format('YYYY-MM'));
+            searchFormData.set('byday-to', moment().format('YYYY-MM'));
+
+            // 폼에 기본값 출력
+            searchFormEl.querySelector('.search-period .period-from').value = searchFormData.get('monthly-from');
+            searchFormEl.querySelector('.search-period .period-to').value = searchFormData.get('monthly-to');
+            searchFormEl.querySelector('.search-period .period-from').setAttribute('max', searchFormData.get('monthly-to'));
+            searchFormEl.querySelector('.search-period .period-to').setAttribute('min', searchFormData.get('monthly-from'));
+            
+            // 조회기간타입에 따라 input 형태 변경 / 값 저장
+            searchFormEl.elements['date-type'].forEach(radio => {
+                radio.addEventListener('click', function() {
+                    if (this.value == 'daily') {
+                        searchFormEl.querySelector('.search-period .period-from').setAttribute('type', 'date');
+                        searchFormEl.querySelector('.search-period .period-to').setAttribute('type', 'date');
+                    } else {
+                        searchFormEl.querySelector('.search-period .period-from').setAttribute('type', 'month');
+                        searchFormEl.querySelector('.search-period .period-to').setAttribute('type', 'month');
+                    }
+                    searchFormEl.querySelector('.search-period .period-from').setAttribute('name', this.value+'-from');
+                    searchFormEl.querySelector('.search-period .period-to').setAttribute('name', this.value+'-to');
+                    searchFormEl.querySelector('.search-period .period-from').value = searchFormData.get(this.value+'-from');
+                    searchFormEl.querySelector('.search-period .period-to').value = searchFormData.get(this.value+'-to');
+                    searchFormEl.querySelector('.search-period .period-from').setAttribute('max', searchFormData.get(this.value+'-to'));
+                    searchFormEl.querySelector('.search-period .period-to').setAttribute('min', searchFormData.get(this.value+'-from'));
+                })
+            });
+
+            searchFormEl.querySelector('.search-period .period-from').addEventListener('change', function() {
+                searchFormData.set(this.name, this.value);
+                searchFormEl.querySelector('.search-period .period-to').setAttribute('min', this.value);
+            });
+            searchFormEl.querySelector('.search-period .period-to').addEventListener('change', function() {
+                searchFormData.set(this.name, this.value);
+                searchFormEl.querySelector('.search-period .period-from').setAttribute('max', this.value);
+            });
+        })
+    </script>
+
+</body>
+
+</html>

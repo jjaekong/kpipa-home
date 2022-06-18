@@ -1,0 +1,1536 @@
+.parsley-error:focus {border: 2px solid #D50000 !important;box-sizing: border-box;border-radius: 6px;outline: none;}
+.parsley-errors-list > li {font-weight: normal;font-size:14px;color: #EA2E2E;position: relative;bottom: 0px;left: 0px;margin: 0 !important;padding: 0 !important;display: inline-block;width: 100%;text-align:left;}
+.loginBtn {
+    float: right;
+    margin-right: 50px;
+    margin-top: 20px;
+}
+
+.loginBtn a {
+    float: left;
+    display: block;
+    width: 75px;
+    height: 32px;
+    line-height: 30px;
+    font-size: 1.4em;
+    text-align: center;
+    border-radius: 50px;
+    color: rgba(255, 255, 255, 0.6);
+    margin-left: 10px;
+
+}
+
+.loginBtn a.on {
+    border: 1px solid #fff;
+    box-sizing: border-box;
+    color: #fff;
+    font-weight: 700;
+}
+
+.loginArea {
+    background: #F8FCFF;
+}
+
+.loginArea > .inner {
+    position: relative;
+    overflow: hidden;
+    padding: 80px 0;
+    min-height: 500px;
+}
+
+.loginBox {
+    width: 1200px;
+    height: auto;
+    margin: 5em auto;
+    border-radius: 16px;
+    box-shadow: 2px 2px 10px #dfdfdf;
+    background: #fff;
+    min-height: 600px;
+    overflow: hidden;
+}
+
+.loginBox.normalBox {
+    width: 600px;
+    min-height: unset;
+    padding-bottom: 6em;
+}
+
+.loginBox.find {
+    width: 690px;
+}
+
+.loginBox.find .right {
+    float: none;
+    width: 100%;
+    padding-bottom: 48px;
+}
+
+.loginBox.find .right .find_pw_txt {
+    text-align: center;
+    margin: 4em 0;
+}
+
+.loginBox.find .right .find_pw_txt p {
+    font-size: 1.5em;
+    line-height: 1.7em;
+    font-weight: 500;
+    color: #000;
+}
+
+.loginBox.find .right .find_pw_txt p span {
+    color: #1837AC;
+}
+
+.normalBox .dormancy_img {
+    width: 7em;
+    height: 7em;
+    margin: 5em auto 3em auto;
+    background: url(../../img/common/dormancy.png) center no-repeat;
+    background-size: cover;
+}
+
+.normalBox .dormancy_img.pw_change {
+    background: url(../../img/common/pw_change.png) center no-repeat;
+    background-size: cover;
+}
+
+.normalBox .dormancy_img.find {
+    background: url(../../img/common/find_id.png) center no-repeat;
+    background-size: cover;
+}
+
+.loginBox.normalBox .title {
+    margin-top: 0;
+}
+
+.loginBox .loginBoxTitle{
+    font-size: 2.8em;
+    margin-top: 1.42em;
+    font-weight: 700;
+    color: #1B325F;
+    text-align: center;
+}
+
+.loginBox .loginBoxTitle.mt85{
+    margin-top: 3.03em;
+}
+
+.loginBox .loginBoxSubTitle{
+    font-size: 1.4em;
+    margin-top: 1em;
+    color: #000;
+    text-align: center;
+}
+
+.loginBox .loginBoxSubTitle span{
+    color: #1837AC;
+}
+
+.normalBox .con {
+    font-size: 1.5em;
+    font-weight: 500;
+    text-align: center;
+    color: #5F5F5F;
+    line-height: 1.7em;
+    margin-top: 2.6em;
+}
+
+.normalBox .con span {
+    font-size: 1em;
+    color: #1B5AD3;
+}
+
+.normalBox .find_id_txt {
+    margin-top: 4.5em;
+    text-align: center;
+}
+
+.normalBox .find_id_txt p {
+    font-size: 2.6em;
+    color: #242424;
+    font-weight: 500;
+}
+
+.normalBox .find_id_txt p span {
+    font-size: 1em;
+    font-weight: 500;
+    color: #1837AC;
+    margin-left: 24px;
+}
+
+.normalBox .submit {
+    font-size: 1.8em;
+    margin: 2.9em auto 0 auto;
+    width: 17.7em;
+    height: 3em;
+    line-height: 2.9em;
+    display: block;
+}
+
+.loginBox .left.eduBg {
+	background: url(../../img/common/login_bgleft.png);
+}
+.loginBox .left {
+    float: left;
+    width: calc(100% - 665px);
+    background: url(../../img/common/login_bg.png);
+    background-size: cover;
+    min-height: 680px;
+    margin-top: -1px;
+}
+
+.loginBox.memberService .left {
+    background: url(../../img/common/memberService_bg.png);
+    background-size: cover;
+}
+
+.loginBox.memberService .left .tit {
+    font-size: 2.3em;
+    font-weight: 700;
+    color: #18277A;
+    margin-top: 2.2em;
+}
+
+.loginBox .left .inner {
+    padding-left: 45px;
+}
+
+.loginBox .left .subTitle {
+    margin-top: 60px;
+    background: url(../../img/common/kpipa_icon_w.png) left center no-repeat;
+    background-size: 30px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #fff;
+    padding: 5px 0 5px 35px;
+}
+
+.loginBox .left .title {
+    text-align: left;
+    color: #fff;
+    margin-top: 1em;
+    font-size: 3.8em;
+    font-weight: 700;
+}
+
+.loginBox .left .con {
+    font-size: 1.6em;
+    font-weight: 500;
+    color: #fff;
+    text-align: left;
+    margin-top: 1.9em;
+}
+
+.loginBox .right {
+    float: left;
+    width: 66.5em;
+}
+
+.loginBox .title {
+    text-align: center;
+    font-size: 3.4em;
+    font-weight: 700;
+    color: #1B325F;
+    margin-top: 1.47em;
+}
+
+.loginBox .form_link {
+    width: 46em;
+    margin: 3em auto 0 auto;
+}
+
+.loginBox .form_link::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.loginBox .form_link a {
+    display: block;
+    float: left;
+    width: 50%;
+    height: 70px;
+    line-height: 68px;
+    text-align: center;
+    font-size: 1.8em;
+    font-weight: 700;
+    border-bottom: 1px solid #BCBCBC;
+    box-sizing: border-box;
+    color: rgba(27, 50, 95, 0.6);
+    position: relative;
+}
+
+.loginBox .form_link a.on {
+    color: #1B325F;
+}
+
+.loginBox .form_link a.on::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 4px;
+    background: #002F62;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.loginBox .form {
+    width: 46em;
+    margin: 0 auto;
+}
+
+.loginBox .form::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.loginBox .form .input {
+    float: left;
+    width: calc(100% - 14.5em);
+}
+
+.loginBox .form .input .input_text {
+    height: 50px;
+    line-height: 50px;
+}
+
+.loginBox .form .input .inputList {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.loginBox .form .input .idSave {
+    margin-top: 13px;
+}
+
+.loginBox .form .input .idSave label {
+    margin-left: 5px;
+}
+
+.loginBox .form .input label {
+    margin-bottom: 5px;
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 1.4em;
+    font-weight: 500;
+    color: #5F5F5F;
+}
+
+.loginBox .form .submit {
+    float: right;
+    display: block;
+    width: 9em;
+    margin-top: 1.8em;
+    height: 140px;
+}
+
+.loginBox .loginBoxBtn {
+    width: 310px;
+    margin: 5em auto 0 auto;
+}
+
+.loginBox .loginBoxBtn::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.loginBox .loginBoxBtn a {
+    font-size: 1.4em;
+    font-weight: 500;
+    float: left;
+    color: #5F5F5F;
+}
+
+.loginBox .loginBoxBtn a::after {
+    content: "";
+    display: inline-block;
+    float: left;
+    width: 1px;
+    height: 20px;
+    background: rgba(0, 0, 0, 0.2);
+    margin: 0 25px;
+}
+
+.loginBox .loginBoxBtn a:first-child::after {
+    display: none;
+}
+
+.loginBox .loginBoxBottom {
+    border-top: 1px solid #EBEBEB;
+    box-sizing: border-box;
+    margin-top: 3.5em;
+}
+
+.loginBox .loginBoxBottom .inner {
+    width: 46em;
+    margin: auto;
+    text-align: center;
+    padding: 4em 0 5.5em 0;
+}
+
+.loginBox .loginBoxBottom .con {
+    font-size: 1.3em;
+    font-weight: 500;
+    color: #505050;
+}
+
+.loginBox .loginBoxBottom .loginBottomBtn {
+    margin-top: 3em;
+}
+
+.loginBox .loginBoxBottom .loginBottomBtn a {
+    display: block;
+    float: left;
+    width: 48%;
+    margin-right: 4%;
+    height: 3.57em;
+    line-height: 3.4em;
+    background: #439FFC;
+    border: 1px solid #4387CE;
+    box-sizing: border-box;
+    border-radius: 6px;
+    font-size: 1.4em;
+    font-weight: 400;
+    color: #fff;
+    text-align: center;
+}
+
+.loginBox .loginBoxBottom .loginBottomBtn .apply {
+    border: 2px solid #002f62;
+    box-sizing: border-box;
+    color: #002f62;
+    background: #fff;
+}
+
+.loginBox .loginBoxBottom .loginBottomBtn a:last-child {
+    margin-right: 0;
+}
+
+.loginBox .loginBtnWrap {
+    width: 46em;
+    margin: 0 auto;
+}
+
+.loginBox .loginBtnWrap a,
+.loginBox .loginBtnWrap input {
+    width: 48%;
+    margin-right: 4%;
+    float: left;
+    display: block;
+    font-size: 1.4em;
+    font-weight: 400;
+    height: 4em;
+    line-height: 3.9em;
+    border-radius: 6px;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+}
+
+.loginBox .loginBtnWrap .oneBtn{
+    margin-left: 26%;
+}
+
+.loginBox .loginBtnWrap a:last-child {
+    margin-right: 0;
+}
+
+.loginBox .loginBtnWrap .bgBtn {
+    background: #002F62;
+    color: #fff;
+}
+
+.loginBox .loginBtnWrap .colorBtn {
+    border: 2px solid #002F62;
+    box-sizing: border-box;
+    color: #002F62;
+}
+
+.loginBox .findInputList {
+    margin-bottom: 4em;
+    position: relative;
+}
+
+.loginBox .findInputList::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.loginBox .findInputList .findInputListHalf {
+    width: 48%;
+    margin-right: 4%;
+    float: left;
+    position: relative;
+}
+
+.loginBox .findInputList label {
+    display: block;
+    font-size: 1.4em;
+    font-weight: 500;
+    margin-bottom: 10px;
+    color: #5F5F5F;
+}
+
+.loginBox .findInputList input {
+    height: 50px;
+    line-height: 48px;
+}
+
+.loginBox .findInputList input::placeholder{
+    letter-spacing: 0.5px;
+    color: rgba(0,0,0,0.3);
+}
+
+.loginBox .findInputList .certBox .certBoxInput {
+    position: relative;
+    float: left;
+    width: 72%;
+}
+
+.loginBox .findInputList .certBox .certBoxInput .time {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translate(0, -50%);
+    font-size: 1.6em;
+    font-weight: 500;
+    color: #CC0000;
+    display: none;
+}
+
+.loginBox .findInputList .certBox .certBoxInput .time.on {
+    display: block;
+}
+
+.loginBox .findInputList .certBox input {
+    width: 100%;
+}
+
+.loginBox .findInputList .certBox .submit {
+    float: right;
+    width: 25%;
+    display: block;
+    height: 50px;
+    line-height: 48px;
+    margin-top: 0;
+}
+
+.contentsBox {
+    width: 1525px;
+    margin: 0 auto 3em auto;
+    background: #fff;
+    border-radius: 6px;
+    box-shadow: 2px 2px 10px #dfdfdf;
+    overflow: hidden;
+}
+
+.contentsBox > .inner {
+    padding: 60px 100px;
+}
+
+.contentsBox > .inner::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.applyBox .applyTitle {
+    font-size: 3.6em;
+    font-weight: 700;
+    color: #1B325F;
+    float: left;
+}
+
+.applyBox .lookUpBox {
+    float: right;
+    margin-right: 6em;
+    width: 63em;
+    margin-top: -10px;
+}
+
+.applyBox .lookUpBox label {
+    font-size: 2em;
+    font-weight: 700;
+    color: #1B325F;
+    margin-bottom: 0.7em;
+    display: block;
+}
+
+.applyBox .lookUpBox .btnBox {
+    width: 100%;
+    overflow: hidden;
+}
+
+.applyBox .lookUpBox .btnBox .input_text {
+    float: left;
+    width: calc(100% - 165px);
+}
+
+.applyBox .lookUpBox .btnBox .submit {
+    float: right;
+    width: 160px;
+    background: url(../../img/common/search_btn.png) right 48px center no-repeat #002F62;
+    background-size: 12px 13px;
+}
+
+.applyBox .lookUpBox .infoTxt {
+    font-size: 1.4em;
+    margin-top: 1.1em;
+    color: #1837AC;
+}
+
+.contentsBox .statusTitle {
+    font-size: 3em;
+    font-weight: 700;
+    color: #1B325F;
+    position: relative;
+}
+
+.contentsBox .statusTitle::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 106px;
+    height: 3px;
+    background: #1B325F;
+}
+
+.agreeBox .statusTitle {
+    margin-bottom: 2.33em;
+}
+
+.agreeBox .checkAllBox {
+    margin-bottom: 6em;
+}
+
+.contentsBox .subTitle {
+    font-size: 1.6em;
+    margin-top: 1.6em;
+    color: #4B4B4B;
+}
+
+.contentsBox .subTitle.gray {
+    color: #8e8e8e;
+}
+
+.statusBox .buisnessInfoBox {
+    width: 100%;
+    height: 6em;
+    line-height: 5.5em;
+    margin-top: 4em;
+    background: #EBF0F5;
+    border-radius: 6px;
+    position: relative;
+}
+
+.statusBox .buisnessInfoBox::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 1px;
+    height: 35px;
+    background: #CAD1ED;
+}
+
+.statusBox .buisnessInfoBox::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.statusBox .buisnessInfoBox .infoList {
+    float: left;
+    width: calc(50% - 24px);
+    padding-left: 24px;
+}
+
+.statusBox .buisnessInfoBox .infoList .title {
+    font-size: 1.8em;
+    color: #5B5C80;
+}
+
+.statusBox .buisnessInfoBox .infoList .con {
+    font-size: 1.8em;
+    font-weight: 700;
+    margin-left: 5px;
+    color: #1837AC;
+}
+
+.statusBox .tableWrap {
+    margin-top: 2.8em;
+}
+
+.agreeContentsWrap {
+    margin-bottom: 8em;
+    position: relative;
+}
+
+.agreeContentsWrap::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.agreeContentsWrap .agreeTitle {
+    font-size: 2.4em;
+    font-weight: 700;
+    color: #1B325F;
+}
+
+.agreeContentsWrap .agreeTitle.gray {
+    color: #666;
+}
+
+.agreeContentsWrap .agreeTitle span {
+    font-size: 1em;
+    font-weight: 700;
+    color: #1837AC;
+    margin-left: 5px;
+}
+
+.agreeContentsWrap .agreeTitle span.gray {
+    color: #8E8E8E;
+}
+
+.agreeContentsWrap .agreeText {
+    margin-top: 3em;
+    border: 1px solid #BEBEBE;
+    box-sizing: border-box;
+    border-radius: 6px;
+    overflow-y: scroll;
+    height: 170px;
+    font-size:16px;
+}
+
+.agreeContentsWrap .view_all {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: block;
+    width: 125px;
+    height: 40px;
+    line-height: 40px;
+    color: #fff;
+    background: #368CE8;
+    border: 1px solid #1E6AB9;
+    box-sizing: border-box;
+    border-radius: 6px;
+    text-align: center;
+    font-size: 1.4em;
+}
+
+.agreeContentsWrap .agreeText.h300 {
+    height: 300px;
+}
+
+.agreeContentsWrap .agreeText.h275 {
+    height: 275px;
+}
+
+.agreeContentsWrap .agreeText .inner {
+    padding: 25px 10px 25px 30px;
+}
+
+.agreeContentsWrap .agreeText .inner .text {
+    font-size: 1.6em;
+    line-height: 1.8em;
+    color: #4B4B4B;
+}
+
+.agreeContentsWrap .agreeBtnBox {
+    float: right;
+    width: 26em;
+    height: 42px;
+    line-height: 48px;
+    text-align: center;
+    background: #EBF0F5;
+    border-radius: 6px;
+    margin-top: 2em;
+}
+
+.agreeContentsWrap .agreeBtnBox input[type="checkbox"],
+.checkAllBox input[type="checkbox"] {
+    display: inline-block;
+    vertical-align: sub;
+}
+
+.agreeContentsWrap .agreeBtnBox label {
+    font-size: 1.8em;
+}
+
+.checkAllBox {
+    margin-top: 6em;
+    height: 48px;
+    line-height: 54px;
+    width: calc(100% - 3em);
+    text-align: left;
+    background: #D8E2EE;
+    border-radius: 6px;
+    padding-left: 3em;
+}
+
+.checkAllBox input[type="checkbox"] + label {
+    font-size: 1.8em;
+    padding-left: 1.5em;
+}
+
+.checkAllBox input[type="checkbox"] + label::after {
+    background: url(../../img/common/bg_checkbox_off2.png) center /100% no-repeat;
+    ;
+}
+
+
+.checkAllBox input[type="checkbox"]:checked + label:after {
+    background: url(../../img/common/bg_checkbox_on.png) center /100% no-repeat;
+}
+
+.agreeBtnWrap {
+    margin: 7em auto 0 auto;
+    width: 52em;
+}
+
+.agreeBtnWrap::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.agreeBtnWrap .submit,
+.agreeBtnWrap .cancle {
+    float: left;
+    width: 48%;
+    margin-right: 4%;
+    font-size: 1.6em;
+    font-weight: 700;
+    height: 3.5em;
+    line-height: 3.5em;
+}
+
+.agreeBtnWrap a:last-child {
+    margin-right: 0;
+}
+
+.memberTypeBox > .inner {
+    padding: 45px 50px 70px 50px;
+    border-bottom: 1px solid #bebebe;
+}
+
+.memberTypeBox .memberJoinTitle {
+    font-size: 3em;
+    font-weight: 700;
+    color: #1B325F;
+    position: relative;
+}
+
+.memberTypeBox .memberJoinTitle.memberBg {
+    padding-left: 50px;
+}
+
+.memberTypeBox .memberBg::before {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 30px;
+    background: url(../../img/common/memberBg.png) 0 center no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 50%;
+    left: 0px;
+    transform: translate(0, -50%);
+}
+
+.memberTypeBox .memberTypeWrap {
+    margin-top: 5em;
+    margin-left: 5em;
+}
+
+.memberTypeBox .memberTypeWrap::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.memberTypeBox .memberTypeWrap > div:last-child {
+    margin-right: 0;
+}
+
+.memberTypeBox .memberTypeWrap .memberTypeList {
+    float: left;
+    width: 300px;
+    height: 385px;
+    margin-right: 40px;
+    border-radius: 8px;
+    position: relative;
+}
+
+.memberTypeBox .memberTypeWrap .memberTypeList.memberType01 {
+    background: url(../../img/common/memberType_01.png) right 0 bottom 0 no-repeat #002F62;
+    background-size: 128px;
+    border: 1px solid #03246B;
+    box-sizing: border-box;
+}
+
+.memberTypeBox .memberTypeWrap .memberTypeList.memberType02 {
+    background: url(../../img/common/memberType_02.png) right 0 bottom 0 no-repeat #368CE8;
+    background-size: 128px;
+    border: 1px solid #1E6AB9;
+    box-sizing: border-box;
+}
+
+.memberTypeBox .memberTypeWrap .memberTypeList.memberType03 {
+    background: url(../../img/common/memberType_03.png) right 9px bottom 12px no-repeat #03B5B5;
+    background-size: 128px;
+    border: 1px solid #0A9090;
+    box-sizing: border-box;
+}
+
+.memberTypeBox .memberTypeWrap .memberTypeList.memberType04 {
+    background: url(../../img/common/memberType_04.png) right 9px bottom 12px no-repeat #E67F26;
+    background-size: 128px;
+    border: 1px solid #CA7023;
+    box-sizing: border-box;
+}
+
+.memberTypeBox .memberTypeWrap .memberTypeList .inner {
+    padding-left: 40px;
+}
+
+.memberTypeBox .memberTypeWrap .memberTypeList a {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+
+.memberTypeBox .memberTypeWrap .memberTypeList .tit {
+    font-size: 2em;
+    font-weight: 700;
+    margin-top: 1.5em;
+    color: #fff;
+}
+
+.memberTypeBox .memberTypeWrap .memberTypeList .typeLi {
+    margin-top: 2.5em;
+}
+
+.memberTypeBox .memberTypeWrap .memberTypeList .typeLi li {
+    margin-bottom: 9px;
+    font-size: 1.3em;
+    color: #fff;
+    font-weight: 400;
+    padding-left: 11px;
+    position: relative;
+}
+
+.memberTypeBox .memberTypeWrap .memberTypeList .typeLi li::before {
+    content: "";
+    display: block;
+    width: 3px;
+    height: 3px;
+    border-radius: 50%;
+    background: #fff;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+.memberTypeBox .memberTypeWrap .memberTypeList .plus {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    width: 36px;
+    height: 36px;
+    background: url(../../img/common/plus.png) 0 no-repeat;
+    background-size: cover;
+}
+
+.memberTypeBox .memberTypeText {
+    margin: 4em 0 8em;
+}
+
+.memberTypeBox .memberTypeText ul {
+    margin-left: 5em;
+}
+
+.memberTypeBox .memberTypeText ul li {
+    padding-left: 25px;
+    font-size: 1.4em;
+    color: #6E6E6E;
+    position: relative;
+    margin-bottom: 8px;
+}
+
+.memberTypeBox .memberTypeText ul li::before {
+    content: "";
+    display: block;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: #6E6E6E;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(0, -50%);
+}
+
+.memberJoinStep {
+    text-align: center;
+    width: 100%;
+    height: 50px;
+    margin: 0 auto 7.5em auto;
+    position: relative;
+}
+
+.memberJoinStep > .inner {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.memberJoinStep::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.memberJoinStep .step {
+    font-size: 1.6em;
+    font-weight: 700;
+    float: left;
+    position: relative;
+    padding-top: 25px;
+    color: #1B325F;
+}
+
+.memberJoinStep .step.on {
+    color: #1837AC;
+}
+
+.memberJoinStep .step::after {
+    content: "";
+    display: block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: #fff;
+    border: 1px solid #1B325F;
+    box-sizing: border-box;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.memberJoinStep .step.on::after {
+    border: 1px solid #1837AC;
+    background: #1837AC;
+}
+
+.memberJoinStep .line {
+    width: 250px;
+    margin: 10px 5px 0 5px;
+    float: left;
+    height: 5px;
+    background: url(../../img/common/border-dotted.png) 0 center;
+}
+
+.memberJoinStep.step4 .line {
+    width: 125px;
+}
+
+.dataCheckWrap {
+    background: #FAFAFA;
+    border-radius: 6px;
+    border: 1px solid #DBDBDB;
+    box-sizing: border-box;
+    margin-top: 2.5em;
+}
+
+.dataCheckWrap::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.dataCheckWrap .checkTitle {
+    font-size: 1.8em;
+    font-weight: 500;
+    color: #15255A;
+    margin-right: 2.8em;
+    float: left;
+    line-height: 80px;
+    margin-left: 35px;
+}
+
+.dataCheckWrap input[type="checkbox"] + label::after {
+    background: url(../../img/common/bg_checkbox_off2.png) center /100% no-repeat;
+}
+
+.dataCheckWrap input[type="checkbox"]:checked + label::after {
+    background: url(../../img/common/bg_checkbox_on.png) center /100% no-repeat;
+}
+
+.dataCheckWrap .chkList {
+    float: left;
+    margin-right: 26px;
+    line-height: 80px;
+}
+
+.memberJoinForm {
+    width: 100%;
+    background: #FAFAFA;
+    border: 1px solid #DBDBDB;
+    box-sizing: border-box;
+    border-radius: 6px;
+    margin-bottom: 3em;
+}
+
+.memberJoinForm::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.memberJoinForm .joinFormHalf {
+    float: left;
+    width: 50%;
+    position: relative;
+}
+
+.memberJoinForm .joinFormHalf.bl::after {
+    content: "";
+    display: block;
+    clear: both;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(0, -50%);
+    background: rgba(190, 190, 190, 0.4);
+    width: 1px;
+    height: 70%;
+}
+
+.memberJoinForm .joinFormHalf .inner {
+    padding: 50px 55px 50px 40px;
+}
+
+.memberJoinForm .joinFormHalf .joinInfoList {
+    margin-bottom: 3.5em;
+    position: relative;
+}
+
+.memberJoinForm .joinFormHalf .joinInfoList.mb6 {
+    margin-bottom: 6em;
+}
+
+.memberJoinForm .joinFormHalf .joinInfoList::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.memberJoinForm .joinFormHalf .joinInfoList label {
+    font-size: 1.6em;
+    font-weight: 400;
+    color: #424242;
+    margin-bottom: 0.65em;
+    display: block;
+    position: relative;
+}
+
+.memberJoinForm .joinFormHalf .joinInfoList label.require::after {
+    content: "*";
+    display: block;
+    position: absolute;
+    left: -12px;
+    top: 65%;
+    transform: translate(0, -50%);
+    font-size: 1em;
+    color: #2E55EA;
+}
+
+.memberJoinForm .joinFormHalf .joinInfoList input {
+    width: 27.14em;
+    float: left;
+}
+
+.memberJoinForm .joinFormHalf .joinInfoList input:disabled {
+    background: #fff;
+}
+
+.memberJoinForm .joinFormHalf .joinInfoList input.w50p {
+    margin-top: 10px;
+    width: 13.2em;
+}
+
+.memberJoinForm .joinFormHalf .joinInfoList input.w80 {
+    width: 17.85em;
+}
+
+.memberJoinForm .joinFormHalf .joinInfoList input::placeholder {
+    color: #9e9e9e;
+}
+
+.memberJoinForm .joinFormHalf .joinInfoList .joinBtn {
+    font-size: 1.4em;
+    font-weight: 500;
+    background: #002F62;
+    border-radius: 6px;
+    text-align: center;
+    display: block;
+    color: #fff;
+    float: left;
+    width: 8.285em;
+    height: 40px;
+    line-height: 40px;
+    margin-left: 12px;
+}
+
+.memberJoinForm .joinFormHalf .joinInfoList .joinBtn.search {
+    background: #002F62;
+    background-size: 12px 13px;
+    text-align: center;
+}
+
+.memberJoinForm .joinFormHalf .joinInfoList .joinBtn.refresh {
+    background: #E1E3EA;
+    border: 1px solid #BFC7D9;
+    color: #5F5F5F;
+    margin-left: 10px;
+}
+
+.memberJoinForm .joinFormHalf .joinInfoList .joinListWrap {
+    position: relative;
+}
+
+.memberJoinForm .joinFormHalf .joinInfoList .file_close {
+    position: absolute;
+    top: 45px;
+    right: 200px;
+    width: 18px;
+    height: 18px;
+    display: block;
+    background: url(../../img/common/file_close.png) center no-repeat;
+    background-size: cover;
+}
+
+.memberJoinForm .joinFormHalf .joinInfoList .file_find {
+    display: block;
+    width: 32px;
+    height: 32px;
+    background: url(../../img/common/file_search.png) center no-repeat #E1E3EA;
+    background-size: 12px 13px;
+    border: 1px solid #BFC7D9;
+    box-sizing: border-box;
+    float: left;
+    margin-top: 4px;
+    margin-left: 10px;
+    border-radius: 6px;
+}
+
+.memberJoinForm .joinFormHalf .joinInfoList .joinListWrap::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.memberJoinForm .joinFormHalf .joinInfoList .sub_text {
+    font-size: 1.2em;
+    color: #1837AC;
+    display: block;
+    text-indent: 10px;
+    margin-top: 3px;
+}
+
+.joinInfoText {
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    background: #EBF0F5;
+    border: 1px solid #BBC5E2;
+    box-sizing: border-box;
+    border-radius: 6px;
+    margin-bottom: 8em;
+}
+
+.joinInfoText p {
+    font-size: 1.5em;
+    color: #15255A;
+}
+
+.resultInquiry {
+    text-align: center;
+}
+
+.resultInquiry .title {
+    font-size: 2.8em;
+    font-weight: 700;
+    color: #1B325F;
+}
+
+.inquiryFormWrap {
+    width: 46em;
+    margin: 5em auto 7em auto;
+    text-align: center;
+}
+
+.inquiryFormWrap .inquiryFormList {
+    margin-bottom: 3em;
+}
+
+.inquiryFormWrap .inquiryFormList label {
+    text-align: left;
+    display: block;
+    margin-bottom: 5px;
+    font-size: 1.4em;
+    font-weight: 400;
+    color: #5F5F5F;
+}
+
+.inquiryFormWrap .input_text {
+    height: 50px;
+    line-height: 48px;
+}
+
+.inquiryFormWrap .BtnWrap a {
+    height: 50px;
+    line-height: 48px;
+}
+
+.resultInquiryTable {
+    border-top: 1px solid #DBDBDB;
+    box-sizing: border-box;
+    padding-top: 60px;
+}
+
+.resultInquiryTable .tableTitle {
+    text-align: left;
+    font-size: 2.4em;
+    font-weight: 700;
+    color: #1B325F;
+    margin-bottom: 0.8em;
+}
+
+.resultInquiryTable .tableWrap th,
+.resultInquiryTable .tableWrap td {
+    font-size: 1.6em;
+    padding: 1.15em 0;
+}
+
+.resultInquiryTable .tableWrap th {
+    font-weight: 500;
+}
+
+.resultInquiryTable .tableWrap td {
+    font-weight: 400;
+}
+
+.contentsBox .statusSubTitle {
+    font-size: 3em;
+    font-weight: 700;
+    color: #1B325F;
+    margin-bottom: 23px;
+}
+
+.contentsBox .statusTitle_02 {
+    font-size: 4em;
+}
+
+.contentsBox .statusTitle.statusTitle_02::after {
+    width: 143px;
+}
+
+.contentsBox .subText {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 3.45em;
+}
+
+.contentsBox .subText .grayText {
+    color: #777;
+    display: inline-block;
+    padding-top: 10px;
+}
+.contentsBox .subText .grayText.bdBox {
+    border:1px solid #777;
+    padding:20px;
+    border-radius:6px;
+    text-align:left;
+}
+.contentsBox .subText .grayText.bdBox span {
+	display: inline-block;
+    font-size: 16px;
+    color: #777;
+    width: 100%;
+}
+
+.contentsBox_02 {
+    width: 908px;
+}
+
+.contentsBox_02 .statusTitle {
+    text-align: center;
+}
+
+.contentsBox_02 .statusTitle::after {
+    left: 50%;
+    width: 224px;
+    transform: translatex(-50%);
+}
+
+.contentsBox_02 .agreeBtnWrap {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.contentsBox_02 .agreeBtnWrap .submit {
+    float: none;
+}
+
+.memberJoinForm .joinFormHalf .joinInfoList .sub_text.errorColor {
+    color: #ea2e2e;
+}
+
+.memberJoinForm .joinFormHalf.bl.bl_02::after {
+    top: 57%;
+    height: 96%;
+}
+
+.memberJoinForm .joinFormHalf.bl.bl_03::after {
+    height: 84%;
+}
+
+.memberJoinForm .joinFormHalf.bl.bl_04::after {
+    height: 79%;
+}
+
+.memberJoinForm .joinFormHalf .joinInfoList.mb5 {
+    margin-bottom: 5em;
+}
+
+.isbnLoginBox {
+    width: 956px;
+    min-height: 450px;
+}
+
+.isbnLoginBox .right {
+    float: unset;
+    width: 100%;
+}
+
+.isbnLoginBox .right .con{
+    font-size: 1.4em;
+    font-weight: 500;
+    text-align: center;
+    line-height: 1.7em;
+    margin-top: 2.6em;
+}
+
+.isbnLoginBox .right .con{
+    font-size: 1.4em;
+    font-weight: 500;
+    text-align: center;
+    line-height: 1.7em;
+    margin-top: 2.6em;
+}
+
+.isbnLoginBox .right .con span{
+    color: #0E355F;
+}
+
+.isbnLoginBox .form {
+    width: 54em;
+    margin: 4em auto 0 auto;
+}
+
+@media (max-width:1600px) {
+    .contentsBox {
+        /* width: 90%; */
+    }
+
+    .memberTypeBox .memberTypeWrap .memberTypeList {
+        width: 22%;
+        margin-right: 3%;
+    }
+
+    .memberJoinForm .joinFormHalf .joinInfoList input {
+        width: 26em;
+    }
+
+    .memberJoinForm .joinFormHalf .joinInfoList input.w50p {
+        width: 12.6em;
+    }
+
+    .memberJoinForm .joinFormHalf .joinInfoList input.w80 {
+        width: 16.85em;
+    }
+}
+
+.memberJoinForm .download-buttons {
+    clear: both;
+    padding-top: 10px;
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+}
+.memberJoinForm .download-buttons div a {
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #666;
+    border-radius: 6px;
+    height: 40px;
+    font-size: 12px;
+    margin-right: 10px;
+    padding-right: 10px;
+    padding-left: 5px;
+    background-color: #fff;
+}
+.memberJoinForm .download-buttons div a i {
+    margin-right: 5px;
+    width: 22px;
+    height: 22px;
+    background-image: url()
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+}
+.memberJoinForm .download-buttons div a i.acrobat {
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Adobe_Acrobat_DC_logo_2020.svg/796px-Adobe_Acrobat_DC_logo_2020.svg.png);
+}
+.memberJoinForm .download-buttons div a i.hangul {
+    background-image: url(https://w.namu.la/s/5430c14e4938264cd2f43f9b42d598bcf7e99b232f23b544683bc3091a27f54d7736435b3eafcfbaf8e40fca3842d7d6603265d7ebe2e51a92d247a1b0c4b0e43a3d591b2681cf49065df65fe16b4d18);
+
+}
+
+.noticeBox {
+    width: 690px;
+    margin: -20px auto 0;
+}
+.noticeBox ul {
+    font-size: 14px;
+}
+.noticeBox ul li {
+    position: relative;
+    padding-left: 10px;
+}
+.noticeBox ul li::before {
+    position: absolute;
+    left: 0;
+    content: '\2022';
+}
+.noticeBox ul li + li {
+    margin-top: 5px;
+}

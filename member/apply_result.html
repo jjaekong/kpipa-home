@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="/css/style.css" rel="stylesheet">
+    <link href="/css/swiper-bundle.min.css" rel="stylesheet">
+
+    <title>출판유통통합전산망</title>
+</head>
+
+<body>
+
+    <!-- 컨텐츠 -->
+    <!--
+        페이지별 구분자(클래스) 필요.
+        대메뉴별 구분자.
+        - 회원: member
+        - 회원가입신청: apply
+    -->
+    <main id="main" class="member apply bg-white">
+
+        <div class="menu-title-box py-4 py-xl-5">
+            <div class="container">
+                <h1 class="menu-title mb-0 text-center py-2">
+                    <a href="#">회원가입 신청결과 조회</a>
+                </h1>
+            </div>
+        </div>
+
+        <div class="px-3 px-xl-0">
+            <div class="container">
+                <div class="apply-result">
+                    <table class="table table-bordered data-table">
+                        <colgroup>
+                            <col style="width: 20%;">
+                            <col style="width: auto;">
+                            <col style="width: 20%;">
+                            <col style="width: auto;">
+                        </colgroup>
+                        <tbody>
+                            <tr>
+                                <th>신청자</th>
+                                <td>(주)바이비출판사</td>
+                                <th>회원유형</th>
+                                <td>출판사</td>
+                            </tr>
+                            <tr>
+                                <th>가입신청일시</th>
+                                <td>2022-10-17</td>
+                                <th>진행상태</th>
+                                <td>가입 반려</td>
+                            </tr>
+                            <tr>
+                                <th>반려사유</th>
+                                <td colspan="3">재직증명서 파일이 열리지 않습니다. 재 첨부 부탁드립니다.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="btn-area">
+                        <a href="#" class="btn shadow-none">회원가입 수정</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- 퍼블리싱용 JS -->
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="/js/template.sub.js"></script>
+
+</body>
+
+</html>

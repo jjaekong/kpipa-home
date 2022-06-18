@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="/css/style.css" rel="stylesheet">
+    <link href="/css/swiper-bundle.min.css" rel="stylesheet">
+
+    <title>출판유통통합전산망</title>
+</head>
+
+<body>
+
+    <!-- 컨텐츠 -->
+    <!--
+        페이지별 구분자(클래스) 필요.
+        대메뉴별 구분자.
+        - 통합전산망 소개: about
+        - 서비스 소개: service
+    -->
+    <main id="main" class="about service bg-white">
+
+        <div class="menu-title-box py-4 py-xl-5">
+            <div class="container">
+                <h1 class="menu-title mb-0 text-center py-2">
+                    <a href="#">서비스 소개</a>
+                </h1>
+            </div>
+        </div>
+
+        <div class="tabs-wrapper px-3 px-xl-0 mb-4 mb-xl-5">
+            <div class="container">
+                <ul class="tabs d-flex mb-0 list-unstyled flex-wrap">
+                    <li><a class="active px-2 d-flex align-items-center justify-content-center text-center text-decoration-none" href="./service_onix.html">국제표준 오닉스</a></li>
+                    <li><a class="px-2 d-flex align-items-center justify-content-center text-center text-decoration-none" href="./service_thema.html">국제표준 테마</a></li>
+                    <li><a class="px-2 d-flex align-items-center justify-content-center text-center text-decoration-none" href="./service_metadata.html">메타데이터 서비스</a></li>
+                </ul>    
+            </div>
+        </div>
+
+        <div class="about-onix-wrapper px-3 px-xl-0">
+            <div class="container">
+                <div class="about-onix">
+                    <div class="row align-items-center">
+                        <div class="col-12 col-xl-4">
+                            <div class="about-onix-header">
+                                <h4>ONIX</h4>
+                                <p>Online Information Exchange</p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-xl-8">
+                            <div class="about-onix-body">
+                                <ul>
+                                    <li>책의 생산정보를 전자형식으로 나타내고 전달하기 위한 표준</li>
+                                    <li>세계 모든 출판사가 도서에 관한 정보를 교환할 때 이용하는 메타데이터</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="onix-define-wrapper px-3 px-xl-0">
+            <div class="container">
+                <div class="onix-define">
+                    <h4>ONIX <span>정의</span></h4>
+                    <ul class="list-unstyled mb-0">
+                        <li>출판물 상품 정보의 확장된 표현과 자유로운 상호 교환을 위한 도서 정보 국제표준</li>
+                        <li>오프라인 서점, 온라인 서점 등에서 취급하는 인쇄 도서 뿐만 아니라, 전자책, CD, 카세트 테이프, DVD, 비디오 테이프, 지구본, 지도, 우편엽서를 포함하는 모든 자료의 유통 표준으로 정의</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="onix-goal-wrapper px-3 px-xl-0">
+            <div class="container">
+                <div class="onix-goal">
+                    <h4>ONIX <span>추구 목표</span></h4>
+                    <p>도서 정보의 전달방식을 표준화하여 도소매상을 비롯한 도서 공급원들이 ONIX 형식의 정보를 수용</p>
+                    <ul class="list-unstyled">
+                        <li>책과 그 외 다른 미디어 포함</li>
+                        <li>출판사, 온라인 서점을 포함한 산업의 모든 분야에서 필요로 하는 정보 제공</li>
+                        <li>국가, 국제적 권리, 유통, 가격, 유용성을 반영하는 구조 제공</li>
+                        <li>다국어 시장에서 사용 가능</li>
+                        <li>영국의 BIC(Book Industry Communication) Basic과 미국출판협회의 ONIX 프로젝트 결과에 대한 통합</li>
+                        <li>장래 전자 환경을 위한 메타데이터 모델로 확정된 EPICS와 INDECS에 대한 가능한 지원</li>
+                        <li>미래 전자환경에 적당한 모델로 만들어진 EDItEUR의 EPICS와 INDECS에 대한 가능한 지원</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- 퍼블리싱용 JS -->
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="/js/template.sub.js"></script>
+
+</body>
+
+</html>

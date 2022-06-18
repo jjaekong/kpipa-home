@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="/css/style.css" rel="stylesheet">
+    <link href="/css/swiper-bundle.min.css" rel="stylesheet">
+
+    <title>출판유통통합전산망</title>
+</head>
+
+<body>
+
+    <!-- 컨텐츠 -->
+    <!--
+        페이지별 구분자(클래스) 필요.
+        대메뉴별 구분자.
+        - 통합전산망 소개: about
+        - 서비스 소개: service
+    -->
+    <main id="main" class="about service bg-white">
+
+        <div class="menu-title-box py-4 py-xl-5">
+            <div class="container">
+                <h1 class="menu-title mb-0 text-center py-2">
+                    <a href="#">서비스 소개</a>
+                </h1>
+            </div>
+        </div>
+
+        <div class="tabs-wrapper px-3 px-xl-0 mb-4 mb-xl-5">
+            <div class="container">
+                <ul class="tabs d-flex mb-0 list-unstyled flex-wrap">
+                    <li><a class="px-2 d-flex align-items-center justify-content-center text-center text-decoration-none" href="./service_onix.html">국제표준 오닉스</a></li>
+                    <li><a class="px-2 d-flex align-items-center justify-content-center text-center text-decoration-none" href="./service_thema.html">국제표준 테마</a></li>
+                    <li><a class="active px-2 d-flex align-items-center justify-content-center text-center text-decoration-none" href="./service_metadata.html">메타데이터 서비스</a></li>
+                </ul>    
+            </div>
+        </div>
+
+        <div class="about-metadata-wrapper px-3 px-xl-0">
+            <div class="container">
+                <div class="about-metadata">
+                    <div class="row align-items-center">
+                        <div class="col-12 col-xl-4">
+                            <div class="about-metadata-header">
+                                <h4>메타데이터</h4>
+                            </div>
+                        </div>
+                        <div class="col-12 col-xl-8">
+                            <div class="about-metadata-body">
+                                <ul>
+                                    <li>메타데이터는 책의 정보를 의미합니다. 
+                                        전통적으로 출판계에서는 ‘서지정보’라는 
+                                        용어를 주로 사용했고, 전자책이 출판계에 
+                                        등장하면서 ‘메타데이터’라는 표현을 더 흔하게 
+                                        사용하게 되었습니다.</li>
+                                    <li>지금의 메타데이터는 전자 데이터 교환(EDI) 
+                                        방식으로 정보교환이 이뤄집니다. 따라서 
+                                        최대한 인간의 개입 없이 기계간 정보 수신과 
+                                        해석 및 표현이 가능하도록 정보는 구조를 
+                                        갖추고 일관성 있는 규칙을 가져야 합니다.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="quote-metadata-wrapper px-3 px-xl-0">
+            <div class="container">
+                <div class="quote-metadata">
+                    <div class="speech">
+                        <i class="bi bi-quote"></i>
+                        <p>
+                            메타데이터는 서점, 도서관, 교육 관계자, 독자에게
+                            충분한 정보를 제공하여 각자 필요한 정보를
+                            선택할 수 있게 하는것이다.<br>
+                            그리고, 그 정보는 데이터 유통망에서 유효하게
+                            사용될 수 있도록 해야한다.
+                        </p>
+                        <i class="bi bi-quote"></i>
+                    </div>
+                    <div class="speaker">
+                        <div class="by">By Chris Saynor, EDItEUR, Standards Editor</div>
+                        <div class="where">(2019년 3월 BI세미나 중)</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="manage-metadata-wrapper px-3 px-xl-0">
+            <div class="container">
+                <div class="manage-metadata">
+                    <h4>출판유통통합전산망<br class="d-md-none">
+                        메타데이터 관리</h4>
+                    <p>출판유통통합전산망은 국제표준 ONIX3.0(<b>ON</b>Line <b>I</b>nformation e<b>X</b>change)기반의 메타데이터 입력폼을 통해 출판사가 도서유형별로 메타데이터를 등록하면 연계기관에 주기(30분 단위)적으로 
+                        자동 전송됩니다.</p>
+                    <figure>
+                        <div>
+                            <img class="w-100 d-block d-md-none" src="/img/about/img_metadata_process.gif">
+                            <img class="w-100 d-none d-md-block" src="/img/about/img_metadata_process_xl.gif">
+                        </div>
+                    </figure>
+                    <p>메타데이터 관리시스템은 출판사가 ISBN을 신청할 때 
+                        입력한 데이터가 자동으로 불러와 중복입력이 필요 
+                        없으며, 출판사가 신간 정보를 한 번 입력하면 모든 
+                        서점과 유통사의 시스템(SCM/POS)에 신속하게 
+                        전달된다. 
+                        입력된 도서 메타데이터는 신간 보도자료 및 카탈로그 
+                        자동 생성기를 통해 PDF나 HTML 포맷으로 저자, 
+                        언론기관, 서평단 등 출판사가 원하는 곳으로 이메일을 
+                        통해 전달할 수 있습니다.</p>
+                    <figure>
+                        <div>
+                            <img class="w-100 d-block d-md-none" src="/img/about/img_metadata_flow.gif">
+                            <img class="w-100 d-none d-md-block" src="/img/about/img_metadata_flow_xl.gif">
+                        </div>
+                        <figcaption>통합 메타데이터 관리 및 연계 개념도</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </div>
+
+        <div class="guide-metadata-wrapper px-3 px-xl-0">
+            <div class="container">
+                <div class="guide-metadata">
+                    <h4>메타데이터 등록 가이드</h4>
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <div class="figure">
+                                    <img class="ico-notebook" src="/img/about/ico_notebook.gif">
+                                </div>
+                                <div class="figcaption">
+                                    동영상 가이드 <i class="bi bi-arrow-right-circle"></i>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="figure">
+                                    <img class="ico-files" src="/img/about/ico_files.gif">
+                                </div>
+                                <div class="figcaption">
+                                    도서정보 입력방법 안내 다운로드 <i class="bi bi-arrow-down-circle"></i>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- 퍼블리싱용 JS -->
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="/js/template.sub.js"></script>
+
+</body>
+
+</html>

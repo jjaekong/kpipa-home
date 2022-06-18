@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="/css/style.css" rel="stylesheet">
+    <link href="/css/swiper-bundle.min.css" rel="stylesheet">
+
+    <title>출판유통통합전산망</title>
+</head>
+
+<body>
+
+    <!-- 컨텐츠 -->
+    <!--
+        페이지별 구분자(클래스) 필요.
+        대메뉴별 구분자.
+        - 회원: member
+        - 휴면/잠김: locked
+    -->
+    <main id="main" class="member locked bg-white">
+
+        <div class="menu-title-box py-4 py-xl-5">
+            <div class="container">
+                <h1 class="menu-title mb-0 text-center py-2">
+                    <a href="#">휴면 상태 안내</a>
+                </h1>
+            </div>
+        </div>
+
+        <div class="px-3 px-xl-0">
+            <div class="container">
+                
+                <div class="locked-area">
+                    <div class="locked-body">
+                        <i class="bi bi-lock"></i>
+                        <p>
+                            안녕하세요. 000회원님,<br>
+                            회원님께서는 1년 이상 출판유통통합전산망에 접속하지 않아 휴면상태로 전환되었습니다.<br>
+                            사이트 이용을 원하는 경우, 아래 <b>'휴면상태 해제'</b>를 선택하시기 바라며<br>
+                            휴면상태 해지 후 보안을 위해 비밀번호 변경을 권장합니다.
+                        </p>
+                    </div>
+                    <div class="locked-footer">
+                        <a href="#" class="btn btn-unlock shadow-none">휴면상태 해제</a>
+                        <a href="#" class="btn btn-go-main shadow-none">메인으로</a>
+                        <a href="#" class="btn btn-change-pw shadow-none">비밀번호 변경</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </main>
+
+    <!-- 퍼블리싱용 JS -->
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="/js/template.sub.js"></script>
+
+    <script>
+        window.addEventListener('load', function() {
+            var findPwFormEl = document.querySelector('#find-pw-tab');
+            var findPwFormTab = new bootstrap.Tab(findPwFormEl);
+
+            findPwFormTab.show();
+        })
+    </script>
+
+</body>
+
+</html>

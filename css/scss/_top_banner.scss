@@ -1,0 +1,48 @@
+#top-banner {
+    z-index: 900;
+    position: sticky;
+    width: 100%;
+    display: none;
+    background-color: #f7f7f7;
+    @include media-breakpoint-up(xl) {
+        display: block;
+        top: 0 !important;
+        height: 120px;
+        & ~ #toolbar {
+            top: 120px !important;
+        }
+        & ~ #header {
+            top: 171px !important;
+        }
+        a {
+            display: block !important;
+            width: 1080px !important;
+            height: 120px !important;
+            img {
+                display: block !important;
+                width: 1080px !important;
+                height: 120px !important;
+            }
+        }
+        .controls {
+            width: 120px;
+            height: 120px;
+            right: 0;
+            top: 0;
+            color: #000;
+        }
+        .form-check {
+            label {
+                cursor: pointer;
+                font-size: 12px;
+            }
+        }
+        .btn-closee {
+            font-size: 30px;
+            .bi {
+                color: #000;
+                font-weight: 100;
+            }
+        }
+    }
+}

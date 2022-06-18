@@ -1,0 +1,94 @@
+#sidebar {
+    .modal-dialog {
+        // width: 300px;
+        width: 60vw;
+        background-color: white;
+    }
+    &.fade {
+        .modal-dialog {
+            transform: translate(calc(100% + 50px), 0);
+        }
+    }
+    &.show {
+        .modal-dialog {
+            transform: translate(40vw, 0);;
+        }
+    }
+    .modal-body {
+        background-color: white;
+    }
+    .modal-title {
+        img {
+            height: 30px;
+        }
+    }
+    .btn-close {
+        font-size: 15px;
+        color: #000;
+        opacity: 1;
+    }
+    .accordion-header {
+        width: 100%;
+        button {
+            font-size: 15px;
+            color: #000;
+            width: 100%;
+            .bi-plus-lg {
+                display: none;
+            }
+            .bi-dash-lg {
+                display: block;
+            }
+            &.collapsed {
+                .bi-plus-lg {
+                    display: block;
+                }
+                .bi-dash-lg {
+                    display: none;
+                }
+            }
+            // &::after {
+            //     content: '-';
+            //     margin-left: auto;
+            //     font-size: 15px;
+            // }
+            // &.collapsed {
+            //     &::after {
+            //         content: '+';
+            //     }
+            // }
+        }
+    }
+    // .accordion-button {
+    //     font-size: 15px;
+    //     font-weight: 500;
+    //     color: #468500;
+    //     // &:focus {
+    //     //     color: #468500 !important;
+    //     // }
+    //     &:focus {
+    //         border-color: #000 !important;
+    //     }
+    //     &::after {
+    //         content: '+';
+    //     }
+    //     &.collapsed {
+    //         color: #000;
+    //         &::after {
+    //             color: #000;
+    //         }
+    //     }
+    // }
+    .accordion-body {
+        a {
+            font-size: 15px;
+            color: #000;
+            font-weight: 300;
+            text-decoration: none;
+            &:focus,
+            &.active {
+                color: #468500 !important;
+            }
+        }
+    }
+}

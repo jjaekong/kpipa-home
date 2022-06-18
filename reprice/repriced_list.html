@@ -1,0 +1,309 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="/css/style.css" rel="stylesheet">
+    <link href="/css/swiper-bundle.min.css" rel="stylesheet">
+
+    <title>출판유통통합전산망</title>
+</head>
+
+<body>
+
+    <!-- 컨텐츠 -->
+    <!--
+        페이지별 구분자(클래스) 필요.
+        대메뉴별 구분자.
+        - 정가변경 공표: reprice
+        - 공표 간행물: repriced-list
+    -->
+    <main id="main" class="reprice repriced-list bg-white">
+
+        <div class="modal fade popup advanced-search-modal" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">공표 간행물 상세검색</h5>
+                        <button type="button" class="btn-close shadow-none" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form action="#">
+                            <div class="form-item">
+                                <label for="search-announce-date-from">공표일</label>
+                                <div class="period-group">
+                                    <input id="search-announce-date-from" type="date" class="form-control shadow-none" max="9999-12-31" min="1900-01-01">
+                                    <span class="bar">-</span>
+                                    <input id="search-announce-date-to" type="date" class="form-control shadow-none" max="9999-12-31" min="1900-01-01">
+                                </div>
+                            </div>
+                            <div class="form-item">
+                                <label for="search-enforce-date-from">시행일</label>
+                                <div class="period-group">
+                                    <input id="search-enforce-date-from" type="date" class="form-control shadow-none" max="9999-12-31" min="1900-01-01">
+                                    <span class="bar">-</span>
+                                    <input id="search-enforce-date-to" type="date" class="form-control shadow-none" max="9999-12-31" min="1900-01-01">
+                                </div>
+                            </div>
+                            <div class="form-item">
+                                <label for="search-release-date-from">발행일</label>
+                                <div class="period-group">
+                                    <input id="search-release-date-from" type="date" class="form-control shadow-none" max="9999-12-31" min="1900-01-01">
+                                    <span class="bar">-</span>
+                                    <input id="search-release-date-to" type="date" class="form-control shadow-none" max="9999-12-31" min="1900-01-01">
+                                </div>
+                            </div>
+                            <div class="form-item">
+                                <label for="search-isbn">ISBN</label>
+                                <input id="search-isbn" type="text" class="form-control shadow-none">
+                            </div>
+                            <div class="form-item">
+                                <label for="search-title">도서명</label>
+                                <input id="search-title" type="text" class="form-control shadow-none">
+                            </div>
+                            <div class="form-item">
+                                <label for="search-publisher">출판사</label>
+                                <input id="search-publisher" type="text" class="form-control shadow-none">
+                            </div>
+                            <div class="form-item">
+                                <label for="search-writer">저자</label>
+                                <input id="search-writer" type="text" class="form-control shadow-none">
+                            </div>
+                            <div class="form-button">
+                                <button type="reset" class="btn btn-reset shadow-none">검색 초기화</button>
+                                <button type="submit" class="btn btn-search shadow-none">검색</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-title-box py-4 py-xl-5">
+            <div class="container">
+                <h1 class="menu-title mb-0 text-center py-2">
+                    <a href="#">공표 간행물</a>
+                </h1>
+            </div>
+        </div>
+
+        <div class="search-wrapper px-3 px-xl-0">
+            <div class="container">
+                <form action="./search_results.html" class="search-form">
+                    <div class="row gx-2 justify-content-md-center align-items-md-center">
+                        <div class="col-12 d-none col-md-auto d-md-inline pe-md-2"><label for="search-book-keyword">통합검색</label></div>
+                        <div class="col-12 col-md-2">
+                            <select name="" id="search-book-category" class="form-control shadow-none mb-2 mb-md-0">
+                                <option value="">전체</option>
+                                <option value="">도서</option>
+                                <option value="">출판사/임프린트</option>
+                                <option value="">저자</option>
+                                <option value="">카탈로그</option>
+                            </select>
+                        </div>
+                        <div class="col-7 col-md-4">
+                            <div class="search-auto-complete">
+                                <input id="sltSearchType" type="search" class="search-auto-complete-keyword form-control shadow-none" placeholder="검색어를 입력하세요.">
+                            </div>
+                        </div>
+                        <div class="col-2 col-md-auto">
+                            <button type="submit" class="btn btn-search shadow-none">검색</button>
+                        </div>
+                        <div class="col-3 col-md-auto">
+                            <button type="button" class="btn btn-advanced-search shadow-none" data-bs-target=".advanced-search-modal" data-bs-toggle="modal">상세검색</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="px-3 px-xl-0 pb-3 pb-xl-2">
+            <div class="container">
+                <div class="row justify-content-between align-items-center">
+                    <div class="col-12 col-xl-auto">
+                        <div class="total">전체 <b>3,099</b>건</div>
+                    </div>
+                    <div class="col-12 col-xl-auto d-none d-xl-block">
+                        <button class="btn btn-download shadow-none"><i><img src="/img/ico_excel.png"></i>엑셀 다운로드</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="px-3 px-xl-0">
+            <div class="container">
+                <div class="table-responsive table-board-list">
+                    <table class="table table-hover table-bordered">
+                        <colgroup>
+                            <col style="width: 80px;">
+                            <col style="width: 160px;">
+                            <col style="width: auto;">
+                            <col style="width: 120px;">
+                            <col style="width: 120px;">
+                            <col style="width: 100px;">
+                            <col style="width: 100px;">
+                            <col style="width: 110px;">
+                            <col style="width: 110px;">
+                            <col style="width: 110px;">
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th>순번</th>
+                                <th>ISBN</th>
+                                <th>도서명</th>
+                                <th>출판사</th>
+                                <th>저자</th>
+                                <th>기존가격</th>
+                                <th>변경가격</th>
+                                <th>공표일</th>
+                                <th>시행일</th>
+                                <th>발행일</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="text-center">3099</td>
+                                <td class="text-center">979-11-288-9094-9</td>
+                                <td class="title">혁신학교 교장의 탄생: 혁신교육생태계 만들기</td>
+                                <td class="text-center">커뮤니케이션북스㈜</td>
+                                <td class="text-center">이혜정 외 1명</td>
+                                <td class="text-end">14,800</td>
+                                <td class="text-end">16,800</td>
+                                <td class="text-center">2021-12-01</td>
+                                <td class="text-center">2021-12-01</td>
+                                <td class="text-center">2021-12-01</td>
+                            </tr>
+                            <tr>
+                                <td class="text-center">3099</td>
+                                <td class="text-center">979-11-288-9094-9</td>
+                                <td class="title">혁신학교 교장의 탄생: 혁신교육생태계 만들기</td>
+                                <td class="text-center">커뮤니케이션북스㈜</td>
+                                <td class="text-center">이혜정 외 1명</td>
+                                <td class="text-end">14,800</td>
+                                <td class="text-end">16,800</td>
+                                <td class="text-center">2021-12-01</td>
+                                <td class="text-center">2021-12-01</td>
+                                <td class="text-center">2021-12-01</td>
+                            </tr>
+                            <tr>
+                                <td class="text-center">3099</td>
+                                <td class="text-center">979-11-288-9094-9</td>
+                                <td class="title">혁신학교 교장의 탄생: 혁신교육생태계 만들기</td>
+                                <td class="text-center">커뮤니케이션북스㈜</td>
+                                <td class="text-center">이혜정 외 1명</td>
+                                <td class="text-end">14,800</td>
+                                <td class="text-end">16,800</td>
+                                <td class="text-center">2021-12-01</td>
+                                <td class="text-center">2021-12-01</td>
+                                <td class="text-center">2021-12-01</td>
+                            </tr>
+                            <tr>
+                                <td class="text-center">3099</td>
+                                <td class="text-center">979-11-288-9094-9</td>
+                                <td class="title">혁신학교 교장의 탄생: 혁신교육생태계 만들기</td>
+                                <td class="text-center">커뮤니케이션북스㈜</td>
+                                <td class="text-center">이혜정 외 1명</td>
+                                <td class="text-end">14,800</td>
+                                <td class="text-end">16,800</td>
+                                <td class="text-center">2021-12-01</td>
+                                <td class="text-center">2021-12-01</td>
+                                <td class="text-center">2021-12-01</td>
+                            </tr>
+                            <tr>
+                                <td class="text-center">3099</td>
+                                <td class="text-center">979-11-288-9094-9</td>
+                                <td class="title">혁신학교 교장의 탄생: 혁신교육생태계 만들기</td>
+                                <td class="text-center">커뮤니케이션북스㈜</td>
+                                <td class="text-center">이혜정 외 1명</td>
+                                <td class="text-end">14,800</td>
+                                <td class="text-end">16,800</td>
+                                <td class="text-center">2021-12-01</td>
+                                <td class="text-center">2021-12-01</td>
+                                <td class="text-center">2021-12-01</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <div class="paging-wrapper pb-5">
+            <div class="container">
+                <ul class="paging list-unstyled mb-0 d-flex justify-content-center align-items-center">
+                    <li>
+                        <a class="d-flex justify-content-center align-items-center text-decoration-none" href="#">
+                            <i class="bi bi-chevron-double-left"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="d-flex justify-content-center align-items-center text-decoration-none" href="#">
+                            <i class="bi bi-chevron-left"></i>
+                        </a>
+                    </li>
+                    <li class="fraction px-2">
+                        1 / 5
+                    </li>
+                    <li class="paging-list-item">
+                        <a class="active d-flex justify-content-center align-items-center text-decoration-none" href="#">1</a>
+                    </li>
+                    <li class="paging-list-item">
+                        <a class="d-flex justify-content-center align-items-center text-decoration-none" href="#">2</a>
+                    </li>
+                    <li class="paging-list-item">
+                        <a class="d-flex justify-content-center align-items-center text-decoration-none" href="#">3</a>
+                    </li>
+                    <li class="paging-list-item">
+                        <a class="d-flex justify-content-center align-items-center text-decoration-none" href="#">4</a>
+                    </li>
+                    <li class="paging-list-item">
+                        <a class="d-flex justify-content-center align-items-center text-decoration-none" href="#">5</a>
+                    </li>
+                    <li class="paging-list-item">
+                        <a class="d-flex justify-content-center align-items-center text-decoration-none" href="#">6</a>
+                    </li>
+                    <li class="paging-list-item">
+                        <a class="d-flex justify-content-center align-items-center text-decoration-none" href="#">7</a>
+                    </li>
+                    <li class="paging-list-item">
+                        <a class="d-flex justify-content-center align-items-center text-decoration-none" href="#">8</a>
+                    </li>
+                    <li class="paging-list-item">
+                        <a class="d-flex justify-content-center align-items-center text-decoration-none" href="#">9</a>
+                    </li>
+                    <li class="paging-list-item">
+                        <a class="d-flex justify-content-center align-items-center text-decoration-none" href="#">1000</a>
+                    </li>
+                    <li>
+                        <a class="d-flex justify-content-center align-items-center text-decoration-none" href="#">
+                            <i class="bi bi-chevron-right"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="d-flex justify-content-center align-items-center text-decoration-none" href="#">
+                            <i class="bi bi-chevron-double-right"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="no-data-wrapper px-3 px-xl-0 mb-4 mb-xl-5">
+            <div class="container">
+                <div class="no-data">
+                    <i class="bi bi-exclamation-circle"></i>
+                    <p>"<span>ss</span>"에 대한 검색결과가 없습니다.</p>
+                </div>
+            </div>
+        </div>
+        
+    </main>
+
+    <!-- 퍼블리싱용 JS -->
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="/js/template.sub.js"></script>
+
+</body>
+
+</html>

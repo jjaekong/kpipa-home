@@ -1,0 +1,300 @@
+.header {
+    height: 72px;
+    background: #002F62;
+    position: relative;
+}
+
+.header .logo {
+    padding-top: 21px;
+    float: left;
+}
+
+.header .logo a {
+    background: url(../../img/common/kpipa_logo.png) 0 center no-repeat;
+    background-size: 100%;
+    font-size: 0;
+    color: #fff;
+    font-weight: 500;
+    padding: 20px 100px;
+    line-height:0;
+    display:inline;
+}
+
+.header .nav{
+    margin-left: 2%;
+    float: left;
+}
+
+.header .nav > ul {
+    line-height: 70px;
+}
+
+.header .nav > ul > li {
+    float: left;
+    margin-right: 7em;
+}
+
+.header .nav > ul > li:last-child {
+    margin-right: 0;
+}
+
+.header .nav > ul > li > a {
+    font-size: 1.6em;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 1);
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.header .nav > ul > li > a:hover,
+.header .nav > ul > li > a:focus {
+    color: #7CBBFF;
+}
+
+.header .nav > ul > li > a.on{
+    color: #7CBBFF;
+    font-weight: 700;
+    position: relative;
+}
+
+.header .nav > ul > li > a.on::after{
+    content: "";
+    width: 100%;
+    height: 4px;
+    background: #7CBBFF;
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+}
+
+.header .nav .depth2 {
+    font-size: 0;
+    height: 0;
+    overflow: hidden;
+    position: absolute;
+    top: 72px;
+    left: 0;
+    background: #fff;
+    width: 100%;
+    font-size: 1em;
+    z-index: 6000;
+
+}
+
+.header .nav .depth2.on{
+    height: 52px;
+    line-height: 52px;
+    box-shadow: 0 3px 5px #efefef;
+}
+
+.header .nav .depth2 ul{
+    display: flex;
+    justify-content: center;
+}
+
+.header .nav .depth2 ul.li6{
+    min-width: 58%;
+}
+
+.header .nav .depth2 ul.li7{
+    min-width: 65%;
+}
+
+.header .nav .depth2 ul.li8{
+    min-width: 72%;
+}
+
+.header .nav .depth2 ul.li9{
+    min-width: 79%;
+}
+
+.header .nav .depth2 ul.li10{
+    min-width: 86%;
+}
+
+.header .nav .depth2 li {
+    float: left;
+    margin-right: 6em;
+}
+
+.header .nav .depth2 li:last-child {
+    margin-right: 0;
+}
+
+.header .nav .depth2 li a {
+    font-size: 1.6em;
+    font-weight: 400;
+    color: #757575;
+    display: block;
+    height: 100%;
+    position: relative;
+}
+
+.header .nav .depth2 li a:focus,
+.header .nav .depth2 li a:hover{
+    outline: none;
+    color: #002F62;
+}
+
+.header .nav .depth2 li a.on::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #002F62;
+}
+
+.header .nav .depth2.li3 li:first-child {
+    padding-left: 68em;
+}
+
+.header .selectDiv {
+    float: right;
+    margin-top: 16px;
+    overflow: hidden;
+}
+
+.header .selectDiv img {
+    display: inline-block;
+    vertical-align: middle;
+    float: left;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-top: 3px;
+}
+
+.header .ui-selectmenu-button.ui-button {
+    border: none;
+    color: #fff;
+    font-size: 1.4em;
+    font-weight: 700;
+    background: url(../../img/common/select_arrow_wt.png) right center no-repeat;
+    background-size: 24px;
+}
+
+.header .ui-selectmenu-text {
+    color: #fff;
+}
+
+.scrollNav{
+    height: 52px;
+    background: #002F62;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    z-index: 6000;
+    display: none;
+}
+
+.scrollNav.on{
+    display: block;
+}
+
+.scrollNav .scrollLogo a{
+    width: 32px;
+    height: 32px;
+    display: block;
+    float: left;
+    margin-left: 40px;
+    margin-top: 10px;
+    background: url(../../img/common/home.png) center no-repeat;
+    margin-right: 12px;
+}
+
+.scrollNav .scrollDept{
+    width: 185px;
+    text-indent: 20px;
+    float: left;
+    display: none;
+}
+
+.scrollNav .scrollDept.dept1{
+    display: block;
+}
+
+.scrollNav .scrollDept.on{
+    display: block;
+}
+
+.scrollNav .scrollDept.arrow > a{
+    background: url(../../img/common/scoll_arrow.png) right 13px center no-repeat;
+}
+
+.scrollNav .scrollDept li.arrow a{
+    background: url(../../img/common/scoll_arrow2.png) right 13px center no-repeat;
+}
+
+.scrollNav .scrollDept > a{
+    font-size: 1.6em;
+    color: #fff;
+    font-weight: 700;
+    line-height: 52px;
+    display: block;
+    border-right: 1px solid rgba(255,255,255,0.2);
+    box-sizing: border-box;
+}
+
+.scrollNav .scrollDept.dept1 > a{
+	height:52px;
+    border-left: 1px solid rgba(255,255,255,0.2);
+}
+
+.scrollNav .scrollDept ul{
+    padding-top: 0px;
+    display: none;
+    background: #fff;
+}
+
+.scrollNav .scrollDept.dept1 ul{
+    display: none;
+}
+
+.scrollNav .scrollDept ul.on{
+    display: block !important;
+}
+
+.scrollNav .scrollDept.dept1 ul{
+    border: 1px solid #E6E6E6;
+    box-sizing: border-box;
+}
+
+.scrollNav .scrollDept.dept2 ul,
+.scrollNav .scrollDept.dept3 ul{
+    border-right: 1px solid #E6E6E6;
+    border-bottom: 1px solid #E6E6E6;
+    box-sizing: border-box;
+}
+
+.scrollNav .scrollDept ul li a{
+    display: block;
+    height: 40px;
+    line-height: 40px;
+    font-size: 1.3em;
+    color: #1B325F;
+}
+
+.scrollNav .scrollDept ul li a.on{
+    color: #002F62;
+    font-weight: 700;
+}
+
+#ui-id-1-menu{
+    /* width: 150px !important; */
+}
+
+@media(max-width:1720px){
+    .header .nav{
+        margin-left: 5em;
+    }
+
+    .header .nav > ul > li{
+        margin-right: 6em;
+    }
+}

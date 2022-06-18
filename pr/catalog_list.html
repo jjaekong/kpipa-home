@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="/css/style.css" rel="stylesheet">
+    <link href="/css/swiper-bundle.min.css" rel="stylesheet">
+
+    <title>출판유통통합전산망</title>
+</head>
+
+<body>
+
+    <!-- 컨텐츠 -->
+    <!--
+        페이지별 구분자(클래스) 필요.
+        대메뉴별 구분자.
+        - 홍보서비스: pr
+        - 전체도서: online-catalog
+    -->
+    <main id="main" class="pr online-catalog bg-white">
+
+        <div class="menu-title-box py-4 py-xl-5">
+            <div class="container">
+                <h1 class="menu-title mb-0 text-center py-2 py-xl-4">
+                    <a href="#">도서 카탈로그</a>
+                </h1>
+            </div>
+        </div>
+
+        <div class="search-wrapper px-3 px-xl-0">
+            <div class="container">
+                <form action="./catalog_search_results.html" class="search-form">
+                    <div class="row gx-2 justify-content-md-center align-items-md-center">
+                        <div class="col-12 d-none col-md-auto d-md-inline pe-md-2"><label for="search-book-keyword">카탈로그 검색</label></div>
+                        <div class="col-12 col-md-2">
+                            <select name="" id="search-book-category" class="form-control shadow-none mb-2 mb-md-0">
+                                <option value="">전체</option>
+                                <option value="">카탈로그</option>
+                                <option value="">도서</option>
+                                <option value="">출판사/임프린트</option>
+                            </select>
+                        </div>
+                        <div class="col-9 col-md-4">
+                            <input type="search" id="search-book-keyword" class="form-control shadow-none" placeholder="검색어를 입력하세요.">
+                        </div>
+                        <div class="col-3 col-md-1">
+                            <button type="submit" class="btn btn-search w-100 shadow-none">검색</button>
+                        </div>
+                        <!-- <div class="col-2 col-md-1 col-lg-auto">
+                            <button type="button" class="btn btn-reset w-100 shadow-none"><i class="bi bi-arrow-clockwise"></i></button>
+                        </div> -->
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="filter-wrapper px-3 px-xl-0 mb-3">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-auto">
+                        <div class="search-result-total pt-3">총 <span>3,000</span>건</div>
+                    </div>
+                    <div class="col-auto ms-auto">
+                        <ul class="list-sorter list-unstyled mb-0 d-flex align-items-center mt-3">
+                            <li><a href="#" class="active">등록일순</a></li>
+                            <li class="bar">|</li>
+                            <li><a href="#">가나다순</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section class="catalog-list-wrapper px-3 px-xl-0 mb-5">
+            <div class="container">
+                <div class="catalog-grid-list">
+                    <ul class="list-unstyled">
+                        <li>/components/catalog_grid_item.html</li>
+                        <li>/components/catalog_grid_item.html</li>
+                        <li>/components/catalog_grid_item.html</li>
+                        <li>/components/catalog_grid_item.html</li>
+                        <li>/components/catalog_grid_item.html</li>
+                        <li>/components/catalog_grid_item.html</li>
+                        <li>/components/catalog_grid_item.html</li>
+                        <li>/components/catalog_grid_item.html</li>
+                        <li>/components/catalog_grid_item.html</li>
+                        <li>/components/catalog_grid_item.html</li>
+                        <li>/components/catalog_grid_item.html</li>
+                        <li>/components/catalog_grid_item.html</li>
+                        <li>/components/catalog_grid_item.html</li>
+                        <li>/components/catalog_grid_item.html</li>
+                        <li>/components/catalog_grid_item.html</li>
+                        <li>/components/catalog_grid_item.html</li>
+                        <li>/components/catalog_grid_item.html</li>
+                        <li>/components/catalog_grid_item.html</li>
+                        <li>/components/catalog_grid_item.html</li>
+                        <li>/components/catalog_grid_item.html</li>
+                        <li>/components/catalog_grid_item.html</li>
+                        <li>/components/catalog_grid_item.html</li>
+                        <li>/components/catalog_grid_item.html</li>
+                        <li>/components/catalog_grid_item.html</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <div class="paging-wrapper">
+            <div class="container">
+                <ul class="paging list-unstyled mb-0 d-flex justify-content-center align-items-center">
+                    <li>
+                        <a class="d-flex justify-content-center align-items-center text-decoration-none" href="#">
+                            <i class="bi bi-chevron-double-left"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="d-flex justify-content-center align-items-center text-decoration-none" href="#">
+                            <i class="bi bi-chevron-left"></i>
+                        </a>
+                    </li>
+                    <li class="fraction px-2">
+                        1 / 5
+                    </li>
+                    <li class="paging-list-item">
+                        <a class="active d-flex justify-content-center align-items-center text-decoration-none" href="#">1</a>
+                    </li>
+                    <li class="paging-list-item">
+                        <a class="d-flex justify-content-center align-items-center text-decoration-none" href="#">2</a>
+                    </li>
+                    <li class="paging-list-item">
+                        <a class="d-flex justify-content-center align-items-center text-decoration-none" href="#">3</a>
+                    </li>
+                    <li class="paging-list-item">
+                        <a class="d-flex justify-content-center align-items-center text-decoration-none" href="#">4</a>
+                    </li>
+                    <li class="paging-list-item">
+                        <a class="d-flex justify-content-center align-items-center text-decoration-none" href="#">5</a>
+                    </li>
+                    <li class="paging-list-item">
+                        <a class="d-flex justify-content-center align-items-center text-decoration-none" href="#">6</a>
+                    </li>
+                    <li class="paging-list-item">
+                        <a class="d-flex justify-content-center align-items-center text-decoration-none" href="#">7</a>
+                    </li>
+                    <li class="paging-list-item">
+                        <a class="d-flex justify-content-center align-items-center text-decoration-none" href="#">8</a>
+                    </li>
+                    <li class="paging-list-item">
+                        <a class="d-flex justify-content-center align-items-center text-decoration-none" href="#">9</a>
+                    </li>
+                    <li class="paging-list-item">
+                        <a class="d-flex justify-content-center align-items-center text-decoration-none" href="#">1000</a>
+                    </li>
+                    <li>
+                        <a class="d-flex justify-content-center align-items-center text-decoration-none" href="#">
+                            <i class="bi bi-chevron-right"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="d-flex justify-content-center align-items-center text-decoration-none" href="#">
+                            <i class="bi bi-chevron-double-right"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- 퍼블리싱용 JS: 개발에 적용하지 말아주세요. -->
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="/js/template.sub.js"></script>
+    <script>
+        window.addEventListener('DOMContentLoaded', function() {
+            // 책 리스트에 항목 추가(그리드 타입)
+            const catalogGridList = document.querySelectorAll('.catalog-grid-list li')
+            if (catalogGridList.length > 0) {
+                axios.get('/components/catalog_grid_item.html')
+                .then(res => {
+                    catalogGridList.forEach(li => {
+                        li.innerHTML = res.data
+                    })
+                })
+                
+            }
+
+            // 책 리스트에 항목 추가(상세 타입)
+            const catalogDetailedList = document.querySelectorAll('.catalog-detailed-list li')
+            if (catalogDetailedList.length > 0) {
+                axios.get('/components/catalog_detailed_item.html')
+                .then(res => {
+                    catalogDetailedList.forEach(li => {
+                        li.innerHTML = res.data
+                    })
+                })
+                
+            }
+
+            // 책 리스트에 항목 추가(상세 타입)
+            const catalogTableList = document.querySelector('.catalog-table-list')
+            if (catalogTableList) {
+                axios.get('/components/catalog_table_list.html')
+                .then(res => {
+                    catalogTableList.innerHTML = res.data
+                })
+                
+            }
+        })
+    </script>
+
+    <!-- 페이지 JS -->
+    <script defer>
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,235 @@
+@media print {
+    html, body {
+    }
+    #toolbar {
+        display: none;
+    }
+    #header {
+        .btn-menu {
+            display: none;
+        }
+    }
+    #breadcrumb {
+        display: none;
+    }
+    #added-info {
+        display: none;
+    }
+    #footer {
+        display: none;
+    }
+    #btn-goto-top {
+        display: none !important;
+    }
+    .paging-wrapper {
+        display: none;
+    }
+    #main.catalog-details {
+        .publisher-summary {
+            border-bottom: 1px solid #dee2e6 !important;
+            padding: 0 0 10px 0 !important;
+            > .row {
+                justify-content: flex-start !important;
+                > div {
+                    &:nth-of-type(1) {
+                        flex: 0 0 auto !important;
+                        width: auto !important;
+                        
+                    }
+                    &:nth-of-type(2) {
+                        margin-left: 10px;
+                        flex: 0 0 auto !important;
+                        width: auto !important;
+                    }
+                }
+            }
+            .publisher-title,
+            .publisher-addr {
+                box-sizing: border-box;
+            }
+        }
+        .list-type {
+            display: none !important;
+        }
+        .util-wrapper {
+            display: none;
+        }
+        .btn-print {
+            display: none;
+        }
+        .btn-copy-url {
+            display: none;
+        }
+        .filter-wrapper {
+            page-break-before: always;
+        }
+        .list-summary-wrapper {
+            page-break-before: always;
+        }
+        .book-grid-list {
+            li {
+                flex: 0 0 auto;
+                width: 25% !important;
+            }
+        }
+        .book-grid-item {
+            margin-bottom: 0;
+            padding-top: 0;
+            .type-badge {
+                border: 1px solid #d0d0d0;
+                color: #000 !important;
+            }
+            .figcaption {
+                height: 65px !important;
+                overflow: hidden;
+            }
+        }
+        .book-detailed-item {
+            page-break-before: always;
+            border-top: 0 !important;
+            border-bottom: 1px dotted #d0d0d0 !important;
+            .type-badge {
+                border: 1px solid #d0d0d0;
+                color: #000 !important;
+            }
+        }
+        .book-table-list {
+            .table {
+                table-layout: fixed;
+                min-width: auto;
+                // col {
+                //     &:nth-of-type(2) {
+                //         width: 30% !important;
+                //         min-width: 30% !important;
+                //     }
+                //     &:nth-of-type(4) {
+                //         display: none;
+                //     }
+                // }
+                th, td {
+                    padding-left: 2px;
+                    padding-right: 2px;
+                    word-break: break-all !important;
+                    // word-wrap: break-word;
+                    width: 10% !important;
+                    &:nth-of-type(1) { width: 5% !important; } // 순번
+                    &:nth-of-type(2) { width: 30% !important; } // 제목
+                    &:nth-of-type(3) { width: 9% !important; } // ISBN
+                    &:nth-of-type(4) { display: none; }
+                    &:nth-of-type(5) { width: 12% !important; } // 출판사
+                    &:nth-of-type(6) { width: 7% !important; } // 저자
+                    &:nth-of-type(7) { width: 11% !important; } // 가격
+                    &:nth-of-type(8) { width: 8% !important; } // 발행일
+                    &:nth-of-type(9) { width: 8% !important; } // 주제분류
+                    &:nth-of-type(10) { width: 10% !important; } // 도서유형
+                }
+                thead {
+                    border-top: 1px solid black !important;
+                    th, td {
+                        border-color: #dbdbdb !important;
+                        color: #000;
+                        font-weight: bold;
+                        br {
+                            display: inline !important;
+                        }
+                    }
+                }
+                tbody {
+                    td:nth-of-type(2) {
+                        small {
+                            color: #ccc !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    #main.book-details {
+        .book-summary-content {
+            .util {
+                display: none;
+            }
+            .figure {
+                max-width: none !important;
+                // max-height: none !important;
+                // width: auto !important;
+                // height: auto !important;
+                width: 300px !important;
+                height: 450px !important;
+                margin-bottom: 30px;
+                // margin: 0 !important;
+                .type-badge {
+                    border: 1px solid #d0d0d0;
+                    color: #000 !important;
+                }
+                .swiper {
+                    width: 100% !important;
+                    height: 100% !important;
+                    // border: 5px solid orange;
+                }
+                .swiper-wrapper {
+                    width: 100% !important;
+                    height: 100% !important;
+                    transform: none !important;
+                    // border: 5px solid blue;
+                    box-sizing: border-box;
+                    display: block !important;
+                }
+                .swiper-slide {
+                    width: 100% !important;
+                    height: 100% !important;
+                    display: none !important;
+                    transition-property: none !important;
+                    &:first-child {
+                        display: block !important;
+                    }
+                    .ratio {
+                        width: 100% !important;
+                        height: 100% !important;
+                        &::before {
+                            display: none !important;
+                        }
+                        & > * {
+                            position: relative;
+                        }
+                        img {
+                            position: relative;
+                            width: 100% !important;
+                            height: 100% !important;
+                        }
+                    }
+                    
+                }
+                .swiper-pagination {
+                    display: none;
+                }
+            }
+            .info {
+                ul {
+                    li {
+                        width: 33.3%;
+                    }
+                }
+            }
+        }
+        .tabs-wrapper {
+            display: none !important;
+        }
+        .book-details-content {
+            page-break-before: always;
+        }
+        .book-details-content {
+            .tab-content {
+                &:first-child {
+                    border-top: 1px solid #d0d0d0;
+                }
+            }
+        }
+        .book-addtional-content {
+            display: none !important;
+        }
+        #book-history {
+            display: none !important;
+        }
+    }
+}

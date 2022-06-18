@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="/css/style.css" rel="stylesheet">
+    <link href="/css/swiper-bundle.min.css" rel="stylesheet">
+
+    <title>출판유통통합전산망</title>
+</head>
+
+<body>
+
+    <!-- 컨텐츠 -->
+    <!--
+        페이지별 구분자(클래스) 필요.
+        대메뉴별 구분자.
+        - 홍보서비스: pr
+        - 전체도서: catalog-search-results
+    -->
+    <main id="main" class="pr online-catalog bg-white">
+
+        <div class="menu-title-box py-4 py-xl-5">
+            <div class="container">
+                <h1 class="menu-title mb-0 text-center py-2 py-xl-4">
+                    <a href="#">도서 카탈로그</a>
+                </h1>
+            </div>
+        </div>
+
+        <div class="search-wrapper px-3 px-xl-0">
+            <div class="container">
+                <form action="./catalog_search_results.html" class="search-form">
+                    <div class="row gx-2 justify-content-md-center align-items-md-center">
+                        <div class="col-12 d-none col-md-auto d-md-inline pe-md-2"><label for="search-book-keyword">카탈로그 검색</label></div>
+                        <div class="col-12 col-md-2">
+                            <select name="" id="search-book-category" class="form-control shadow-none mb-2 mb-md-0">
+                                <option value="">전체</option>
+                                <option value="">카탈로그</option>
+                                <option value="">도서</option>
+                                <option value="">출판사/임프린트</option>
+                            </select>
+                        </div>
+                        <div class="col-9 col-md-4">
+                            <input type="search" id="search-book-keyword" class="form-control shadow-none" placeholder="검색어를 입력하세요.">
+                        </div>
+                        <div class="col-3 col-md-1">
+                            <button type="submit" class="btn btn-search w-100 shadow-none">검색</button>
+                        </div>
+                        <!-- <div class="col-2 col-md-1 col-lg-auto">
+                            <button type="button" class="btn btn-reset w-100 shadow-none"><i class="bi bi-arrow-clockwise"></i></button>
+                        </div> -->
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="tabs-wrapper px-3 px-xl-0 mb-4 mb-xl-5 bg-white">
+            <div class="container">
+                <ul class="tabs d-flex mb-0 list-unstyled flex-wrap">
+                    <li><a class="active px-2 d-flex align-items-center justify-content-center text-center text-decoration-none" href="/pr/catalog_search_results.html">전체<span class="count">(0)</span></a></li>
+                    <li><a class="px-2 d-flex align-items-center justify-content-center text-center text-decoration-none" href="/pr/catalog_search_results_item.html">카탈로그<span class="count">(0)</span></a></li>
+                    <li><a class="px-2 d-flex align-items-center justify-content-center text-center text-decoration-none" href="/pr/catalog_search_results_item.html">도서<span class="count">(0)</span></a></li>
+                    <li><a class="px-2 d-flex align-items-center justify-content-center text-center text-decoration-none" href="/pr/catalog_search_results_item.html">출판사/임프린트<span class="count">(0)</span></a></li>
+                </ul>    
+            </div>
+        </div>
+
+        <div class="filter-wrapper for-all px-3 px-xl-0">
+            <div class="container">
+                <div class="filter-content pb-2">
+                    <div class="row align-items-center">
+                        <div class="col-auto">
+                            <div class="search-result-total">"<span>ss</span>" 검색 결과 총 <b>0</b>건</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section class="result-wrapper pt-4">
+            <div class="subheader-wrapper px-3 px-xl-0">
+                <div class="container pb-3">
+                    <div class="row justify-content-between align-items-center">
+                        <div class="col-auto">
+                            <h4 class="title mb-0">카탈로그<span class="count">(10,000)</span></h4>
+                        </div>
+                        <div class="col-auto">
+                            <a class="more" href="#">더보기<i class="bi bi-plus"></i></a>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+
+            <div class="catalog-list-wrapper px-3 px-xl-0 mb-4 mb-xl-5">
+                <div class="container">
+                    <div class="catalog-grid-list">
+                        <ul class="mb-0 list-unstyled">
+                            <li>/components/catalog_grid_item.html</li>
+                            <li>/components/catalog_grid_item.html</li>
+                            <li>/components/catalog_grid_item.html</li>
+                            <li>/components/catalog_grid_item.html</li>
+                            <li>/components/catalog_grid_item.html</li>
+                            <li>/components/catalog_grid_item.html</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="result-wrapper pt-4">
+            <div class="subheader-wrapper px-3 px-xl-0 pb-3">
+                <div class="container pb-3">
+                    <div class="row justify-content-between align-items-center">
+                        <div class="col-auto">
+                            <h4 class="title mb-0">도서<span class="count">(10,000)</span></h4>
+                        </div>
+                        <div class="col-auto">
+                            <a class="more" href="#">더보기<i class="bi bi-plus"></i></a>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+
+            <div class="catalog-list-wrapper px-3 px-xl-0 mb-4 mb-xl-5">
+                <div class="container">
+                    <div class="catalog-grid-list">
+                        <ul class="mb-0 list-unstyled">
+                            <li>/components/catalog_grid_item.html</li>
+                            <li>/components/catalog_grid_item.html</li>
+                            <li>/components/catalog_grid_item.html</li>
+                            <li>/components/catalog_grid_item.html</li>
+                            <li>/components/catalog_grid_item.html</li>
+                            <li>/components/catalog_grid_item.html</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="result-wrapper pt-4">
+            <div class="subheader-wrapper px-3 px-xl-0">
+                <div class="container pb-3">
+                    <div class="row justify-content-between align-items-center">
+                        <div class="col-auto">
+                            <h4 class="title mb-0">출판사/임프린트<span class="count">(10,000)</span></h4>
+                        </div>
+                        <div class="col-auto">
+                            <a class="more" href="#">더보기<i class="bi bi-plus"></i></a>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+
+            <!-- <div class="catalog-list-wrapper px-3 px-xl-0 mb-4 mb-xl-5">
+                <div class="container">
+                    <div class="catalog-grid-list">
+                        <ul class="mb-0 list-unstyled">
+                            <li>/components/catalog_grid_item.html</li>
+                            <li>/components/catalog_grid_item.html</li>
+                            <li>/components/catalog_grid_item.html</li>
+                            <li>/components/catalog_grid_item.html</li>
+                            <li>/components/catalog_grid_item.html</li>
+                            <li>/components/catalog_grid_item.html</li>
+                        </ul>
+                    </div>
+                </div>
+            </div> -->
+
+            <div class="book-list-wrapper px-3 px-xl-0">
+                <div class="container">
+                    <div class="no-book-list">
+                        <i class="bi bi-exclamation-circle"></i>
+                        <p>"<span>ss</span>"에 대한 검색결과가 없습니다.</p>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- 퍼블리싱용 JS: 개발에 적용하지 말아주세요. -->
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="/js/template.sub.js"></script>
+    <script>
+        window.addEventListener('DOMContentLoaded', function() {
+            const items = document.querySelectorAll('.catalog-grid-list li')
+            if (items.length > 0) {
+                axios.get('/components/catalog_grid_item.html')
+                .then(res => {
+                    // catalogList.innerHTML = res.data
+                    items.forEach(li => {
+                        li.innerHTML = res.data
+                    })
+                })
+            }
+        }) 
+    </script> 
+
+    <!-- 페이지 JS -->
+    <script defer>
+    </script>
+
+</body>
+
+</html>

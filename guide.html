@@ -1,0 +1,436 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="./css/style.css" rel="stylesheet">
+    <link href="./css/swiper-bundle.min.css" rel="stylesheet">
+
+    <title>출판유통통합전산망</title>
+</head>
+
+<body>
+
+    <!-- 툴바 -->
+    <div id="toolbar" class="sticky-top w-100">
+        <div class="container px-3 px-xl-0">
+            <div class="row align-items-center justify-content-between">
+                <div class="col-12 col-md-auto">
+                    <dl class="cs mb-0 d-flex align-items-center">
+                        <dt class="me-1 d-flex align-items-center"><i class="bi bi-headset me-1"></i> 고객지원센터</dt>
+                        <dd class="mb-0"><a href="tel: 070-8209-4271">070 8209
+                                4271~2</a></dd>
+                    </dl>
+                </div>
+                <div class="col-12 d-none col-md-auto d-xl-block">
+                    <div class="util ml-auto d-flex align-items-center">
+                        <a class="user me-4" href="#"><span>박지혜</span>님 반갑습니다.</a>
+                        <a class="log px-3" href="#">로그아웃</a>
+                        <!-- <a class="log" href="#">로그인</a> -->
+                        <div class="dropdown quick">
+                            <a data-bs-toggle="dropdown" id="quick-menu" class="px-3" href="#">Quick Menu</a>
+                            <div class="dropdown-menu dropdown-menu-end" aria-labelledby="quick-menu">
+                                <a class="dropdown-item" href="#">문화체육관광부</a>
+                                <a class="dropdown-item" href="#">한국출판 문화상업진흥원</a>
+                            </div>
+                        </div>
+                        <a class="admin d-flex align-items-center px-3 rounded-pill" href="#">업무시스템</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 헤더 -->
+    <header id="header" class="position-sticky w-100">
+        <div class="container">
+            <div class="row align-items-center py-2 py-xl-4">
+                <div class="col-auto ps-3 py-1 ps-xl-0 py-xl-2">
+                    <h1 class="logo mb-0 py-xl-1">
+                        <a href="#">
+                            <img src="/img/logo.png" class="d-block" alt="출판유통통합전산망">
+                        </a>
+                    </h1>
+                </div>
+                <div class="col-auto ms-auto">
+                    <div class="row align-items-center">
+                        <div class="col-auto d-none d-xl-flex">
+                            <ul class="nav list-unstyled mb-0 d-flex">
+                                <li class="px-4">
+                                    <a class="px-2 active" href="#">통합전산망 소개</a>
+                                    <ul class="position-absolute list-unstyled mb-0 ps-2">
+                                        <li class="py-2"><a class="active" href="#">사업 소개</a></li>
+                                        <li class="py-2"><a href="#">서비스 소개</a></li>
+                                        <li class="py-2"><a href="#">관련 사이트</a></li>
+                                    </ul>
+                                </li>
+                                <li class="px-4">
+                                    <a class="px-2" href="#">표준관리 소개</a>
+                                    <ul class="position-absolute list-unstyled mb-0 ps-2">
+                                        <li class="py-2"><a href="#">국제표준 오닉스 소개</a></li>
+                                        <li class="py-2"><a href="#">국제표준 테마 소개</a></li>
+                                        <li class="py-2"><a href="#">주제분류 테마</a></li>
+                                        <li class="py-2"><a href="#">메타데이터 소개</a></li>
+                                    </ul>
+                                </li>
+                                <li class="px-4">
+                                    <a class="px-2" href="#">홍보서비스</a>
+                                    <ul class="position-absolute list-unstyled mb-0 ps-2">
+                                        <li class="py-2"><a href="#">출간예정 도서</a></li>
+                                        <li class="py-2"><a href="#">주제분류별 연관도서</a></li>
+                                        <li class="py-2"><a href="#">독자맞춤서비스</a></li>
+                                        <li class="py-2"><a href="#">도서 카탈로그</a></li>
+
+                                    </ul>
+                                </li>
+                                <li class="px-4">
+                                    <a class="px-2" href="#">통계서비스</a>
+                                    <ul class="position-absolute list-unstyled mb-0 ps-2">
+                                        <li class="py-2"><a href="#">판매통계</a></li>
+                                        <li class="py-2"><a href="#">인포그래픽 서비스</a></li>
+                                    </ul>
+                                </li>
+                                <li class="px-4">
+                                    <a class="px-2" href="#">정가변경 공표</a>
+                                    <ul class="position-absolute list-unstyled mb-0 ps-2">
+                                        <li class="py-2"><a href="#">공표 소개</a>
+                                        <li class="py-2"><a href="#">공표 자료</a>
+                                    </ul>
+                                </li>
+                                <li class="ps-4 pe-3 pe-xl-0">
+                                    <a class="px-2 pe-xl-0" href="#">고객지원센터</a>
+                                    <ul class="position-absolute list-unstyled mb-0 ps-2">
+                                        <li class="py-2"><a href="#">공지사항</a></li>
+                                        <li class="py-2"><a href="#">자주 묻는 질문</a></li>
+                                        <li class="py-2"><a href="#">매뉴얼</a></li>
+                                        <li class="py-2"><a href="#">동영상 강좌</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-auto px-3 d-xl-none">
+                            <button class="btn btn-link btn-menu p-0 btn-sm shadow-none" data-bs-toggle="modal"
+                                data-bs-target="#sidebar">
+                                <i class="bi bi-list"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="backdrop bg-whtie"></div>
+    </header>
+
+    <!-- 사이드 메뉴 -->
+    <div class="modal fade" tabindex="-1" id="sidebar">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">
+                        <a href="#">
+                            <img src="/img/logo.png" class="d-block" alt="출판유통통합전산망">
+                        </a>
+                    </h5>
+                    <button type="button" class="btn-close pe-3 shadow-none" data-bs-dismiss="modal"
+                        aria-label="닫기"></button>
+                </div>
+                <div class="modal-body p-0">
+                    <div class="accordion accordion-flush" id="sidebar-accordion">
+                        <div class="accordion-item bg-white">
+                            <h2 class="accordion-header">
+                                <button
+                                    class="bg-white shadow-none collapsed px-3 py-4 border-0 w-100 text-start d-flex"
+                                    type="button" data-bs-toggle="collapse" data-bs-target="#sidebar-submenu-1"
+                                    aria-expanded="false" aria-controls="sidebar-submenu-1">
+                                    통합전산망 소개
+                                    <i class="bi bi-plus-lg ms-auto me-1"></i>
+                                    <i class="bi bi-dash-lg ms-auto me-1"></i>
+                                </button>
+                            </h2>
+                            <div id="sidebar-submenu-1" class="accordion-collapse collapse"
+                                data-bs-parent="#sidebar-accordion">
+                                <div class="accordion-body pt-0">
+                                    <ul class="list-unstyled mb-0">
+                                        <li class="py-2 ps-2"><a class="active" href="#">사업 소개</a></li>
+                                        <li class="py-2 ps-2"><a href="#">서비스 소개</a></li>
+                                        <li class="py-2 ps-2"><a href="#">관련 사이트</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item bg-white">
+                            <h2 class="accordion-header">
+                                <button
+                                    class="bg-white shadow-none collapsed px-3 py-4 border-0 w-100 text-start d-flex"
+                                    type="button" data-bs-toggle="collapse" data-bs-target="#sidebar-submenu-2"
+                                    aria-expanded="false" aria-controls="sidebar-submenu-2">
+                                    표준관리 소개
+                                    <i class="bi bi-plus-lg ms-auto me-1"></i>
+                                    <i class="bi bi-dash-lg ms-auto me-1"></i>
+                                </button>
+                            </h2>
+                            <div id="sidebar-submenu-2" class="accordion-collapse collapse"
+                                data-bs-parent="#sidebar-accordion">
+                                <div class="accordion-body pt-0">
+                                    <ul class="list-unstyled mb-0">
+                                        <li class="py-2 ps-2"><a href="#">국제표준 오닉스 소개</a></li>
+                                        <li class="py-2 ps-2"><a href="#">국제표준 테마 소개</a></li>
+                                        <li class="py-2 ps-2"><a href="#">주제분류 테마</a></li>
+                                        <li class="py-2 ps-2"><a href="#">메타데이터 소개</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item bg-white">
+                            <h2 class="accordion-header">
+                                <button
+                                    class="bg-white shadow-none collapsed px-3 py-4 border-0 w-100 text-start d-flex"
+                                    type="button" data-bs-toggle="collapse" data-bs-target="#sidebar-submenu-3"
+                                    aria-expanded="false" aria-controls="sidebar-submenu-3">
+                                    홍보서비스
+                                    <i class="bi bi-plus-lg ms-auto me-1"></i>
+                                    <i class="bi bi-dash-lg ms-auto me-1"></i>
+                                </button>
+                            </h2>
+                            <div id="sidebar-submenu-3" class="accordion-collapse collapse"
+                                data-bs-parent="#sidebar-accordion">
+                                <div class="accordion-body pt-0">
+                                    <ul class="list-unstyled mb-0">
+                                        <li class="py-2 ps-2"><a href="#">출간예정 도서</a></li>
+                                        <li class="py-2 ps-2"><a href="#">주제분류별 연관도서</a></li>
+                                        <li class="py-2 ps-2"><a href="#">독자맞춤서비스</a></li>
+                                        <li class="py-2 ps-2"><a href="#">도서 카탈로그</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item bg-white">
+                            <h2 class="accordion-header">
+                                <button
+                                    class="bg-white shadow-none collapsed px-3 py-4 border-0 w-100 text-start d-flex"
+                                    type="button" data-bs-toggle="collapse" data-bs-target="#sidebar-submenu-4"
+                                    aria-expanded="false" aria-controls="sidebar-submenu-4">
+                                    통계서비스
+                                    <i class="bi bi-plus-lg ms-auto me-1"></i>
+                                    <i class="bi bi-dash-lg ms-auto me-1"></i>
+                                </button>
+                            </h2>
+                            <div id="sidebar-submenu-4" class="accordion-collapse collapse"
+                                data-bs-parent="#sidebar-accordion">
+                                <div class="accordion-body pt-0">
+                                    <ul class="list-unstyled mb-0">
+                                        <li class="py-2 ps-2"><a href="#">판매통계</a></li>
+                                        <li class="py-2 ps-2"><a href="#">인포그래픽 서비스</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item bg-white">
+                            <h2 class="accordion-header">
+                                <button
+                                    class="bg-white shadow-none collapsed px-3 py-4 border-0 w-100 text-start d-flex"
+                                    type="button" data-bs-toggle="collapse" data-bs-target="#sidebar-submenu-5"
+                                    aria-expanded="false" aria-controls="sidebar-submenu-5">
+                                    정가변경 공표
+                                    <i class="bi bi-plus-lg ms-auto me-1"></i>
+                                    <i class="bi bi-dash-lg ms-auto me-1"></i>
+                                </button>
+                            </h2>
+                            <div id="sidebar-submenu-5" class="accordion-collapse collapse"
+                                data-bs-parent="#sidebar-accordion">
+                                <div class="accordion-body pt-0">
+                                    <ul class="list-unstyled mb-0">
+                                        <li class="py-2 ps-2"><a href="#">정가변경 공표</a></li>
+                                        <li class="py-2 ps-2"><a href="#">공표 자료</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item bg-white">
+                            <h2 class="accordion-header">
+                                <button
+                                    class="bg-white shadow-none collapsed px-3 py-4 border-0 w-100 text-start d-flex"
+                                    type="button" data-bs-toggle="collapse" data-bs-target="#sidebar-submenu-6"
+                                    aria-expanded="false" aria-controls="sidebar-submenu-6">
+                                    고객지원센터
+                                    <i class="bi bi-plus-lg ms-auto me-1"></i>
+                                    <i class="bi bi-dash-lg ms-auto me-1"></i>
+                                </button>
+                            </h2>
+                            <div id="sidebar-submenu-6" class="accordion-collapse collapse"
+                                data-bs-parent="#sidebar-accordion">
+                                <div class="accordion-body pt-0">
+                                    <ul class="list-unstyled mb-0">
+                                        <li class="py-2 ps-2"><a href="#">공지사항</a></li>
+                                        <li class="py-2 ps-2"><a href="#">자주 묻는 질문</a></li>
+                                        <li class="py-2 ps-2"><a href="#">매뉴얼</a></li>
+                                        <li class="py-2 ps-2"><a href="#">동영상 강좌</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 컨텐츠 -->
+    <!-- 페이지별 구분자(클래스) 필요. 이 페이지는 홈이기 때문에 home 클래스를 추가하였음. -->
+    <main id="main" class="bg-white">
+
+        <div class="container py-5">
+
+            <div class="mb-4">
+
+                <h3 class="border-bottom pb-3 mb-3">알럿</h3>
+
+                <div class="mb-4">
+                    <button type="button" class="shadow-none btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#alert-modal">알럿 열기 (html)</button>
+                    <button type="button" class="shadow-none btn btn-primary btn-sm" id="btn-show-alert">알럿 열기 (script)</button>
+                </div>
+
+                <h5>HTML</h5>
+
+                <div class="border rounded mb-3 p-3">                    
+<pre><code>&lt;button type="button" class="shadow-none btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#alert-modal"&gt;알럿 열기 (html)&lt;/button&gt;
+&lt;button type="button" class="shadow-none btn btn-primary btn-sm" id="btn-show-alert"&gt;알럿 열기 (script)&lt;/button&gt;
+
+&lt;div class="modal alert-modal" id="alert-modal" tabindex="-1"&gt;
+    &lt;div class="modal-dialog modal-sm modal-dialog-centered"&gt;
+        &lt;div class="modal-content shadow"&gt;
+            &lt;div class="modal-body pt-4"&gt;
+                &lt;p&gt;알럿입니다. 알럿입니다.&lt;/p&gt;
+            &lt;/div&gt;
+            &lt;div class="modal-footer border-top-0"&gt;
+                &lt;button type="button" class="rounded-pill shadow-none btn btn-sm btn-secondary" data-bs-dismiss="modal"&gt;닫기&lt;/button&gt;
+                &lt;button type="button" class="rounded-pill shadow-none btn btn-sm btn-primary bg-green"&gt;확인&lt;/button&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                </div>
+                
+                <h5>SCRIPT</h5>
+
+                <div class="border rounded mb-3 p-3">                    
+<pre><code>// 모달 객체 생성
+var alertModal = new bootstrap.Modal(document.getElementById('alert-modal'), {
+    backdrop: false
+})
+
+// 버튼 클릭시 모달 보이기
+document.getElementById('btn-show-alert').addEventListener('click', function() {
+    alertModal.show();
+})</code></pre>
+                </div>
+
+                <div class="modal alert-modal" id="alert-modal" tabindex="-1">
+                    <div class="modal-dialog modal-sm modal-dialog-centered">
+                        <div class="modal-content shadow">
+                            <div class="modal-body pt-4 px-4">
+                                <p class="mb-0">알럿입니다. 알럿입니다.</p>
+                                <p class="mb-0">알럿입니다.</p>
+                                <p class="mb-0">알럿입니다.</p>
+                            </div>
+                            <div class="modal-footer border-top-0">
+                                <button type="button" class="shadow-none btn px-4 btn-secondary" data-bs-dismiss="modal"><small>취소</small></button>
+                                <button type="button" class="shadow-none btn px-4 btn-primary bg-green"><small>확인</small></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </main>
+
+    <!-- 부가정보 -->
+    <div id="added-info">
+        <div class="container px-3 px-md-0 py-3 py-md-0">
+            <div class="row align-items-md-center">
+                <div class="col-12 col-md-10">
+                    <ul class="policy mb-3 mb-md-0 px-3 px-xl-0 list-unstyled d-flex flex-wrap align-items-center">
+                        <li><a href="#">사이트맵</a></li>
+                        <li class="bar" role="presentation"></li>
+                        <li><a href="#">이용약관</a></li>
+                        <li class="bar" role="presentation"></li>
+                        <li><a href="#">개인정보처리방침</a></li>
+                        <li class="bar" role="presentation"></li>
+                        <li><a href="#">OPEN API</a></li>
+                        <li class="bar" role="presentation"></li>
+                        <li><a href="#">이메일주소무단수집거부</a></li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-2">
+                    <div class="related dropup">
+                        <button
+                            class="btn dropdown-toggle w-100 rounded-0 text-start d-flex justify-content-between align-items-center shadow-none"
+                            type="button" id="related-sites" data-bs-toggle="dropdown" aria-expanded="false">
+                            관련 사이트
+                            <i class="bi bi-chevron-up"></i>
+                        </button>
+                        <ul class="dropdown-menu rounded-0" aria-labelledby="related-sites">
+                            <li><a class="dropdown-item" href="#">문화체육관광부</a></li>
+                            <li><a class="dropdown-item" href="#">한국출판 문화상업진흥원</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 푸터 -->
+    <footer id="footer">
+        <div class="container px-3 px-xl-0">
+            <div class="row align-items-xl-center">
+                <div class="col-12 col-xl-2 d-none d-sm-block">
+                    <img class="logo mb-3 mb-xl-0" src="/img/logo_white.png" alt="출판유통통합전산망">
+                </div>
+                <div class="col-12 col-xl-10">
+                    <ul class="contacts list-unstyled d-xl-flex">
+                        <li>
+                            <address class="mb-0">(54866) 전라북도 전주시 덕진구 중동로 63 </address>
+                        </li>
+                        <li>고객지원센터 : <a href="mailto: 070-8209-4271" target="_blank" title="새창으로 열림">070-8209-4271~2</a>
+                        </li>
+                        <li>출판유통선진화센터(출판유통 정보센터) : <a href="tel: 063-219-2798">063-219-2798</a></li>
+                        <li>E-MAIL: <a href="mailto: kbookdata@kpipa.or.kr" target="_blank"
+                                title="새창으로 열림">kbookdata@kpipa.or.kr</a></li>
+                    </ul>
+                    <p class="copyright mb-0">
+                        Publication Industry Promotion Agency of Korea.<br class="d-xl-none">
+                        All Rights Reserved.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 공통 JS -->
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/swiper-bundle.min.js"></script>
+    <script defer src="./js/common.js"></script>
+
+    <!-- 페이지 JS -->
+    <script type="module" src="./js/countUp.min.js"></script>
+    <script defer src="./js/home.js" type="module"></script>
+
+    <script>
+        // 모달 객체 생성
+        var alertModal = new bootstrap.Modal(document.getElementById('alert-modal'), {
+            backdrop: false
+        })
+        
+        // 버튼 클릭시 모달 보이기
+        document.getElementById('btn-show-alert').addEventListener('click', function() {
+            alertModal.show();
+        })
+    </script>
+
+</body>
+
+</html>

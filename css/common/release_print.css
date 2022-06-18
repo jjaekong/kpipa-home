@@ -1,0 +1,260 @@
+
+@media screen {
+    #printSection {
+        display: none;
+    }
+}
+
+
+@media print {
+
+    a[href]:after {
+        content: none !important;
+    }
+
+    body * {
+        visibility: hidden;
+    }
+
+    #printSection,
+    #printSection * {
+        visibility: visible;
+    }
+
+    #printSection {
+        position: absolute;
+        left: 0;
+        top: 0;
+        border: 0;
+        box-shadow: none;
+    }
+
+    /*  .preview_print>div {
+        width: 600px;
+    }*/
+
+    /*#printSection .preview_print img {
+
+       width:100%; height:100%; max-width:100% !important;
+
+    }*/
+
+    #printSection .preview_print .shadow {
+        box-shadow: none;
+    }
+
+    .dataInfo2 .dataTit {
+        position: relative;
+        margin-top: 55px;
+        padding: 15px 10px 10px !important;
+
+        border-bottom: 1px solid #e7e7e7;
+        background-color: #f0f0f0 !important;
+        -webkit-print-color-adjust: exact !important;
+
+    }
+
+    .dataInfo2 .dataTit .tit {
+        position: relative;
+        padding-left: 20px;
+        font-size: 26px !important;
+        color: #333;
+    }
+
+    .dataInfo2 .dataCont {
+        padding: 20px 15px;
+        font-size: 21px !important;
+        line-height: 24px;
+    }
+
+    .dataInfo2 .dataCont > strong {
+        font-size: 18px !important;
+        color: #e21a1a !important;
+    }
+
+
+    .cont_header .company_name {
+        margin-bottom: 10px;
+        color: #333;
+        font-size: 23px;
+        font-weight: bold;
+        display: inline-block;
+    }
+
+    /*.cont_header .company_address dt {
+        display: inline-block;
+        color: #777;
+        font-weight: bold;
+        font-size: 20px;
+    }
+
+    .cont_header .company_address dd {
+        display: inline-block;
+        color: #777;
+        font-weight: bold;
+        font-size: 20px;
+    }*/
+
+    .dataInfo2 .dataCont {
+        padding: 20px 15px;
+        font-size: 16px;
+        line-height: 28px;
+
+    }
+
+    .custom_request {
+        display: none;
+    }
+
+    title {
+        display: none;
+    }
+
+    /*   .catalog_print > div {
+        width: 300px;
+    }
+
+    #printSection .catalog_print img {
+
+       width:100%; height:100%; max-width:100% !important;
+
+    }
+
+    #printSection .catalog_print .shadow  {
+        box-shadow: none;
+    }*/
+
+    .catalog_pre_wrap .catalog_pre_tit {
+        background: #f0f0f0 !important;
+        -webkit-print-color-adjust: exact !important;
+    }
+
+    .catalog_pre.type2 .template_name {
+        background: #f0f0f0 !important;
+        -webkit-print-color-adjust: exact !important;
+    }
+
+    .catalog_preview .preview_cont > p {
+        margin-top: 15px;
+        font-size: 22px !important;
+        color: #555;
+        line-height: 26px;
+    }
+
+    .catalog_pre_list li .tit {
+        font-size: 23px !important;
+        line-height: 1.4;
+        height: 60px;
+    }
+
+    .catalog_pre.type6 .catalog_pre_list .tit {
+        height: 60px;
+    }
+
+    .catalog_pre_list li .author {
+
+        font-size: 20px !important;
+        height: auto;
+    }
+
+    .catalog_pre_list li .detail span {
+        font-size: 19px !important;
+    }
+
+    .catalog_pre_list li .detail strong {
+        font-size: 20px !important;
+    }
+
+    .catalog_preview .preview_cont .date {
+        display: none;
+    }
+
+    .catalog_pre_list li .detail span {
+        display: none;
+    }
+
+    .catalog_pre.type4 .catalog_pre_list li .detail span {
+        display: block;
+    }
+
+    .catalog_pre.type5 .catalog_pre_list li .detail span {
+        display: block;
+    }
+
+    .detail_view_cont .catalog_book_tit {
+        background: #f0f0f0 !important;
+        -webkit-print-color-adjust: exact !important;
+    }
+
+    .catalog_pre_list li .detail strong {
+        margin-top: 4px;
+    }
+
+    .data_table_print th {
+        background-color: #f0f2f9 !important;
+        -webkit-print-color-adjust: exact !important;
+    }
+
+    .catalog_tabs {
+        display: block;
+        /* border-bottom: 1px solid #a6a6a6; */
+    }
+
+    /*
+    .catalog_tabs .view {
+        padding:25px 0 0 0 !important;
+    }
+
+    .modal_pop_div.print.type02 .catalog_tabs .view {
+        padding:25px 0 0 0 !important;
+    }*/
+
+    .catal_form.print_detail {
+        max-width: 100%;
+        height: 1200px;
+    }
+
+    .catal_seg .nav li.sub {
+        background: #d0d6e9 !important;
+        -webkit-print-color-adjust: exact !important;
+    }
+
+    .catal_seg .nav li .list {
+        display: block !important;
+        background: #fff !important;
+    }
+
+    .print_detail_tab_catal dl dt {
+        background: #d0d6e9 !important;
+        -webkit-print-color-adjust: exact !important;
+    }
+
+    [class^="tab_zone_"] {
+        display: none !important;
+    }
+
+}
+
+@page {
+
+    /*size: auto;*/
+    margin: 15mm;
+    /*@page : footer { display: none; }
+    @page : header { display: none; }*/
+
+}
+
+
+@media print {
+
+    header,
+    footer {
+        display: none;
+    }
+}
+
+
+
+
+/* //print */
+

@@ -1,0 +1,24 @@
+@charset "UTF-8";
+/* 나의 도서 판매량 Top10 */
+.statsReportBestSellerList .rankTable table {
+  table-layout: fixed;
+}
+
+/* 온라인 수발주관리 > 신규주문 레이아웃 */
+.innerRow {
+  display: flex;
+}
+.innerRow .innerCol {
+  overflow: auto;
+  flex: 1 1 auto;
+}
+
+.leftBox {
+  overflow: auto;
+  margin-top: 20px;
+  margin-right: 20px;
+  min-height: 100px;
+  background: #fff;
+}
+
+/*# sourceMappingURL=renew.css.map */

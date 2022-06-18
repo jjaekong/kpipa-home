@@ -1,0 +1,244 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="/css/style.css" rel="stylesheet">
+    <link href="/css/swiper-bundle.min.css" rel="stylesheet">
+
+    <title>출판유통통합전산망</title>
+</head>
+
+<body>
+
+    <!-- 컨텐츠 -->
+    <!--
+        페이지별 구분자(클래스) 필요.
+        대메뉴별 구분자.
+        - 회원: member
+        - 아이디/비번 찾기: find
+    -->
+    <main id="main" class="member find bg-white">
+
+        <div class="menu-title-box py-4 py-xl-5">
+            <div class="container">
+                <div class="find-nav">
+                    <ul class="nav find-tabs" role="tablist">
+                        <li><a class="nav-link" id="find-id-tab" data-bs-toggle="tab" href="#find-id-form" data-bs-target="#find-id-form">아이디 찾기</a></li>
+                        <li><a class="nav-link" id="find-pw-tab" data-bs-toggle="tab" href="#find-pw-form" data-bs-target="#find-pw-form">비밀번호 재설정</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="px-3 px-xl-0">
+            <div class="container">
+                
+                <div class="find-area">
+                    <div class="find-body">
+                        <div class="tab-content">
+                            <div class="tab-pane fade show" id="find-id-form" role="tabpanel">
+                                
+                                <!-- 아이디 찾기 폼 -->
+                                <div class="find-form">
+                                    <div class="form-item">
+                                        <label for="member-name-for-id">담당자 이름</label>
+                                        <div class="form-item-body">
+                                            <div class="form-input">
+                                                <input type="text" class="form-control shadow-none" id="member-name-for-id" required>
+                                            </div>
+                                            <div class="form-error">
+                                                <ul class="parsley-errors-list filled">
+                                                    <li class="parsley-required">아이디를 입력해 주세요.</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-item">
+                                        <label for="member-email-for-id">담당자 이메일</label>
+                                        <div class="form-item-body">
+                                            <div class="form-input">
+                                                <input type="emali" class="form-control shadow-none" id="member-email-for-id" required>
+                                            </div>
+                                            <div class="form-error">
+                                                <ul class="parsley-errors-list filled">
+                                                    <li class="parsley-required">이메일 주소를 입력해 주세요.</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-item">
+                                        <label for="member-mobile-for-id">휴대폰번호</label>
+                                        <div class="form-item-body">
+                                            <div class="form-input">
+                                                <input type="text" class="form-control shadow-none" id="member-mobile-for-id" required placeholder="하이픈(-)없이 숫자만 입력">
+                                            </div>
+                                            <div class="form-error">
+                                                <ul class="parsley-errors-list filled">
+                                                    <li class="parsley-required">휴대폰번호를 입력해 주세요.</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-button">
+                                        <a href="#" class="btn btn-find shadow-none">아이디 찾기</a>
+                                    </div>
+                                </div>
+                                <!-- // 아이디 찾기 폼 -->
+
+                                <!-- 아이디 찾기 성공 -->
+                                <div class="find-id-result">
+                                    <p>‘<span class="member-name">진흥원</span>’님의 아이디는 아래와 같습니다.</p>
+                                    <dl>
+                                        <dt>아이디</dt>
+                                        <dd>futu******</dd>
+                                    </dl>
+                                    <a href="#" class="btn btn-login shadow-none">로그인</a>
+                                </div>
+                                <!-- // 아이디 찾기 성공 -->
+                                
+                            </div>
+                            <div class="tab-pane fade" id="find-pw-form" role="tabpanel">
+
+                                <!-- 비번찾기 폼 -->
+                                <div class="find-form">
+                                    <div class="form-item">
+                                        <label for="member-id-for-pw">아이디</label>
+                                        <div class="form-item-body">
+                                            <div class="form-input">
+                                                <input type="text" class="form-control shadow-none" id="member-id-for-pw" required>
+                                            </div>
+                                            <div class="form-error">
+                                                <ul class="parsley-errors-list filled">
+                                                    <li class="parsley-required">이름을 입력해 주세요.</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-item">
+                                        <label for="member-name-for-pw">담당자 이름</label>
+                                        <div class="form-item-body">
+                                            <div class="form-input">
+                                                <input type="text" class="form-control shadow-none" id="member-name-for-pw" required>
+                                            </div>
+                                            <div class="form-error">
+                                                <ul class="parsley-errors-list filled">
+                                                    <li class="parsley-required">이름을 입력해 주세요.</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-item">
+                                        <label for="member-email-for-pw">담당자 이메일</label>
+                                        <div class="form-item-body">
+                                            <div class="form-input d-flex">
+                                                <div class="form-control-wrap">
+                                                    <input type="emali" class="form-control shadow-none" id="member-email-for-pw" required>
+                                                </div>
+                                                <a href="#" class="btn btn-cert-num shadow-none">인증번호 받기</a>
+                                                <a href="#" class="btn btn-cert-num shadow-none disabled">인증번호 받기</a>
+                                            </div>
+                                            <div class="form-error">
+                                                <ul class="parsley-errors-list filled">
+                                                    <li class="parsley-required">이메일 주소를 입력해 주세요.</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-item">
+                                        <label for="email-cert-num">메일 인증번호</label>
+                                        <div class="form-item-body">
+                                            <div class="form-input d-flex">
+                                                <div class="form-control-wrap">
+                                                    <input type="text" class="form-control shadow-none" id="email-cert-num" required placeholder="인증번호 입력" readonly disabled>
+                                                    <span class="time-limit on" id="timerPw">3:00</span>
+                                                    <!-- 인증번호 받기 전: on 클래스가 없어야 함 -->
+                                                </div>
+                                                <a href="#" class="btn btn-cert-num shadow-none disabled">인증번호 확인</a>
+                                                <!--
+                                                <a href="#" class="btn btn-cert-num shadow-none">인증번호 확인</a>
+                                                <a href="#" class="btn btn-cert-num shadow-none success">인증 성공</a>
+                                                -->
+                                            </div>
+                                            <div class="form-error" id="form-error-pwMailCheck">
+                                                <ul class="parsley-errors-list filled">
+                                                    <li class="parsley-required">비밀번호를 입력해 주세요.</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-button">
+                                        <a href="#" class="btn btn-find shadow-none">비밀번호 재설정</a>
+                                    </div>
+                                </div>
+                                <!-- // 비번찾기 폼 -->
+
+                                <!-- 새 비번 설정 -->
+                                <div class="reset-password">
+                                    <p class="reset-help">새 비밀번호를 입력해 주시기 바랍니다.</p>
+                                    <div class="find-form">
+                                        <div class="form-item">
+                                            <label for="reset-password">새 비밀번호</label>
+                                            <div class="form-item-body">
+                                                <div class="form-input">
+                                                    <input type="text" class="form-control shadow-none" id="reset-password" required>
+                                                </div>
+                                                <div class="form-error">
+                                                    <ul class="parsley-errors-list filled">
+                                                        <li class="parsley-required">비밀번호를 입력해 주세요.</li>
+                                                    </ul>
+                                                </div>
+                                                <div class="form-help">
+                                                    8~20자리 영문(대, 소문자 구분) + 숫자 + 특수문자 조합 사용 가능한 특수문자(~!^*()-=+_)
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-item">
+                                            <label for="reset-password-confirm">새 비밀번호 확인</label>
+                                            <div class="form-item-body">
+                                                <div class="form-input">
+                                                    <input type="text" class="form-control shadow-none" id="reset-password-confirm" required>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-button">
+                                            <a href="#" class="btn btn-find shadow-none">비밀번호 재설정</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- // 새 비번 설정 -->
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="find-help">
+                        <ul>
+                            <li>회원가입 시 등록한 정보를 입력하시면 아이디를 확인할 수 있습니다.</li>
+                            <li>담당자가 변경되었거나 그 외 다른 문제로 확인이 어려운 경우 [고객지원센터>자료실]내 담당자 변경 신청서를 접수해 주시기 바랍니다.</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </main>
+
+    <!-- 퍼블리싱용 JS -->
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="/js/template.sub.js"></script>
+
+    <script>
+        window.addEventListener('load', function() {
+            var findPwFormEl = document.querySelector('#find-pw-tab');
+            var findPwFormTab = new bootstrap.Tab(findPwFormEl);
+
+            findPwFormTab.show();
+        })
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="/css/style.css" rel="stylesheet">
+    <link href="/css/swiper-bundle.min.css" rel="stylesheet">
+
+    <title>출판유통통합전산망</title>
+</head>
+
+<body>
+
+    <!-- 컨텐츠 -->
+    <!--
+        페이지별 구분자(클래스) 필요.
+        대메뉴별 구분자.
+        - 정가변경 공표: reprice
+        - 공표 통계: repriced-stat
+    -->
+    <main id="main" class="reprice repriced-stat bg-white">
+
+        <div class="menu-title-box py-4 py-xl-5">
+            <div class="container">
+                <h1 class="menu-title mb-0 text-center py-2">
+                    <a href="#">공표 통계</a>
+                </h1>
+            </div>
+        </div>
+
+        <div class="chart-wrapper px-3 px-xl-0 mb-4 mb-xl-5">
+            <div class="container">
+                <!-- 차트의 높이는 인라인 스타일로 임의 설정하였으니 개발 시 style을 삭제(높이 삭제)하거나, 수치를 변경하시면 됩니다. -->
+                <div class="stat-graph">
+                    <img src="/img/img_reprice_stat.gif" alt="정가공표통계그래프">
+                </div>
+            </div>
+        </div>
+
+        <div class="data-table-wrapper px-3 px-xl-0 mb-4 mb-xl-5">
+            <div class="container">
+                <div class="table-responsive">
+                    <table class="table table-bordered table-hover data-table" style="min-width: 400px;">
+                        <thead>
+                            <tr>
+                                <th>시행일</th>
+                                <th>인상</th>
+                                <th>인하</th>
+                                <th>총합계</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th>2014년</th>
+                                <td>28</td>
+                                <td>2,656</td>
+                                <td>2,684</td>
+                            </tr>
+                            <tr>
+                                <th>2015년</th>
+                                <td>935</td>
+                                <td>4,345</td>
+                                <td>5,280</td>
+                            </tr>
+                            <tr>
+                                <th>2016년</th>
+                                <td>992</td>
+                                <td>1,947</td>
+                                <td>2,939</td>
+                            </tr>
+                            <tr>
+                                <th>2017년</th>
+                                <td>761</td>
+                                <td>2,128</td>
+                                <td>2,889</td>
+                            </tr>
+                            <tr>
+                                <th>2018년</th>
+                                <td>2,248</td>
+                                <td>1,013</td>
+                                <td>3,261</td>
+                            </tr>
+                            <tr>
+                                <th>2019년</th>
+                                <td>4,055</td>
+                                <td>1,227</td>
+                                <td>5,282</td>
+                            </tr>
+                            <tr>
+                                <th>2020년</th>
+                                <td>3,448</td>
+                                <td>1,581</td>
+                                <td>5,029</td>
+                            </tr>
+                            <tr>
+                                <th>2021년</th>
+                                <td>3,480</td>
+                                <td>1,132</td>
+                                <td>4,612</td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <th>총합계</th>
+                                <td>15,947</td>
+                                <td>16,029</td>
+                                <td>31,976</td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <div class="standard-data-wrapper px-3 px-xl-0">
+            <div class="container">
+                <section class="standard-data">
+                    <h4>데이터 기준</h4>
+                    <ul class="note list-unstyled">
+                        <li>출판문화산업 진흥법 제22조 시행(14년) 이후 현재(21년)까지 정가변경 공표 통계입니다. </li>
+                    </ul>
+                </section>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- 퍼블리싱용 JS -->
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="/js/template.sub.js"></script>
+
+</body>
+
+</html>

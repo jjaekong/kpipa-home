@@ -1,0 +1,77 @@
+#main.error {
+    padding-bottom: 0 !important;
+    .logo {
+        padding: 10px;
+        margin-bottom: 0;
+        border-bottom: 1px solid #e5e7ee;
+        img {
+            display: block;
+            height: 32px;
+        }
+        @include media-breakpoint-up(xl) {
+            padding: 30px 0;
+            img {
+                height: 43px;
+            }
+        }
+    }
+    .error-body {
+        padding: 50px 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        img {
+            max-width: 200px;
+        }
+        .message {
+            margin-top: 30px;
+            font-size: 16px;
+            h6 {
+                font-size: 20px;
+            }
+        }
+        .btn-area {
+            padding: 10px;
+            display: flex;
+            width: 100%;
+            justify-content: center;
+            .btn {
+                flex: 1;
+                max-width: 150px;
+                text-decoration: none;
+                box-shadow: none;
+                & + .btn {
+                    margin-left: 10px;
+                }
+            }
+            .btn-go-back {
+                border-color: #262f5f;
+            }
+            .btn-go-main {
+                background-color: #262f5f;
+                color: white;
+            }
+        }
+        @include media-breakpoint-up(xl) {
+            padding-top: 100px;
+            img {
+                max-width: 300px;
+            }
+            .message {
+                margin-top: 50px;
+                font-size: 30px;
+                h6 {
+                    font-size: 40px;
+                }
+            }
+            .btn-area {
+                margin-top: 50px;
+                .btn {
+                    padding-top: 10px;
+                    padding-bottom: 10px;
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,284 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="/css/style.css" rel="stylesheet">
+    <link href="/css/swiper-bundle.min.css" rel="stylesheet">
+
+    <title>출판유통통합전산망</title>
+</head>
+
+<body>
+
+    <!-- 컨텐츠 -->
+    <!--
+        페이지별 구분자(클래스) 필요.
+        대메뉴별 구분자.
+        - 통계서비스: stat
+        - 독자통계(연령별): reader-region
+    -->
+    <main id="main" class="stat reader-age bg-white">
+
+        <div class="modal fade popup advanced-search-modal" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">독자 통계 상세검색</h5>
+                        <button type="button" class="btn-close shadow-none" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="advanced-search-form">
+                            <div class="form-item">
+                                <div class="form-item-label">성별</div>
+                                <div class="checkbox-group">
+                                    <label class="checkbox all">
+                                        <input class="visually-hidden" type="checkbox" name="" value=""><i></i><span>전체</span>
+                                    </label>
+                                    <label class="checkbox">
+                                        <input class="visually-hidden" type="checkbox" name="" value=""><i></i><span>남성</span>
+                                    </label>
+                                    <label class="checkbox">
+                                        <input class="visually-hidden" type="checkbox" name="" value=""><i></i><span>여성</span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="form-item">
+                                <div class="form-item-label">연령</div>
+                                <div class="checkbox-group">
+                                    <label class="checkbox all">
+                                        <input class="visually-hidden" type="checkbox" name="" value=""><i></i><span>전체</span>
+                                    </label>
+                                    <label class="checkbox">
+                                        <input class="visually-hidden" type="checkbox" name="" value=""><i></i><span>10대</span>
+                                    </label>
+                                    <label class="checkbox">
+                                        <input class="visually-hidden" type="checkbox" name="" value=""><i></i><span>20대</span>
+                                    </label>
+                                    <label class="checkbox">
+                                        <input class="visually-hidden" type="checkbox" name="" value=""><i></i><span>30대</span>
+                                    </label>
+                                    <label class="checkbox">
+                                        <input class="visually-hidden" type="checkbox" name="" value=""><i></i><span>40대</span>
+                                    </label>
+                                    <label class="checkbox">
+                                        <input class="visually-hidden" type="checkbox" name="" value=""><i></i><span>50대</span>
+                                    </label>
+                                    <label class="checkbox">
+                                        <input class="visually-hidden" type="checkbox" name="" value=""><i></i><span>60대 이상</span>
+                                    </label>
+                                    <label class="checkbox">
+                                        <input class="visually-hidden" type="checkbox" name="" value=""><i></i><span>미상</span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="form-button">
+                                <button type="reset" class="btn btn-reset shadow-none">검색 초기화</button>
+                                <button type="submit" class="btn btn-search shadow-none">검색</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-title-box py-4 py-xl-5">
+            <div class="container">
+                <h1 class="menu-title mb-0 text-center py-2">
+                    <a href="#">독자 통계</a>
+                </h1>
+            </div>
+            
+        </div>
+        <div class="tabs-wrapper px-3 px-xl-0 mb-4 mb-xl-5">
+            <div class="container">
+                <ul class="tabs d-flex mb-0 list-unstyled flex-wrap">
+                    <li><a class="active px-2 d-flex align-items-center justify-content-center text-center text-decoration-none" href="./reader_age.html">연령별 독자 통계</a></li>
+                    <li><a class="px-2 d-flex align-items-center justify-content-center text-center text-decoration-none" href="./reader_region.html">지역별 독자 통계</a></li>
+                </ul>    
+            </div>
+        </div>
+
+        <div class="search-form-wrapper px-3 px-xl-0">
+            <div class="container">
+                <div class="search-form">
+                    <div class="search-form-body">
+                        <div class="row justify-content-center align-items-center">
+                            <div class="col-12 col-lg-auto">
+                                <div class="search-title">조회기간</div>
+                            </div>
+                            <div class="col-12 col-lg-auto">
+                                <div class="radio-group">
+                                    <label class="radio">
+                                    <input class="visually-hidden" type="radio" name="" value="" ><i></i><span>최근 7일</span>
+                                    </label>
+                                    <label class="radio">
+                                        <input class="visually-hidden" type="radio" name="" value=""><i></i><span>최근 30일</span>
+                                    </label>
+                                    <label class="radio">
+                                        <input class="visually-hidden" type="radio" name="" value=""><i></i><span>기간설정</span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-auto">
+                                <div class="period-group">
+                                    <input class="form-control shadow-none period-from" type="date" name="period-from" value="" max="9999-12-31">
+                                    <span class="bar">-</span>
+                                    <input class="form-control shadow-none period-to" type="date" name="period-to" value="" max="9999-12-31">
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-auto">
+                                <div class="button-group">
+                                    <button type="button" class="btn btn-search shadow-none">검색</button>
+                                    <button type="button" class="btn btn-advanced-search shadow-none" data-bs-target=".advanced-search-modal" data-bs-toggle="modal">상세검색</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="px-3 px-xl-0">
+            <div class="container">
+                <p class="text-center">※ 알라딘으로부터 제공받은 판매 데이터로 집계됩니다.(추후 다른 유통사 추가 업데이트 예정)</p>
+            </div>
+        </div>
+
+        <!-- <div class="search-result-wrapper px-3 px-xl-0 mb-4 mb-xl-5">
+            <div class="container">
+                <div class="search-result">
+                    <div class="no-data">
+                        <i class="bi bi-exclamation-circle"></i>
+                        <p>조회기간이 적절하지 않습니다.</p>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+        
+        <div class="graph-wrapper px-3 px-xl-0">
+            <div class="container">
+                <div class="graph-container">
+                    <div class="row">
+                        <div class="col-12 col-xl-6">
+                            <div class="graph-content gender-stat">
+                                <figure class="male disabled">
+                                    <div class="diagram">
+                                        <div class="bg"></div>
+                                        <div class="percent" id="malePer" style="background-color: blue"></div>
+                                        <div class="outline"></div>
+                                        <!-- <img class="outline" src="/img/ico_stand_person_border.png"> -->
+                                    </div>
+                                    <figcaption>
+                                        <dl>
+                                            <dt>남성</dt>
+                                            <dd>50%</dd>
+                                        </dl>
+                                    </figcaption>
+                                </figure>
+                                <figure class="female">
+                                    <div class="diagram">
+                                        <div class="bg"></div>
+                                        <div class="percent" id="femalePer" style="background-color: red"></div>
+                                        <div class="outline"></div>
+                                    </div>
+                                    <figcaption>
+                                        <dl>
+                                            <dt>여성</dt>
+                                            <dd>50%</dd>
+                                        </dl>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                        </div>
+                        <div class="col-12 col-xl-6">
+                            <div class="graph-content age-stat">
+                                graph
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="list-summary-wrapper px-3 px-xl-0">
+            <div class="container">
+                <div class="list-summary pt-3 mb-3">
+                    <div class="row align-items-center">
+                        <div class="col-auto">
+                            <div class="total">총 <span>3,000</span>건</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="book-list-wrapper px-3 px-xl-0 mb-3">
+            <div class="container">
+                <div class="book-grid-list">
+                    <ul class="mb-0 list-unstyled">
+                        <li>/components/book_grid_item.html</li>
+                        <li>/components/book_grid_item.html</li>
+                        <li>/components/book_grid_item.html</li>
+                        <li>/components/book_grid_item.html</li>
+                        <li>/components/book_grid_item.html</li>
+                        <li>/components/book_grid_item.html</li>
+                        <li>/components/book_grid_item.html</li>
+                        <li>/components/book_grid_item.html</li>
+                        <li>/components/book_grid_item.html</li>
+                        <li>/components/book_grid_item.html</li>
+                        <li>/components/book_grid_item.html</li>
+                        <li>/components/book_grid_item.html</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="standard-data-wrapper px-3 px-xl-0">
+            <div class="container">
+                <section class="standard-data">
+                    <h4>데이터 기준</h4>
+                    <ul class="time list-unstyled">
+                        <li>당일 오전 10시 이전 확인 시 2일 전 판매 데이터까지 확인 가능</li>
+                        <li>당일 오전 10시 이후 확인 시 1일 전 판매 데이터까지 확인 가능</li>
+                    </ul>
+                    <ul class="note list-unstyled">
+                        <li>독자 통계는 알라딘으로부터 제공받은 판매 데이터로 집계되며, 추후 다른 유통사의 정보를 받아 추가 업데이트 예정입니다.</li>
+                        <li>연령별, 지역별로 각각 데이터를 수집하므로 같은 기간으로 검색 시에도 연령별, 지역별 독자 통계의 도서 목록이 다르게 노출될 수 있습니다.</li>
+                    </ul>
+                </section>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- 퍼블리싱용 JS -->
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="/js/template.sub.js"></script>
+    <script>
+        window.addEventListener('DOMContentLoaded', function() {
+            // 책 리스트에 항목 추가(그리드 타입)
+            const bookGridList = document.querySelectorAll('.book-grid-list li')
+            if (bookGridList.length > 0) {
+                axios.get('/components/book_grid_item2.html')
+                .then(res => {
+                    bookGridList.forEach(li => {
+                        li.innerHTML = res.data
+                    })
+                })
+                
+            }
+
+            // document.getElementById('malePer').style.background = 'blue';
+            document.getElementById('malePer').style.top = 'calc(100% - 50%)';
+            // document.getElementById('femalePer').style.background = 'red';
+            document.getElementById('femalePer').style.top = 'calc(100% - 100%)';
+            
+        })
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,383 @@
+.footerBox {
+    position:relative;
+    height: auto;
+    border-top: 1px solid #C6C6C6;
+    box-sizing: border-box;
+    background: #F8FCFF;
+    min-width:1510px;
+    z-index:2001;
+}
+
+.footerBox.footerBox2 {
+    height: auto;
+    padding-bottom: 6em;
+}
+
+.footerBox::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.footerBox .div_wrap {
+    width: 1505px;
+    margin: 2em auto 3em auto;
+}
+
+.footerBox .div_wrap::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.footerBox .logo_top::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.footerBox .logo_top .logo {
+    width: 175px;
+}
+
+.footerBox .logo_top a {
+    font-size: 1.6em;
+    font-weight: normal;
+    color: rgba(0, 0, 0, 0.7);
+    margin-right: 40px;
+    display: block;
+    float: left;
+}
+
+.footerBox .logo_top .txt {
+    margin-top: 7px;
+}
+
+.footerBox .footer_info {
+    margin-top: 2.7em;
+}
+
+.footerBox .footer_info::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.footerBox .footer_left {
+    float: left;
+}
+
+.footerBox .footer_right {
+    float: right;
+}
+
+.footerBox .footer_btn {
+    float: left;
+}
+
+.footerBox .footer_btn a {
+    font-size: 12px;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.5);
+    margin-right: 20px;
+    padding-top: 35px;
+    display: block;
+    float: left;
+    width: 50px;
+    text-align: center;
+}
+
+.footerBox .footer_btn a:last-child {
+    margin-right: 0;
+}
+
+.footerBox .footer_btn .controll {
+    background: url(../../img/common/controll.png) center 0 no-repeat;
+    background-size: 32px;
+}
+
+.footerBox .footer_btn .faq {
+    background: url(../../img/common/faq.png) center 0 no-repeat;
+    background-size: 32px;
+}
+
+.footerBox .footer_btn .consulting {
+    background: url(../../img/common/consulting.png) center 0 no-repeat;
+    background-size: 32px;
+}
+
+.footerBox .footer_btn .guide {
+    background: url(../../img/common/guide.png) center 0 no-repeat;
+    background-size: 32px;
+}
+
+.footerBox .footer_text {
+    float: left;
+    border-right: 1px solid #BEBEBE;
+    border-left: 1px solid #BEBEBE;
+    box-sizing: border-box;
+    padding: 0 25px;
+    margin: 0 1.5em;
+    margin-top: 0.5em;
+}
+
+.footerBox .footer_text p {
+    font-size: 10px;
+    color: rgba(0, 0, 0, 0.4);
+    margin-bottom: 5px;
+}
+
+.footerBox .footer_text .txt1 {
+    font-size: 1.4em;
+    font-weight: 700;
+    color: rgba(90, 113, 196, 0.7);
+}
+
+.footerBox .footer_text .txt2 {
+    font-size: 1.8em;
+    font-weight: 700;
+    color: rgba(24, 55, 172, 0.7);
+    margin-top: 5px;
+}
+
+.footerBox .footer_info .info_txt {
+    font-size: 1.2em;
+    color: rgba(0, 0, 0, 0.5);
+    font-weight: 700;
+    float: left;
+    margin-right: 10px;
+}
+
+.footerBox .footer_info .info_txt span {
+    position: relative;
+    padding: 0 10px;
+    font-size: 1.2em;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.footerBox .footer_info .info_txt span.bl::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(0, -50%);
+    width: 1px;
+    height: 10px;
+    background: #A0A0A0;
+}
+
+.footerBox .footer_info .info_txt span:first-child {
+    margin-left: 10px;
+}
+
+.footerBox.footerBox2 .div_wrap {
+    width: 1525px;
+}
+
+.footerBox .listTop {
+    display: block;
+}
+
+.footerBox .infoListWrap {
+    float: left;
+}
+
+.footerBox .infoListWrap .listTop::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.footerBox .infoList {
+    float: left;
+    margin-right: 6em;
+}
+
+.footerBox .infoList p {
+    padding-left: 22px;
+}
+
+.footerBox .infoList .tit {
+    font-size: 1.6em;
+    font-weight: 700;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.footerBox .infoList .con {
+    font-size: 1.3em;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.6);
+    margin-top: 8px;
+}
+
+.footerBox .address {
+    background: url(../../img/common/address.png) 0 center no-repeat;
+    background-size: 12px 15px;
+    padding-left: 17px;
+}
+
+.footerBox .tel {
+    background: url(../../img/common/tel.png) 0 center no-repeat;
+    background-size: 16px 16px;
+    padding-left: 18px;
+}
+
+.footerBox .email {
+    background: url(../../img/common/email.png) 0 center no-repeat;
+    background-size: 13px 9px;
+    padding-left: 18px;
+}
+
+.footerBox .infoListWrap .listBottom {
+    margin-top: 4em;
+}
+
+.footerBox .infoListWrap .listBottom .con {
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.footerBox .infoListWrap .listBottom .con2 {
+    font-size: 10px;
+    color: rgba(0, 0, 0, 0.6);
+    margin-top: 6px;
+}
+
+.footerBox .m_hypen {
+    display: inline-block;
+    vertical-align: middle;
+    width: 1px;
+    height: 11px;
+    background: rgba(124, 126, 127, 0.4);
+    margin: 0 8px;
+}
+
+.footerBox .selectBoxWrap {
+    float: right;
+}
+
+.footerBox .selectBoxWrap.type2 .ui-selectmenu-button.ui-button {
+    border: none;
+    border-bottom: 1px solid #ADB6CF;
+    box-sizing: border-box;
+    border-radius: 0;
+    font-size: 1.4em;
+    font-weight: 700;
+    color: rgba(0, 20, 96, 0.8);
+    background: url(../../img/common/footer_arrow.png) right center no-repeat;
+    background-size: 10px;
+}
+
+.footerBox .selectBoxWrap .ui-selectmenu-button.ui-button {
+    width: 120px;
+    height: 36px;
+    line-height: 25px;
+    padding-left: 0px;
+    border: 1px solid #A7A7A7;
+    background: url(../../img/common/footer_arrow2.png) right 5px center no-repeat;
+}
+
+.footerBox .selectBoxWrap .ui-selectmenu-text {
+    color: rgba(0, 0, 0, 0.5);
+    font-weight: 700;
+}
+
+.footerBox .infoMenu {
+    margin-top: 12px;
+}
+
+.footerBox .infoMenu::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.footerBox .infoMenu .footerTit {
+    font-size: 1.4em;
+    font-weight: 700;
+    color: rgba(46, 85, 234, 0.8);
+    padding-left: 24px;
+    background: url(../../img/common/footerTit.png) 0 center no-repeat;
+    background-size: 16px;
+    margin-right: 5.85em;
+}
+
+.footerBox .infoMenu .link {
+    font-size: 1.4em;
+    font-weight: 700;
+    color: rgba(0, 20, 96, 0.8);
+    margin-right: 4.42em;
+}
+
+.footerBox .menuListWrap {
+    margin-top: 4.7em;
+    margin-left: 24px;
+}
+
+.footerBox .menuListWrap .menuList {
+    float: left;
+}
+
+.footerBox .menuListWrap .menuList .tit {
+    font-size: 14px;
+    color: #777;
+    font-weight: 700;
+    margin-bottom: 15px;
+    display: block;
+    margin-right: 4.4em;
+}
+
+.footerBox .menuListWrap .menuList .list {
+    font-size: 11px;
+    color: rgba(0, 0, 0, 0.4);
+    margin-bottom: 10px;
+    display: block;
+}
+
+.footerBox .infoTxt {
+    margin-top: 3.5em;
+}
+
+.footerBox .infoTxt .infoTxtList {
+    margin-bottom: 3em;
+}
+
+.footerBox .infoTxt .infoTxtList p {
+    padding-left: 22px;
+}
+
+.footerBox .infoTxt .infoTxtList .tit {
+    font-size: 1.6em;
+    font-weight: 700;
+    color: rgba(0, 0, 0, 0.5)
+}
+
+.footerBox .infoTxt .infoTxtList .tit.tel {
+    background: url(../../img/common/tel.png) 0 center no-repeat;
+    background-size: 16px 16px;
+}
+
+.footerBox .infoTxt .infoTxtList .tit.address {
+    background: url(../../img/common/address.png) 0 center no-repeat;
+    background-size: 14px 18px;
+}
+
+.footerBox .infoTxt .infoTxtList .con {
+    margin-top: 0.6em;
+    font-size: 1.3em;
+    color: rgba(0, 0, 0, 0.6)
+}
+
+.footerBox .selectBoxWrap .copyright {
+    font-size: 10px;
+    color: rgba(0, 0, 0, 0.4);
+    margin-top: 7em;
+    padding-left: 22px;
+}
+
+@media(max-width:1600px) {
+    .footerBox .div_wrap {
+        width: 90%;
+    }
+}

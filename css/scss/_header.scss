@@ -1,0 +1,109 @@
+#header {
+    background-color: #f7f7f7;
+    border-bottom: 1px solid #e5e7ee;
+    z-index: 900;
+    .logo {
+        a {
+            display: block;
+        }
+        img {
+            height: 32px;
+        }
+    }
+    .btn-search {
+        font-size: 20px;
+        line-height: 1;
+        color: #000;
+    }
+    .btn-menu {
+        font-size: 25px;
+        line-height: 1;
+        color: #000;
+    }
+    .nav {
+        > li {
+            position: relative;
+            > a {
+                color: #000;
+                font-size: 17px;
+                font-weight: 500;
+                text-decoration: none;
+                &:hover,
+                &:focus,
+                &.active {
+                    color: #468500;
+                }
+            }
+            > ul {
+                // top: calc(100% + 1px);
+                top: 105px;
+                background-color: white;
+                > li {
+                    > a {
+                        font-size: 13px;
+                        color: #767676;
+                        text-decoration: none;
+                        &:hover,
+                        &:focus,
+                        &.active {
+                            color: #468500;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @include media-breakpoint-up(sm) {  }
+    @include media-breakpoint-up(md) {  }
+    @include media-breakpoint-up(lg) { 
+    }
+    @include media-breakpoint-up(xl) {
+        .logo {
+            img {
+                height: 43px;
+            }
+        }
+        .nav {
+            > li {
+                > ul {
+                    display: none;
+                    width: 140px;
+                }
+            }
+        }
+        .backdrop {
+            display: none;
+            background-color: #fff;
+        }
+        &.expanded {
+            .nav {
+                > li {
+                    > ul {
+                        display: block;
+                    }
+                }
+            }
+            .backdrop {
+                display: block;
+                height: 230px;
+                border-top: 1px solid #e5e7ee;
+            }
+            
+        }
+    }
+}
+
+body.home {
+    #header {
+        position: sticky;
+        top: 51px;
+        width: 100%;
+    }
+}
+
+body.sub {
+    #header {
+        position: sticky;
+        width: 100%;
+    }
+}

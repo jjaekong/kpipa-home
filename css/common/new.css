@@ -1,0 +1,444 @@
+/** ==== 공통 영역 ==== **/
+.loginArea {
+    background: #F8FCFF;
+}
+.loginArea > .inner {
+    position: relative;
+    overflow: hidden;
+    padding: 8em 0;
+}
+.memberJoinStep {
+    text-align: center;
+    width: 100%;
+    height: 50px;
+    margin: 0 auto 7.5em auto;
+    position: relative;
+}
+.contentsBox {
+    width: 1525px;
+    box-shadow: rgb(223 223 223) 2px 2px 10px;
+    margin: 0px auto 3em;
+    background: rgb(255, 255, 255);
+    border-radius: 6px;
+    overflow: hidden;
+}
+.contentsBox > .inner {
+    padding: 60px 100px;
+}
+
+.contentsBox > .inner::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/** ====서지정보유통지원시스템 인증 영역 ( SC-000.html )==== **/
+
+.memberJoinStep.step02 > .inner {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width:53%;
+}
+.memberJoinStep > .inner::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.memberJoinStep .step {
+    font-size: 1.6em;
+    font-weight: 700;
+    float: left;
+    position: relative;
+    padding-top: 25px;
+    color: #1B325F;
+}
+.memberJoinStep .step.on {
+    color: #1837AC;
+}
+
+.memberJoinStep .step::after {
+    content: "";
+    display: block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: #fff;
+    border: 1px solid #1B325F;
+    box-sizing: border-box;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.memberJoinStep .step.on::after {
+    border: 1px solid #1837AC;
+    background: #1837AC;
+}
+
+
+.memberJoinStep.step02 .line {
+    width: 125px;
+    margin: 10px 5px 0 5px;
+    float: left;
+    height: 5px;
+    background: url(../../img/new/border-dotted.png) 0 center;
+}
+
+.managementBox .statusTitle{
+    font-size:4em;
+    margin-bottom: 2em;
+    font-weight: 700;
+    color: #1B325F;
+    position: relative;
+}
+
+.managementBox .statusTitle::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 145px;
+    height: 3px;
+    background: #1B325F;
+}
+
+.numbrManagementWrap .contTit{
+    font-size: 3em;
+    font-weight: 700;
+    color: #1B325F;
+    margin-bottom:0.66666em;
+}
+
+
+.numbrManagementWrap .contDesc{
+    border:1px solid #BEBEBE;
+    border-radius: 6px;
+    background-color:#FCFCFC;
+    padding:5em;
+    position:relative;
+}
+
+
+.numbrManagementWrap .contDesc .descTit{
+    color: #1B325F;
+    font-size:2.2em;
+    font-weight: 700;
+    margin-top:1em;
+}
+.numbrManagementWrap .contDesc .textList{
+    margin-top:2.6em;
+    margin-left:6px;
+    margin-bottom:3em;
+}
+.numbrManagementWrap .contDesc .textList li{
+    font-size:1.6em;
+    color:#4B4B4B;
+    margin-bottom:8px;
+    text-indent: -18px;
+    padding-left: 14px;
+}   
+
+.numbrManagementWrap .contDesc .textList li:nth-of-type(1){
+    font-weight: 700;
+}
+
+.numbrManagementWrap .inputCont{
+    width:300px;
+    position:absolute;
+    top:50%;
+    right:50px;
+    transform: translateY(-50%);
+}
+.numbrManagementWrap .inputCont .imgBox{
+    width:224px;
+    margin: 0 auto 20px;
+}
+    
+.numbrManagementWrap .inputCont .input_txt{
+    width:100%;
+    box-sizing: border-box;
+    border:1px solid #B5B5B5;
+    border-radius: 6px;
+    background-color:#FCFCFC;
+    height: 48px;
+    text-indent: 16px;
+    font-size:1.6em;
+    margin-bottom:10px;
+}
+
+.numbrManagementWrap .inputCont .submit_btn{
+    width:100%;
+    box-sizing: border-box;
+    border-radius: 6px;
+    border:1px solid #002F62;
+    background-color:#002F62;
+    height: 48px;
+    font-size:1.6em;
+    color:#fff;
+}
+.managementTable .tableInfoWrap{
+    margin-top:8em;
+    margin-bottom:2.6em;
+}
+.managementTable .tableInfoWrap::after{
+    content:'';
+    display: block;
+    clear: both;
+}
+.managementTable .tableInfoWrap .leftWrap{
+    padding-left:10px;
+}
+.managementTable .tableInfoWrap .leftWrap .totalNum{
+    font-size:1.4em;
+}
+.managementTable .tableInfoWrap .leftWrap .totalNum .color{
+    color:#083E88;
+    font-weight: 700;
+    margin:0 8px;
+}
+.managementTable .tableInfoWrap .rightWrap .allSelectBtn{
+    width: 160px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 1.4em;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    vertical-align: top;
+    float: right;
+    text-indent: 15px;
+    background: url(../../img/new/icon_chk.png) left 30px center no-repeat #002F62;
+}
+
+.managementTable .tableContainer table tr td {
+    border: none;
+}
+.managementTable .tableContainer table tr:last-of-type td {
+    border-bottom:1px solid #E0E0E0;
+}
+
+.managementBox .pageBtnArea{
+    position:relative;
+    height: 100%;
+}
+.managementBox .pageBtnArea .pageBtnBox{
+    width:auto;
+    position: absolute;
+    top:0;
+    left:50%;
+    transform: translateX(-50%);
+    margin: 20px auto 20px auto;
+    overflow: hidden;
+}
+
+.managementBox .pageBtnBox a {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
+    float: left;
+    border-radius: 25px;
+    margin-right: 13px;
+    font-size: 1.3em;
+    font-weight: normal;
+    text-align: center;
+}
+
+.managementBox .pageBtnBox a.on {
+    background: #002F62;
+    color: #fff;
+}
+.managementBox .pageBtnBox .prevSBtn, 
+.managementBox .pageBtnBox .prevBtn, 
+.managementBox .pageBtnBox .nextBtn, 
+.managementBox .pageBtnBox .nextSBtn {
+    width: 16px;
+    height: 16px;
+    margin-top: 4.5px;
+}
+
+.managementBox .pageBtnBox .prevSBtn {
+    background: url(../../img/new/prevSBtn.png) center no-repeat;
+    background-size: cover;
+}
+
+.managementBox .agreeBtnWrap{
+    width: 52em;
+    margin: 12em auto 0 auto;
+}
+.managementBox .agreeBtnWrap::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+.managementBox .agreeBtnWrap .submit, 
+.managementBox .agreeBtnWrap .cancle {
+    float: left;
+    width: 48%;
+    margin-right: 4%;
+    font-size: 1.6em;
+    font-weight: 700;
+    height: 3.5em;
+    line-height: 3.5em;
+}
+.managementBox .agreeBtnWrap a:last-child {
+    margin-right: 0;
+}
+
+.managementBox .pageBtnBox .prevBtn {
+    background: url(../../img/new/prevBtn.png) center no-repeat;
+    background-size: cover;
+}
+.managementBox .pageBtnBox .nextBtn {
+    background: url(../../img/new/nextBtn.png) center no-repeat;
+    background-size: cover;
+}
+.managementBox .pageBtnBox .nextSBtn {
+    background: url(../../img/new/nextSBtn.png) center no-repeat;
+    background-size: cover;
+}
+
+
+/** ==== 출판유통통합전산망 서비스 안내  영역 ( SC-001.html )==== **/
+
+.brbnNone{
+    border-bottom:none !important;
+}
+.serviceInformationWrap .title{
+    background: url(../../img/new/icon_file.png) left center no-repeat ;
+    font-size: 3em;
+    font-weight: 700;
+    color: #1B325F;
+    padding-left:50px;
+}
+.serviceInformationWrap .text_list{
+    padding:40px 0 0px;
+}
+
+.serviceInformationWrap .text_list li{
+    font-size:1.6em;
+    color:#6E6E6E;
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 12px;
+}
+.serviceInformationWrap .text_list li span{
+    color:#012F62;
+    font-weight: 700;
+}
+
+.serviceInformationWrap .text_list li::before {
+    content: "";
+    display: block;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: #6E6E6E;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(0, -50%);
+}
+.serviceInformationWrap .apiBox_list{
+    margin-bottom:7em;
+    margin-top:6em;
+}
+.serviceInformationWrap .apiBox_list::after{
+    content:'';
+    display: block;
+    clear: both;
+}
+.serviceInformationWrap .apiBox_list li {
+    min-width:300px;
+    width:300px;
+    height: 260px;
+    margin-right:40px;
+    border-radius: 8px;
+    float:left;
+    background: url(../../img/new/icon_api.png) right 20px bottom 20px no-repeat #012F62;
+}
+.serviceInformationWrap .apiBox_list li:nth-of-type(2){
+    background: url(../../img/new/icon_api_02.png) right 20px bottom 20px no-repeat #368CE8;
+}
+.serviceInformationWrap .apiBox_list li:nth-of-type(3){
+    background: url(../../img/new/icon_api_03.png) right 20px bottom 20px no-repeat #09C1C1;
+}
+
+.serviceInformationWrap .apiBox_list li a{
+    display: block;
+    height: 100%;
+    width:calc(100% - 40px);
+    padding:20px;
+}
+.serviceInformationWrap .apiBox_list li a span{
+    color:#fff;
+    font-size:2em;
+    font-weight: 700;
+}
+
+/** ==== 출판유통통합전산망 서비스 이용을 위한 간편 설정 안내  영역 ( SC-002.html )==== **/
+.msgDescArea {
+    width:960px;
+    margin-top:6em;
+}
+.msgDescArea li{
+    position: relative;
+    margin-bottom:6em;
+}
+.msgDescArea li .tit{
+    font-size:1.6em;
+    color:#1B325F;
+    font-weight: 700;
+}
+.msgDescArea li .desc{
+    font-size:1.6em;
+    color:#6E6E6E;
+    margin:1em 0 0 0;
+    padding-left:15px;
+    position: relative;
+}
+.msgDescArea li .desc::before {
+    content: "";
+    display: block;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: #6E6E6E;
+    position: absolute;
+    top: 24%;
+    left: 0;
+}
+
+.msgDescArea li:last-of-type .desc::before { top: 50%; transform: translate(0, -50%);}
+
+.msgDescArea li .link_box{
+    position: absolute;
+    right:0;
+    top:0;
+    width:260px;
+    height: 93px;
+    line-height: 93px;
+    border-radius: 8px;
+    background: url(../../img/new/icon_msg.png) center right 20px no-repeat #012F62;
+}
+.msgDescArea li .link_box a{
+    display: block;
+    height: 100%;
+    color:#fff;
+    font-size:1.6em;
+    padding-left:20px;
+    font-weight: 500;
+}
+
+.msgDescArea li:nth-of-type(2) .link_box{
+    background: url(../../img/new/icon_msg_02.png) center right 20px no-repeat #368CE8;
+}
+
+.msgDescArea li:nth-of-type(3) .link_box{
+    background: url(../../img/new/icon_msg_03.png) center right 20px no-repeat #09C1C1;
+}

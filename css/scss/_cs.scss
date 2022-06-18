@@ -1,0 +1,530 @@
+#main.cs {
+    padding-bottom: 100px;
+    .total {
+        @extend .noto;
+        font-size: 15px;
+        margin-bottom: 10px;
+        b {
+            color: $orange;
+            font-weight: 500;
+        }
+    }
+    .search-form {
+        display: flex;
+        margin-bottom: 10px;
+        .btn-search {
+            margin-left: 5px;
+            background: $lightgreen;
+            color: #fff;
+            width: 77px;
+            font-size: 15px;
+        }
+    }
+}
+
+#main.cs.notice {
+    .board-list {
+        .board-list-item {
+            padding-left: 15px;
+            padding-right: 15px;
+            .bi-paperclip {
+                color: $orange;
+            }
+            dl {
+                dd {
+                    &:nth-child(1) {
+                        display: none;
+                    }
+                    &:nth-child(4) {
+                        display: none;
+                    }
+                }
+            }
+            &.notice {
+//                 padding-left: 10px;
+//                 padding-right: 10px;
+                background: #fcfcfc;
+                dl {
+//                     padding-left: 25px;
+//                     position: relative;
+                    dt {
+                        font-weight: 500;
+                    }
+//                     dd {
+//                         &:nth-child(1) {
+//                             display: block;
+//                             position: absolute;
+//                             left: 0;
+//                         }
+//                     }
+                }
+            }
+            @include media-breakpoint-up(xl) {
+                padding-left: 0;
+                padding-right: 0;
+                dl {
+                    dd {
+                        &:nth-of-type(1) {
+                            display: block;
+                        }
+                        &:nth-of-type(3) {
+                            display: block;
+                        }
+                    }
+                }
+                &.notice {
+                    dl {
+                        padding-left: 0;
+                        dd {
+                            &:nth-child(1) {
+                                position: relative;
+                                left: auto;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        @include media-breakpoint-up(xl) {
+            .board-header {
+                padding-right: 20px;
+                > div {
+                    flex: 0 0 auto;
+                    &:first-child {
+                        width: 100px;
+                    }
+                    &:nth-of-type(2) {
+                        flex: 1;
+                    }
+                    &:nth-of-type(3) {
+                        width: 100px;
+                    }
+                    &:last-child {
+                        width: 100px;
+                    }
+                }
+            }
+            .board-list-item {
+                dl {
+                    padding-right: 20px;
+                    dt, dd {
+                        flex: 0 0 auto;
+                    }
+                    dd {
+                        &:first-child {
+                            width: 100px;
+                        }
+                        &:nth-of-type(2) {
+                            width: 100px;
+                        }
+                        &:last-child {
+                            width: 100px;
+                        }
+                    }
+                    dt {
+                        flex: 1;
+                        text-align: left;
+                        padding-left: 20px;
+                    }
+                }
+            }
+        }
+    }
+    .btn-goto-list {
+        margin: 0 auto;
+        background: $orange;
+        color: #fff;
+        width: 109px;
+        height: 50px;
+        font-size: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+    }
+}
+
+#main.cs.faq {
+    
+    .faq-list {
+        @extend .noto, .mb-0;
+        ul {
+            @extend .list-unstyled, .mb-0;
+            border-top: 1px solid black;
+        }
+        li {
+            border-bottom: 1px solid #e8e8e8;
+        }
+    }
+    .faq-item {
+        .faq-header {
+            display: flex;
+            text-decoration: none;
+            align-items: center;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            &::before {
+                content: 'Q';
+                flex: 0 0 auto;
+                width: 35px;
+                text-align: center;
+                font-size: 16px;
+                @extend .s-core;
+                color: $lightgreen;
+                font-weight: 500;
+            }
+            &::after {
+                font-family: 'bootstrap-icons';
+                content: "\f64d";
+                flex: 0 0 auto;
+                width: 40px;
+                text-align: center;
+                margin-left: auto;
+                color: #000;
+                font-size: 20px;
+            }
+            .faq-title {
+                padding-left: 5px;
+                padding-right: 5px;
+                .faq-type {
+                    font-size: 14px;
+                    color: #747474;
+                }
+                .faq-text {
+                    font-size: 16px;
+                    color: #000;
+                }
+            }
+            // &:hover, &:focus {
+            //     background: #f0f0f0;
+            // }
+        }
+        .faq-body {
+            display: none;
+            background: #f8f8f8;
+            overflow-x: auto;
+            .faq-content {
+                font-size: 14px;
+                line-height: 24px;
+                padding: 15px 15px 15px 40px;
+            }
+        }
+        &.open {
+            .faq-header {
+                &::after {
+                    content: "\f63b";
+                    font-size: 20px;
+                }
+                .faq-title {
+                    .faq-text {
+                        color: $orange;
+                    }
+                }
+            }
+            .faq-body {
+                display: block;
+            }
+        }
+        @include media-breakpoint-up(xl) {
+            .faq-header {
+                &::before {
+                    width: 55px;
+                }
+                &::after {
+                    width: 65px;
+                }
+                .faq-title {
+                    padding-left: 30px;
+                    padding-right: 30px;
+                    display: flex;
+                    align-items: center;
+                    .faq-type {
+                        flex: 0 0 auto;
+                        width: 190px;
+                        font-size: 16px;
+                    }
+                }
+            }
+            .faq-body {
+                padding: 30px 40px;
+                .faq-content {
+                    font-size: 15px;
+                    line-height: 24px;
+                    padding-left: 45px;
+                }
+            }
+        }
+    }
+}
+
+#main.cs.archive {
+    .board-list {
+        .board-list-item {
+            padding-left: 15px;
+            padding-right: 15px;
+            .bi-paperclip {
+                color: $orange;
+            }
+            dl {
+                dd {
+                    &:nth-child(1) {
+                        display: none;
+                    }
+                    &:nth-child(4) {
+                        display: none;
+                    }
+                }
+            }
+            &.notice {
+                
+                background: #fcfcfc;
+                dl {
+//                     padding-left: 25px;
+//                     position: relative;
+                    dt {
+                        font-weight: 500;
+                    }
+//                     dd {
+//                         &:nth-child(1) {
+//                             display: block;
+//                             position: absolute;
+//                             left: 0;
+//                         }
+//                     }
+                }
+            }
+            @include media-breakpoint-up(xl) {
+                padding-left: 0;
+                padding-right: 0;
+                dl {
+                    dd {
+                        &:nth-of-type(1) {
+                            display: block;
+                        }
+                        &:nth-of-type(3) {
+                            display: block;
+                        }
+                    }
+                }
+                &.notice {
+                    dl {
+                        padding-left: 0;
+                        dd {
+                            &:nth-child(1) {
+                                position: relative;
+                                left: auto;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        @include media-breakpoint-up(xl) {
+            .board-header {
+                padding-right: 20px;
+                > div {
+                    flex: 0 0 auto;
+                    &:first-child {
+                        width: 100px;
+                    }
+                    &:nth-of-type(2) {
+                        flex: 1;
+                    }
+                    &:nth-of-type(3) {
+                        width: 100px;
+                    }
+                    &:last-child {
+                        width: 100px;
+                    }
+                }
+            }
+            .board-list-item {
+                dl {
+                    padding-right: 20px;
+                    dt, dd {
+                        flex: 0 0 auto;
+                    }
+                    dd {
+                        &:first-child {
+                            width: 100px;
+                        }
+                        &:nth-of-type(2) {
+                            width: 100px;
+                        }
+                        &:last-child {
+                            width: 100px;
+                        }
+                    }
+                    dt {
+                        flex: 1;
+                        text-align: left;
+                        padding-left: 20px;
+                    }
+                }
+            }
+        }
+    }
+    .btn-goto-list {
+        margin: 0 auto;
+        background: $orange;
+        color: #fff;
+        width: 109px;
+        height: 50px;
+        font-size: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+    }
+}
+
+#main.cs.lecture {
+    .board-list {
+        .board-list-item {
+            padding-left: 15px;
+            padding-right: 15px;
+            .bi-paperclip {
+                color: $orange;
+            }
+            dl {
+                dd {
+                    &:nth-child(1) {
+                        display: none;
+                    }
+                    &:nth-child(4) {
+                        display: none;
+                    }
+                }
+            }
+            @include media-breakpoint-up(xl) {
+                padding-left: 0;
+                padding-right: 0;
+                dl {
+                    dd {
+                        &:nth-of-type(1) {
+                            display: block;
+                        }
+                        &:nth-of-type(3) {
+                            display: block;
+                        }
+                    }
+                }
+                &.notice {
+                    padding-left: 0;
+                    padding-right: 0;
+                    dl {
+                        padding-left: 0;
+                        dd {
+                            &:nth-child(1) {
+                                position: relative;
+                                left: auto;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        @include media-breakpoint-up(xl) {
+            .board-header {
+                padding-right: 20px;
+                > div {
+                    flex: 0 0 auto;
+                    &:first-child {
+                        width: 100px;
+                    }
+                    &:nth-of-type(2) {
+                        flex: 1;
+                    }
+                    &:nth-of-type(3) {
+                        width: 100px;
+                    }
+                    &:last-child {
+                        width: 100px;
+                    }
+                }
+            }
+            .board-list-item {
+                dl {
+                    padding-right: 20px;
+                    dt, dd {
+                        flex: 0 0 auto;
+                    }
+                    dd {
+                        &:first-child {
+                            width: 100px;
+                        }
+                        &:nth-of-type(2) {
+                            width: 100px;
+                        }
+                        &:last-child {
+                            width: 100px;
+                        }
+                    }
+                    dt {
+                        flex: 1;
+                        text-align: left;
+                        padding-left: 20px;
+                    }
+                }
+            }
+        }
+    }
+    .contents-table {
+        margin-top: 25px;
+        border-top: 1px solid black;
+        h4 {
+            border-bottom: 1px solid #e8e8e8;
+            background-color: #f8f8f8;
+            font-size: 15px;
+            padding: 15px 20px;
+            margin-bottom: 0;
+        }
+        > ol {
+            @extend .list-unstyled;
+            margin-bottom: 0;
+            > li {
+                border-bottom: 1px solid #ddd;
+            }
+        }
+        .contents-item {
+            font-size: 15px;
+            display: block;
+            padding: 15px 20px;
+            color: #000;
+            text-decoration: none;
+            min-height: 75px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            .contents-title {
+                font-size: 15px;
+            }
+            .contents-desc {
+                > div {
+                    margin-top: 5px;
+                    font-weight: 500;
+                }
+            }
+        }
+        @include media-breakpoint-up(lg) {
+            margin-top: 0;
+            margin-left: 45px;
+        }
+    }
+    .btn-goto-list {
+        margin: 0 auto;
+        background: $orange;
+        color: #fff;
+        width: 109px;
+        height: 50px;
+        font-size: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+    }
+}
+
+.no-data-wrapper {
+    margin-bottom: 0 !important;
+}

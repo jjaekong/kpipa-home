@@ -1,0 +1,520 @@
+.leftMenu {
+    width: 250px;
+    background: #fff;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    transition: all 0.3s;
+    float: left;
+    height: calc(100vh - 72px);
+    overflow-y: scroll;
+    z-index: 2000;
+}
+
+.leftMenu.on {
+    height: calc(100vh - 52px);
+}
+
+.leftMenu.bottom {
+    bottom: 161px;
+    height: calc(100vh - 233px);
+}
+
+.leftMenu.hide {
+    margin-left: -290px;
+    transition: all 0.3s;
+}
+
+.leftMenu > .inner {
+    padding: 15px 14px 20px 14px;
+    overflow: hidden;
+}
+
+.leftBtn {
+    position: fixed;
+    top: 112px;
+    left: 250px;
+    width: 20px;
+    height: 70px;
+    background: #fff;
+    border-radius: 0 6px 6px 0;
+    transition: all 0.3s;
+    z-index: 999;
+    box-shadow: 1px 1px 2px #dfdfdf;
+}
+
+.leftBtn.on {
+    left: 0;
+    transition: all 0.3s;
+}
+
+.leftBtn img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 7px;
+    height: 12px;
+}
+
+.leftBtn.on img {
+    transform: translate(-50%, -50%) rotate(180deg);
+    transition: all 0.3s;
+}
+
+.myInfo {
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+
+.myInfo::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+.myInfo .profileImg {
+    width: 54px;
+    height: 54px;
+    border-radius: 50px;
+    overflow: hidden;
+    margin: auto;
+    display: block;
+}
+
+.myInfo .name {
+    margin-top: 12px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #fff;
+    text-align: center;
+}
+
+.myInfo .name span {
+    color: #fff;
+}
+
+.myInfo .myInfoBtn {
+    width: 181px;
+    margin: 30px auto 0 auto;
+}
+
+.myInfo .myInfoBtn a {
+    display: inline-block;
+    float: left;
+    width: 84px;
+    height: 24px;
+    line-height: 22px;
+    text-align: center;
+    color: #fff;
+    border: 1px solid #fff;
+    box-sizing: border-box;
+    border-radius: 17px;
+    font-size: 12px;
+}
+
+.myInfo .myInfoBtn a:last-child {
+    margin-left: 13px;
+}
+
+.leftMenu .dept1 > li {
+    height: auto;
+    max-height: 56px;
+    line-height: 56px;
+    text-indent: 30px;
+    font-weight: 400;
+    overflow: hidden;
+    position: relative;
+    border-radius: 8px;
+}
+
+.leftMenu .dept1 > li.on {
+    max-height: 1500px;
+    transition: 0.5s;
+}
+
+.leftMenu .dept1 > li.on > a {
+    background: url(../../img/common/menu_list_icon.png) 20px center no-repeat #DFEEFF;
+}
+
+.leftMenu .dept1 .listArrow {
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    top: 17px;
+    right: 14px;
+    background: url(../../img/common/dept_arrow.png) center no-repeat;
+    background-size: 16px;
+    transition: all 0.3s;
+}
+
+.leftMenu .dept1 > li.on .dept2 li {
+    height: auto;
+    line-height: 44px;
+    min-height: 44px;
+    max-height: 44px;
+    overflow: hidden;
+}
+
+.leftMenu .dept1 > li.on .dept2 li.deptOn > a::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 17px;
+    transform: translate(0, -50%);
+    width: 2px;
+    height: 6px;
+    background: #002f62;
+    border-radius: 10px;
+}
+
+.leftMenu .dept1 > li.on .dept2 li.deptOn > a.on::after {
+    content: "";
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 17px;
+    transform: translate(0, -50%);
+    width: 2px;
+    height: 6px;
+    background: #002f62;
+    border-radius: 10px;
+}
+
+.leftMenu .dept2 > li.on .dept3 li.deptOn > a::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 17px;
+    transform: translate(0, -50%);
+    width: 2px;
+    height: 6px;
+    background: #002f62;
+    border-radius: 10px;
+}
+
+.leftMenu .dept2 > li.on .dept3 li.deptOn > a.on::after {
+    content: "";
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 17px;
+    transform: translate(0, -50%);
+    width: 2px;
+    height: 6px;
+    background: #002f62;
+    border-radius: 10px;
+}
+
+.leftMenu .dept1 > li.on .dept2 li.on {
+    max-height: 1000px;
+    transition: 0.5s;
+}
+
+
+.leftMenu .dept1 > li.on .dept2 li a {
+    font-size: 1.4em;
+    color: #000;
+    padding-left: 0;
+    position: relative;
+    text-indent: 32px;
+}
+
+.leftMenu .dept1 > li.on .dept2 li a::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translate(0, -50%);
+    width: 6px;
+    height: 2px;
+    background: #000;
+    border-radius: 10px;
+}
+
+.leftMenu .dept1 > li.on .dept2 li a.on::before {
+    background: #002F62;
+}
+
+.leftMenu .dept1 > li.on .dept2 li a.on {
+    color: #002F62;
+    font-weight: 700;
+}
+.leftMenu .dept2 > li .dept3 {
+	display:none;
+}
+.leftMenu .dept2 > li.on .dept3 {
+	display:block;
+}
+
+
+.leftMenu .dept2 > li.on .dept3 li {
+    height: auto;
+    line-height: 44px;
+}
+
+.leftMenu .dept2 > li.on .dept3 li a {
+    font-size: 1.4em;
+    color: #000;
+    text-indent: 45px;
+    position: relative;
+}
+
+.leftMenu .dept2 > li.on .dept3 li a::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 30px;
+    transform: translate(0, -50%);
+    width: 6px;
+    height: 2px;
+    background: #000;
+    border-radius: 10px;
+}
+
+.leftMenu .dept2 > li.on .dept3 li a.on::before {
+    background: #002F62;
+}
+
+.leftMenu .dept2 > li.on .dept3 li a.on {
+    color: #002F62;
+}
+
+.leftMenu .dept3 > li.on .dept4 li a {
+    text-indent: 58px;
+}
+
+.leftMenu .dept3 > li.on .dept4 li a::before {
+    left: 45px;
+}
+
+.leftMenu .dept1 > li.on .listArrow {
+    transform: rotate(180deg);
+    transition: all 0.3s;
+}
+
+.leftMenu .dept1 li a {
+    color: #000;
+    font-size: 1.5em;
+    line-height:3em;
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding-left: 20px;
+    cursor:pointer;
+}
+
+.leftMenu .dept1 > li > a {
+    background: url(../../img/common/menu_list_icon.png) 20px center no-repeat;
+    background-size: 15px 13px;
+}
+
+.leftMenu .dept1 > li > a.icon_01{
+    background: url(../../img/common/subMenuIcon_01.png) 16px center no-repeat;
+    background-size: 24px;
+}
+
+.leftMenu .dept1 > li > a.icon_02{
+    background: url(../../img/common/subMenuIcon_02.png) 16px center no-repeat;
+    background-size: 24px;
+}
+
+.leftMenu .dept1 > li > a.icon_03{
+    background: url(../../img/common/subMenuIcon_03.png) 16px center no-repeat;
+    background-size: 24px;
+}
+
+.leftMenu .dept1 > li > a.icon_04{
+    background: url(../../img/common/subMenuIcon_04.png) 16px center no-repeat;
+    background-size: 24px;
+}
+
+.leftMenu .dept1 > li > a.icon_05{
+    background: url(../../img/common/subMenuIcon_05.png) 16px center no-repeat;
+    background-size: 24px;
+}
+
+.leftMenu .dept1 > li > a.icon_06{
+    background: url(../../img/common/subMenuIcon_06.png) 16px center no-repeat;
+    background-size: 24px;
+}
+
+.leftMenu .dept1 > li > a.icon_07{
+    background: url(../../img/common/subMenuIcon_07.png) 16px center no-repeat;
+    background-size: 24px;
+}
+
+.leftMenu .dept1 > li > a.icon_08{
+    background: url(../../img/common/subMenuIcon_08.png) 16px center no-repeat;
+    background-size: 24px;
+}
+
+.leftMenu .dept1 > li > a.icon_09{
+    background: url(../../img/common/subMenuIcon_09.png) 16px center no-repeat;
+    background-size: 24px;
+}
+
+.leftMenu .dept1 > li > a.icon_10{
+    background: url(../../img/common/subMenuIcon_10.png) 16px center no-repeat;
+    background-size: 24px;
+}
+
+.leftMenu .dept1 .dept2 {
+    display: none;
+}
+
+.leftMenu .dept1 .dept2 li {
+    background: #DFEEFF;
+}
+
+.leftMenu .dept1 .dept2 li:last-child {
+    padding-bottom: 10px;
+}
+
+.leftMenu .dept1 > li.on .dept2 {
+    display: block;
+}
+
+.menuInfoWrap {
+    margin-top: 2em;
+}
+
+.menuInfoWrap > div {
+    float: left;
+    width: 48%;
+    margin-right: 4%;
+}
+
+.menuInfoWrap > div:last-child {
+    margin-right: 0;
+}
+
+.menuInfoWrap .call {
+    background: url(../../img/common/call.png) 12px 12px no-repeat rgba(68, 74, 100, 0.5);
+    background-size: 18px;
+}
+
+.menuInfoWrap .mail {
+    background: url(../../img/common/mail.png) 12px 12px no-repeat rgba(68, 74, 100, 0.5);
+    background-size: 18px;
+}
+
+.menuInfoWrap .menuInfo {
+    padding-bottom: 17px;
+}
+
+.menuInfoWrap p {
+    text-indent: 12px;
+    color: #fff;
+}
+
+.menuInfoWrap .tit {
+    font-size: 1.4em;
+    font-weight: 700;
+    padding-top: 35px;
+}
+
+.menuInfoWrap .sub1 {
+    font-size: 12px;
+    font-weight: 400;
+    margin-top: 20px;
+}
+
+.menuInfoWrap .sub2 {
+    font-size: 10px;
+    font-weight: 400;
+    margin-top: 2px;
+}
+
+.leftMenu::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+
+.leftMenu::-webkit-scrollbar-track {
+    background-color: #fff;
+}
+
+.leftMenu::-webkit-scrollbar-thumb {
+    border-radius: 6px;
+    background-color: #8E95A8;
+}
+
+.leftMenu::-webkit-scrollbar-button {
+    width: 0;
+    height: 0;
+}
+
+.leftMenu .user {
+    position: relative;
+    height: 95px;
+    box-sizing: border-box;
+    padding: 24px 0 22px 55px;
+}
+
+.leftMenu .user i {
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    position: absolute;
+    top: 20px;
+    left: 0;
+}
+.leftMenu .user i img{
+	width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.leftMenu .user .name {
+    display: block;
+    font-weight: bold;
+    font-size: 14px;
+    color: #333;
+    margin-left: 5px;
+    max-width:90px;
+}
+
+.leftMenu .user .name b {
+    color: #394263;
+    max-width: 75px;
+    overflow: hidden;
+    display: inline-block;
+    float: left;
+    box-sizing: border-box;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.leftMenu .user .publisher {
+    color: #333;
+    font-size: 13px;
+    line-height:18px;
+    margin-top: 4px;
+    max-height: 34px;
+    max-width: 155px;
+    margin-left: 5px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+.leftMenu .user a {
+    width: 56px;
+    height: 25px;
+    border-radius: 3px;
+    background: #1D348B;
+    display: inline-block;
+    text-align: center;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 25px;
+    color: #fff;
+    position: absolute;
+    right: 5px;
+    top: 20px;
+}

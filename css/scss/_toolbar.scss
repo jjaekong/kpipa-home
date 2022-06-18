@@ -1,0 +1,67 @@
+#toolbar {
+    border-bottom: 1px solid #e5e7ee;
+    background-color: #fff;
+    z-index: 900;
+    .cs {
+        font-size: 14px;
+        height: 50px;
+        dt {
+            font-weight: 400;
+            i {
+                font-size: 1.2rem;
+            }
+        }
+        dd {
+            font-weight: 400;
+            a {
+                color: $orange;
+            }
+        }
+    } 
+    .util {
+        text-underline-position: under;
+        .user {
+            color: #000;
+            span {
+                color: #468500;
+            }
+        }
+        .log {
+            color: #000;
+        }
+        .quick {
+            #quick-menu {
+                border-left: 1px solid #eee;
+                color: #000;
+                span {
+                    border-left: 1px solid #eee;
+                    line-height: 10px;
+                }
+            }
+            .dropdown-item {
+                text-decoration: none;
+                font-size: 13px;
+                &:active {
+                    background: $lightgreen;
+                }
+            }
+        }
+        .admin {
+            background-color: #9d9d9d;
+            color: white;
+            height: 28px;
+            text-decoration: none;
+            &:hover, &:focus {
+                background-color: #7f7f7f;
+            }
+        }
+    }
+}
+
+body.home {
+    #toolbar {
+        position: sticky;
+        top: 0;
+        width: 100%;
+    }
+}

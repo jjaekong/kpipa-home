@@ -1,0 +1,559 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="/css/style.css" rel="stylesheet">
+    <link href="/css/publisher.css" rel="stylesheet"><!-- 도서정보 검색 > 출판사 메뉴를 위한 CSS-->
+    <link href="/css/swiper-bundle.min.css" rel="stylesheet">
+
+    <title>출판유통통합전산망</title>
+</head>
+
+<body>
+
+    <!-- 컨텐츠 -->
+    <!--
+        페이지별 구분자(클래스) 필요.
+        대메뉴별 구분자.
+        - 홍보서비스: pr
+        - 전체도서: library-details
+    -->
+    <main id="main" class="pr library-details bg-white">
+
+        <div class="menu-title-box px-3 py-4 py-xl-5">
+            <div class="container">
+                <div class="row align-items-lg-center">
+                    <div class="col-auto col-lg-1"></div>
+                    <div class="col-12 col-lg-10">
+                        <h1 class="menu-title mb-0 text-center py-2 py-xl-4">
+                            <a href="#">도서출판 길벗</a>
+                        </h1>
+                    </div>
+                    <div class="col-12 col-lg-1 d-flex justify-content-end">
+                        <div class="publisher-share">
+                            <ul class="list-unstyled d-flex mb-0">
+                                <li><a href="#"><i class="bi bi-printer"></i></a></li>
+                                <li><a href="#">URL</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="publisher-info-wrapper px-3 px-xl-0">
+            <div class="container">
+                <div class="publisher-thumb">
+                    <div class="swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img class="d-block w-100" src="../img/publisher/img_publisher_thumbnail.jpg">
+                            </div>
+                            <div class="swiper-slide">
+                                <img class="d-block w-100" src="../img/publisher/img_publisher_thumbnail.jpg">
+                            </div>
+                            <div class="swiper-slide">
+                                <img class="d-block w-100" src="../img/publisher/img_publisher_thumbnail.jpg">
+                            </div>
+                        </div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                    </div>
+                </div>
+                <div class="publisher-summary d-sm-flex">
+                    <img class="publisher-logo align-self-sm-start d-block mx-auto me-sm-3" src="https://picsum.photos/id/684/600/400" alt="출판사 로고">
+                    <div class="publisher-desc">
+                        1990년 (주)도서출판 길벗으로 출발하여 ‘인터넷 무작정 따라하기’가 컴퓨터 부문 베스트셀러 1위를 기록하는 등 여러분들의 사랑으로 꾸준히 성장하며 컴퓨터/인터넷 분야뿐 아니라 경제/경영, 인문, 취미, 여행 등 다양한 분야로 영역을 넓혔습니다. 이를 바탕으로 ‘무작정 따라하기’를 어학분야에 접목해 2000년 이지톡 설립(2019년 ‘도서출판 길벗’과 통합)하고 2006년 어린이 전문 출판을 위해 길벗스쿨을 설립했습니다. 오늘의 길벗은 독자가 있었기에 가능했다는 것을 잊지 않고 더 나은 미래를 만들기 위해 2021년, 새로운 미션과 가치로 다시 시작합니다.
+
+                    </div>
+                </div>
+                <div class="publisher-share d-flex justify-content-end">
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="home"><i class="bi bi-house-door"></i></a></li>
+                        <li><a href="#"><img src="../img/ico_facebook@3x.png"></a></li>
+                        <li><a href="#"><i class="bi bi-twitter"></i></a></li>
+                        <li><a href="#"><i class="bi bi-youtube"></i></a></li>
+                        <li><a href="#"><img class="mt-1" src="../img/ico_naver_blog@3x.png"></a></li>
+                        <li><a href="#"><img src="../img/ico_naver_cafe@3x.png"></i></a></li>
+                        <li><a href="#"><i class="bi bi-instagram"></i></a></li>                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="list-header-wrapper px-3 px-xl-0 mb-3">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-auto">
+                        <h4>출판사 추천도서</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="recommend-list-wrapper px-3 px-xl-0">
+            <div class="container">
+                <div class="recommend-book-list">
+                    <div class="swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="recommend-book-item">
+                                    <div class="book-cover">
+                                        <img src="https://picsum.photos/200/300">
+                                    </div>
+                                    <div class="book-info">
+                                        <img class="quote" src="../img/ico_quote.png">
+                                        <div class="summary">
+                                            한국 최초의 리필스테이션으로 언론의 주목을 받아온 알맹이만 파는 가게, ‘알맹상점’ 세 명의 공동 대표가 쓴 첫 책이 출간되었다. 동네 시장의 비닐봉지 플라스틱 사용을 줄이고 싶어 모인 ‘쓰레기 덕후’들이 어쩌다 사장이 되기까지의 고군분투기, 쓰레기를 하나라도 더 자원으로 활용하기 위해 하고 있는 현재진행형의 노력들, 시민들과 함께 목소리를 모아 기업과 국가를 변화시키고 있는 캠페인, 그리고 상점에서 판매하는 ‘가치 소비’를 돕는 물건들까지 상점의 모든 이야기를 한 권의 책에 꾹꾹 눌러 담았다.
+                                        </div>
+                                        <div class="tags">
+                                            <ul class="list-unstyled mb-0 d-flex">
+                                                <li>#추천</li>
+                                                <li>#제로이스트</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="recommend-book-item">
+                                    <div class="book-cover">
+                                        <img src="https://picsum.photos/200/300">
+                                    </div>
+                                    <div class="book-info">
+                                        <img class="quote" src="../img/ico_quote.png">
+                                        <div class="summary">
+                                            한국 최초의 리필스테이션으로 언론의 주목을 받아온 알맹이만 파는 가게, ‘알맹상점’ 세 명의 공동 대표가 쓴 첫 책이 출간되었다. 동네 시장의 비닐봉지 플라스틱 사용을 줄이고 싶어 모인 ‘쓰레기 덕후’들이 어쩌다 사장이 되기까지의 고군분투기, 쓰레기를 하나라도 더 자원으로 활용하기 위해 하고 있는 현재진행형의 노력들, 시민들과 함께 목소리를 모아 기업과 국가를 변화시키고 있는 캠페인, 그리고 상점에서 판매하는 ‘가치 소비’를 돕는 물건들까지 상점의 모든 이야기를 한 권의 책에 꾹꾹 눌러 담았다.
+                                        </div>
+                                        <div class="tags">
+                                            <ul class="list-unstyled mb-0 d-flex">
+                                                <li>#추천</li>
+                                                <li>#제로이스트</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="recommend-book-item">
+                                    <div class="book-cover">
+                                        <img src="https://picsum.photos/200/300">
+                                    </div>
+                                    <div class="book-info">
+                                        <img class="quote" src="../img/ico_quote.png">
+                                        <div class="summary">
+                                            한국 최초의 리필스테이션으로 언론의 주목을 받아온 알맹이만 파는 가게, ‘알맹상점’ 세 명의 공동 대표가 쓴 첫 책이 출간되었다. 동네 시장의 비닐봉지 플라스틱 사용을 줄이고 싶어 모인 ‘쓰레기 덕후’들이 어쩌다 사장이 되기까지의 고군분투기, 쓰레기를 하나라도 더 자원으로 활용하기 위해 하고 있는 현재진행형의 노력들, 시민들과 함께 목소리를 모아 기업과 국가를 변화시키고 있는 캠페인, 그리고 상점에서 판매하는 ‘가치 소비’를 돕는 물건들까지 상점의 모든 이야기를 한 권의 책에 꾹꾹 눌러 담았다.
+                                        </div>
+                                        <div class="tags">
+                                            <ul class="list-unstyled mb-0 d-flex">
+                                                <li>#추천</li>
+                                                <li>#제로이스트</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="list-header-wrapper px-3 px-xl-0 mb-3">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-auto">
+                        <h4>판매량 높은 도서</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="book-list-wrapper px-3 px-xl-0">
+            <div class="container">
+                <div class="book-grid-list">
+                    <ul class="mb-0 list-unstyled d-flex">
+                        <li>
+                            <a href="/pr/book_details.html" class="book-grid-item">
+                                <div class="figure">
+                                    <img src="/img/dummy_book_cover.jpg">
+                                    <div class="info">
+                                        <div class="mb-1 number">979-11-90898-29-4</div>
+                                        <div class="mb-1 publisher">도서출판 해솔해솔</div>
+                                        <div class="mb-1 writer">저자</div>
+                                        <div class="mb-1 category">어린이, 청소년 , 학습</div>
+                                        <div class="mb-1 date">2021-09-30</div>
+                                        <div class="mb-1 count">대출건수: 1201건</div>
+                                    </div>
+                                    <div class="rank-badge pink">
+                                        200
+                                    </div>
+                                </div>
+                                <div class="figcaption">
+                                    대한민국 파이어족 서바이벌
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/pr/book_details.html" class="book-grid-item">
+                                <div class="figure">
+                                    <img src="/img/dummy_book_cover.jpg">
+                                    <div class="info">
+                                        <div class="mb-1 number">979-11-90898-29-4</div>
+                                        <div class="mb-1 publisher">도서출판 해솔해솔</div>
+                                        <div class="mb-1 writer">저자</div>
+                                        <div class="mb-1 category">어린이, 청소년 , 학습</div>
+                                        <div class="mb-1 date">2021-09-30</div>
+                                        <div class="mb-1 count">대출건수: 1201건</div>
+                                    </div>
+                                    <div class="rank-badge pink">
+                                        200
+                                    </div>
+                                </div>
+                                <div class="figcaption">
+                                    대한민국 파이어족 서바이벌
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/pr/book_details.html" class="book-grid-item">
+                                <div class="figure">
+                                    <img src="/img/dummy_book_cover.jpg">
+                                    <div class="info">
+                                        <div class="mb-1 number">979-11-90898-29-4</div>
+                                        <div class="mb-1 publisher">도서출판 해솔해솔</div>
+                                        <div class="mb-1 writer">저자</div>
+                                        <div class="mb-1 category">어린이, 청소년 , 학습</div>
+                                        <div class="mb-1 date">2021-09-30</div>
+                                        <div class="mb-1 count">대출건수: 1201건</div>
+                                    </div>
+                                    <div class="rank-badge pink">
+                                        200
+                                    </div>
+                                </div>
+                                <div class="figcaption">
+                                    대한민국 파이어족 서바이벌
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/pr/book_details.html" class="book-grid-item">
+                                <div class="figure">
+                                    <img src="/img/dummy_book_cover.jpg">
+                                    <div class="info">
+                                        <div class="mb-1 number">979-11-90898-29-4</div>
+                                        <div class="mb-1 publisher">도서출판 해솔해솔</div>
+                                        <div class="mb-1 writer">저자</div>
+                                        <div class="mb-1 category">어린이, 청소년 , 학습</div>
+                                        <div class="mb-1 date">2021-09-30</div>
+                                        <div class="mb-1 count">대출건수: 1201건</div>
+                                    </div>
+                                    <div class="rank-badge pink">
+                                        200
+                                    </div>
+                                </div>
+                                <div class="figcaption">
+                                    대한민국 파이어족 서바이벌
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/pr/book_details.html" class="book-grid-item">
+                                <div class="figure">
+                                    <img src="/img/dummy_book_cover.jpg">
+                                    <div class="info">
+                                        <div class="mb-1 number">979-11-90898-29-4</div>
+                                        <div class="mb-1 publisher">도서출판 해솔해솔</div>
+                                        <div class="mb-1 writer">저자</div>
+                                        <div class="mb-1 category">어린이, 청소년 , 학습</div>
+                                        <div class="mb-1 date">2021-09-30</div>
+                                        <div class="mb-1 count">대출건수: 1201건</div>
+                                    </div>
+                                    <div class="rank-badge pink">
+                                        200
+                                    </div>
+                                </div>
+                                <div class="figcaption">
+                                    대한민국 파이어족 서바이벌
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/pr/book_details.html" class="book-grid-item">
+                                <div class="figure">
+                                    <img src="/img/dummy_book_cover.jpg">
+                                    <div class="info">
+                                        <div class="mb-1 number">979-11-90898-29-4</div>
+                                        <div class="mb-1 publisher">도서출판 해솔해솔</div>
+                                        <div class="mb-1 writer">저자</div>
+                                        <div class="mb-1 category">어린이, 청소년 , 학습</div>
+                                        <div class="mb-1 date">2021-09-30</div>
+                                        <div class="mb-1 count">대출건수: 1201건</div>
+                                    </div>
+                                    <div class="rank-badge pink">
+                                        200
+                                    </div>
+                                </div>
+                                <div class="figcaption">
+                                    대한민국 파이어족 서바이벌
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="list-header-wrapper px-3 px-xl-0 mb-3">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-auto">
+                        <h4>도서 카탈로그<span>(24)</span></h4>
+                    </div>
+                    <div class="col-auto ms-auto">
+                        <a class="more" href="#">전체보기<i class="bi bi-plus"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="catalog-list-wrapper px-3 px-xl-0">
+            <div class="container">
+                <div class="catalog-grid-list">
+                    <ul class="list-unstyled">
+                        <li>/components/catalog_grid_item.html</li>
+                        <li>/components/catalog_grid_item.html</li>
+                        <li>/components/catalog_grid_item.html</li>
+                        <li>/components/catalog_grid_item.html</li>
+                        <li>/components/catalog_grid_item.html</li>
+                        <li>/components/catalog_grid_item.html</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <div class="published-status-wrapper px-3 px-xl-0">
+            <div class="container">
+                <div class="list-header-wrapper mb-3">
+                    <div class="row align-items-center">
+                        <div class="col-auto">
+                            <h4>출간 현황</h4>
+                        </div>
+                        <div class="col-auto">
+                            <ul class="nav mb-0 d-flex rounded-pill" role="tablist">
+                                <li role="presentation">
+                                    <a class="d-flex align-items-center justify-content-center w-100 h-100 active rounded-pill" href="#published-status-all" data-bs-toggle="pill" role="tab">전체</a>
+                                </li>
+                                <li role="presentation">
+                                    <a class="d-flex align-items-center justify-content-center w-100 h-100 rounded-pill" href="#published-status-recently" data-bs-toggle="pill" role="tab">최근 1년</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-content published-status">
+                    <div class="tab-pane fade show active" id="published-status-all">
+                        <div class="period">
+                            <dl class="d-flex mb-0">
+                                <dt>조회기간</dt>
+                                <dd>2021.09.29 ~ 2021.10.05</dd>
+                            </dl>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 col-lg-7">
+                                <div class="graph-wrapper">
+                                    <h5>주제분류별 주요 출간도서 비율</h5>
+                                    <div class="graph">
+                                        <img src="../img/publisher/dummy_graph.jpg">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-5">
+                                <div class="table-wrapper">
+                                    <h5>주제분류별 주요 출간도서 현황</h5>
+                                    <table class="table table-bordered table-hover data-table">
+                                        <colgroup>
+                                            <col style="width: 60%">
+                                            <col style="width: 40%">
+                                        </colgroup>
+                                        <tbody>
+                                            <tr>
+                                                <th>사회, 사회과학</th>
+                                                <td>31%</td>
+                                            </tr>
+                                            <tr>
+                                                <th>참고서적, 정보, 학제적 주제</th>
+                                                <td>31%</td>
+                                            </tr>
+                                            <tr>
+                                                <th>예술</th>
+                                                <td>31%</td>
+                                            </tr>
+                                            <tr>
+                                                <th>인물, 문학, 문학연구</th>
+                                                <td>31%</td>
+                                            </tr>
+                                            <tr>
+                                                <th>언어, 언어학</th>
+                                                <td>31%</td>
+                                            </tr>
+                                            <tr>
+                                                <th>역사, 고고학</th>
+                                                <td>31%</td>
+                                            </tr>
+                                            <tr>
+                                                <th>어린이, 청소년, 학습</th>
+                                                <td>31%</td>
+                                            </tr>
+                                            <tr>
+                                                <th>생활, 취미, 레저</th>
+                                                <td>31%</td>
+                                            </tr>
+                                            <tr>
+                                                <th>컴퓨터, 정보기술</th>
+                                                <td>31%</td>
+                                            </tr>
+                                            <tr>
+                                                <th>스포츠, 아웃도어활동</th>
+                                                <td>31%</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="published-status-recently">
+                        <div class="period">
+                            <dl class="d-flex mb-0">
+                                <dt>조회기간</dt>
+                                <dd>2021.09.29 ~ 2021.10.05</dd>
+                            </dl>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 col-lg-7">
+                                <div class="graph-wrapper">
+                                    <h5>주제분류별 주요 출간도서 비율</h5>
+                                    <div class="graph">
+                                        <img src="../img/publisher/dummy_graph.jpg">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-5">
+                                <div class="table-wrapper">
+                                    <h5>주제분류별 주요 출간도서 현황</h5>
+                                    <table class="table table-bordered table-hover data-table">
+                                        <colgroup>
+                                            <col style="width: 60%">
+                                            <col style="width: 40%">
+                                        </colgroup>
+                                        <tbody>
+                                            <tr>
+                                                <th>사회, 사회과학</th>
+                                                <td>31%</td>
+                                            </tr>
+                                            <tr>
+                                                <th>참고서적, 정보, 학제적 주제</th>
+                                                <td>31%</td>
+                                            </tr>
+                                            <tr>
+                                                <th>예술</th>
+                                                <td>31%</td>
+                                            </tr>
+                                            <tr>
+                                                <th>인물, 문학, 문학연구</th>
+                                                <td>31%</td>
+                                            </tr>
+                                            <tr>
+                                                <th>언어, 언어학</th>
+                                                <td>31%</td>
+                                            </tr>
+                                            <tr>
+                                                <th>역사, 고고학</th>
+                                                <td>31%</td>
+                                            </tr>
+                                            <tr>
+                                                <th>어린이, 청소년, 학습</th>
+                                                <td>31%</td>
+                                            </tr>
+                                            <tr>
+                                                <th>생활, 취미, 레저</th>
+                                                <td>31%</td>
+                                            </tr>
+                                            <tr>
+                                                <th>컴퓨터, 정보기술</th>
+                                                <td>31%</td>
+                                            </tr>
+                                            <tr>
+                                                <th>스포츠, 아웃도어활동</th>
+                                                <td>31%</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="px-3 px-xl-0 mb-3">
+            <div class="container">
+                <a class="goto-all-books" href="#">
+                    <span>도서출판 길벗</span>의 도서 전체보기
+                </a>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- 퍼블리싱용 JS: 개발에 적용하지 말아주세요. -->
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="/js/template.sub.js"></script>
+    <script>
+        window.addEventListener('DOMContentLoaded', function() {
+
+            // 책 리스트에 항목 추가(그리드 타입)
+            const catalogGridList = document.querySelectorAll('.catalog-grid-list li')
+            if (catalogGridList.length > 0) {
+                axios.get('/components/catalog_grid_item.html')
+                .then(res => {
+                    catalogGridList.forEach(li => {
+                        li.innerHTML = res.data
+                    })
+                })
+                
+            }
+        })
+    </script>
+
+    <!-- 페이지 JS -->
+    <script defer>
+        window.addEventListener('load', function() {
+            const publisherThumbSwiper = new Swiper('.publisher-thumb .swiper', {
+                loop: true,
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+            });
+
+            const recommendListSwiper = new Swiper('.recommend-book-list .swiper', {
+                loop: true,
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+            });
+        });
+    </script>
+
+</body>
+
+</html>

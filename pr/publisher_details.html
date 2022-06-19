@@ -326,12 +326,78 @@
             <div class="container">
                 <div class="catalog-grid-list">
                     <ul class="list-unstyled">
-                        <li>/components/catalog_grid_item.html</li>
-                        <li>/components/catalog_grid_item.html</li>
-                        <li>/components/catalog_grid_item.html</li>
-                        <li>/components/catalog_grid_item.html</li>
-                        <li>/components/catalog_grid_item.html</li>
-                        <li>/components/catalog_grid_item.html</li>
+                        <li>
+                            <a href="/pr/catalog_details.html" class="catalog-grid-item">
+                                <div class="figure ratio ratio-2x3">
+                                    <img src="https://picsum.photos/id/684/300/300" alt="">
+                                </div>
+                                <div class="figcaption">
+                                    <div class="title"><h4 class="mb-0">대한민국 파이어족 서바이벌</h4></div>
+                                    <div class="publisher">도서출판 해솔해솔</div>
+                                    <div class="date">2021-09-30</div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/pr/catalog_details.html" class="catalog-grid-item">
+                                <div class="figure ratio ratio-2x3">
+                                    <img src="https://picsum.photos/id/684/300/300" alt="">
+                                </div>
+                                <div class="figcaption">
+                                    <div class="title"><h4 class="mb-0">대한민국 파이어족 서바이벌</h4></div>
+                                    <div class="publisher">도서출판 해솔해솔</div>
+                                    <div class="date">2021-09-30</div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/pr/catalog_details.html" class="catalog-grid-item">
+                                <div class="figure ratio ratio-2x3">
+                                    <img src="https://picsum.photos/id/684/300/300" alt="">
+                                </div>
+                                <div class="figcaption">
+                                    <div class="title"><h4 class="mb-0">대한민국 파이어족 서바이벌</h4></div>
+                                    <div class="publisher">도서출판 해솔해솔</div>
+                                    <div class="date">2021-09-30</div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/pr/catalog_details.html" class="catalog-grid-item">
+                                <div class="figure ratio ratio-2x3">
+                                    <img src="https://picsum.photos/id/684/300/300" alt="">
+                                </div>
+                                <div class="figcaption">
+                                    <div class="title"><h4 class="mb-0">대한민국 파이어족 서바이벌</h4></div>
+                                    <div class="publisher">도서출판 해솔해솔</div>
+                                    <div class="date">2021-09-30</div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/pr/catalog_details.html" class="catalog-grid-item">
+                                <div class="figure ratio ratio-2x3">
+                                    <img src="https://picsum.photos/id/684/300/300" alt="">
+                                </div>
+                                <div class="figcaption">
+                                    <div class="title"><h4 class="mb-0">대한민국 파이어족 서바이벌</h4></div>
+                                    <div class="publisher">도서출판 해솔해솔</div>
+                                    <div class="date">2021-09-30</div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/pr/catalog_details.html" class="catalog-grid-item">
+                                <div class="figure ratio ratio-2x3">
+                                    <img src="https://picsum.photos/id/684/300/300" alt="">
+                                </div>
+                                <div class="figcaption">
+                                    <div class="title"><h4 class="mb-0">대한민국 파이어족 서바이벌</h4></div>
+                                    <div class="publisher">도서출판 해솔해솔</div>
+                                    <div class="date">2021-09-30</div>
+                                </div>
+                            </a>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -518,18 +584,6 @@
     <script src="/js/template.sub.js"></script>
     <script>
         window.addEventListener('DOMContentLoaded', function() {
-
-            // 책 리스트에 항목 추가(그리드 타입)
-            const catalogGridList = document.querySelectorAll('.catalog-grid-list li')
-            if (catalogGridList.length > 0) {
-                axios.get('/components/catalog_grid_item.html')
-                .then(res => {
-                    catalogGridList.forEach(li => {
-                        li.innerHTML = res.data
-                    })
-                })
-                
-            }
         })
     </script>
 

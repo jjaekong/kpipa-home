@@ -237,7 +237,7 @@
 .library-details .published-status-wrapper .period dl::before {
   position: absolute;
   left: 0;
-  content: "•";
+  content: "·";
 }
 .library-details .published-status-wrapper .period dl dt {
   font-weight: normal;
@@ -320,6 +320,9 @@
   align-items: center;
   justify-content: center;
   border-bottom-right-radius: 15px;
+}
+.library-details .book-grid-item .figcaption {
+  font-weight: 500;
 }
 .library-details .catalog-grid-list {
   padding-top: 20px !important;

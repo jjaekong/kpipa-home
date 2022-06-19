@@ -278,7 +278,7 @@ $lightgreen: #468500;
                 &::before {
                     position: absolute;
                     left: 0;
-                    content: '\2022';
+                    content: '\00B7';
                 }
                 dt {
                     font-weight: normal;
@@ -366,6 +366,12 @@ $lightgreen: #468500;
                 border-bottom-right-radius: 15px;
             }
             
+        }
+    }
+
+    .book-grid-item {
+        .figcaption {
+            font-weight: 500;
         }
     }
 

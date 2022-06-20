@@ -35,8 +35,8 @@
                     <div class="col-12 col-lg-1 d-flex justify-content-end">
                         <div class="publisher-share">
                             <ul class="list-unstyled d-flex mb-0">
-                                <li><a href="#"><i class="bi bi-printer"></i></a></li>
-                                <li><a href="#">URL</a></li>
+                                <li><a class="btn-print" href="#"><i class="bi bi-printer"></i></a></li>
+                                <li><a class="btn-copy-url" href="#">URL</a></li>
                             </ul>
                         </div>
                     </div>
@@ -50,13 +50,13 @@
                     <div class="swiper">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
-                                <img class="d-block w-100" src="../img/publisher/img_publisher_thumbnail.jpg">
+                                <a href="#"><img src="https://picsum.photos/1200/500"></a>
                             </div>
                             <div class="swiper-slide">
-                                <img class="d-block w-100" src="../img/publisher/img_publisher_thumbnail.jpg">
+                                <a href="#"><img src="../img/publisher/img_publisher_thumbnail.jpg"></a>
                             </div>
                             <div class="swiper-slide">
-                                <img class="d-block w-100" src="../img/publisher/img_publisher_thumbnail.jpg">
+                                <a href="#"><img src="https://picsum.photos/1200/400"></a>
                             </div>
                         </div>
                         <div class="swiper-button-prev"></div>
@@ -88,7 +88,7 @@
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-auto">
-                        <h4>출판사 추천도서</h4>
+                        <h4>추천도서</h4>
                     </div>
                 </div>
             </div>
@@ -102,7 +102,7 @@
                             <div class="swiper-slide">
                                 <div class="recommend-book-item">
                                     <div class="book-cover">
-                                        <img src="https://picsum.photos/200/300">
+                                        <a href="#"><img src="https://picsum.photos/200/300"></a>
                                     </div>
                                     <div class="book-info">
                                         <img class="quote" src="../img/ico_quote.png">
@@ -121,7 +121,7 @@
                             <div class="swiper-slide">
                                 <div class="recommend-book-item">
                                     <div class="book-cover">
-                                        <img src="https://picsum.photos/200/300">
+                                        <a href="#"><img src="https://picsum.photos/200/300"></a>
                                     </div>
                                     <div class="book-info">
                                         <img class="quote" src="../img/ico_quote.png">
@@ -140,7 +140,7 @@
                             <div class="swiper-slide">
                                 <div class="recommend-book-item">
                                     <div class="book-cover">
-                                        <img src="https://picsum.photos/200/300">
+                                        <a href="#"><img src="https://picsum.photos/200/300"></a>
                                     </div>
                                     <div class="book-info">
                                         <img class="quote" src="../img/ico_quote.png">
@@ -592,6 +592,11 @@
         window.addEventListener('load', function() {
             const publisherThumbSwiper = new Swiper('.publisher-thumb .swiper', {
                 loop: true,
+                autoplay: {
+                    delay: 7000,
+                    disableOnInteraction: false,
+                    pauseOnMouseEnter: true
+                },
                 navigation: {
                     nextEl: '.swiper-button-next',
                     prevEl: '.swiper-button-prev',

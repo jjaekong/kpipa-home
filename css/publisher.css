@@ -156,12 +156,12 @@
 .library-details .recommend-book-item .book-cover a {
   margin-bottom: 20px;
   display: block;
-  width: 150px;
+  width: 250px;
   border: 1px solid #ebebeb;
 }
 .library-details .recommend-book-item .book-cover img {
   display: block;
-  width: 150px;
+  width: 250px;
 }
 .library-details .recommend-book-item .book-info .quote {
   margin-bottom: 20px;
